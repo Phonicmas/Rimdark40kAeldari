@@ -1,0 +1,4 @@
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kMutations\1.4\Assemblies\Mutations40k.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kMutations\1.4\Source\Mutations40k\obj\Debug\Mutations40k.csproj.AssemblyReference.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kMutations\1.4\Source\Mutations40k\obj\Debug\Mutations40k.csproj.CoreCompileInputs.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kMutations\1.4\Source\Mutations40k\obj\Debug\Mutations40k.dll

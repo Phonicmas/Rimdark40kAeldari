@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AbilityCategoryDef>
+    <defName>BEWH_Aeldari</defName>
+    <displayOrder>1001</displayOrder>
+  </AbilityCategoryDef>
+
+  <!-- Gaze Kill -->
+  <AbilityDef>
+    <defName>BEWH_Riposte</defName>
+    <label>riposte</label>
+    <description>...</description>
+    <iconPath>Placeholder</iconPath>
+    <cooldownTicksRange>30000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <category>BEWH_Aeldari</category>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>0</range>
+      <warmupTime>0.5</warmupTime>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+
+</Defs>

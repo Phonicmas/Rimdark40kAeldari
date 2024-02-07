@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Gene Category -->
+    <!-- Abhuman -->
+    <GeneCategoryDef>
+        <defName>BEWHAeldari</defName>
+        <label>Aeldari</label>
+        <displayPriorityInXenotype>542</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <!-- Parent Genes -->
+    <!-- Aeldari Base -->
+    <GeneDef Name="BEWH_Aeldari" Abstract="True">
+        <displayCategory>BEWHAeldari</displayCategory>
+        <marketValueFactor>1</marketValueFactor>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    </GeneDef>
+
+    <!-- Aeldari: Beauty (increased beauty, decreased filth creation and decreased chance to romance with others) -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariBeauty</defName>
+        <label>aeldari beauty</label>
+        <description>...</description>
+        <iconPath>Placeholder</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>1</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Aeldari: Pointed Ears (cosmetic ears) -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariPointedEars</defName>
+        <label>pointed ears</label>
+        <description>...</description>
+        <iconPath>Placeholder</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <iconPath>UI/Icons/Genes/Gene_EarPointed</iconPath>
+        <endogeneCategory>Ears</endogeneCategory>
+        <randomChosen>true</randomChosen>
+        <graphicData>
+            <layer>PostHair</layer>
+            <drawNorthAfterHair>true</drawNorthAfterHair>
+            <useSkinShader>true</useSkinShader>
+            <drawLoc>HeadTop</drawLoc>
+            <graphicPath>Things/Pawn/Humanlike/HeadAttachments/PointedEars/PointedEars</graphicPath>
+            <colorType>Skin</colorType>
+        </graphicData>
+        <displayOrderInCategory>2</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Aeldari: Graceful (increased dodge and hit chance, and increased move speed + riposte ability?) -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariGraceful</defName>
+        <label>graceful</label>
+        <description>...</description>
+        <iconPath>Placeholder</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>3</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Aeldari: Magnificent Physique (better blood pumping, slightly stronger, taller but not wider) -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariMagnificentPhysique</defName>
+        <label>magnificent physique</label>
+        <description>...</description>
+        <iconPath>Placeholder</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>4</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Aeldari: ??? Intellect (increase intellectual and global learning?) -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariIntellect</defName>
+        <label>??? intellect</label>
+        <description>...</description>
+        <iconPath>Placeholder</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>5</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Aeldari: Naturally Psychic (some sort of psychic increase and possibly ability to do something with wraithbone) -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariPsyker</defName>
+        <label>naturally psychic</label>
+        <description>...</description>
+        <iconPath>Placeholder</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>6</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Aeldari: Meditation Dependency (meditation need) -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariMeditationDependency</defName>
+        <label>meditation dependency</label>
+        <description>...</description>
+        <iconPath>Placeholder</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>7</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Aeldari: Psychic Burden (increased mental break) -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariPsychicBurden</defName>
+        <label>psychic burden</label>
+        <description>...</description>
+        <iconPath>Placeholder</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>8</displayOrderInCategory>
+    </GeneDef>
+
+    <!-- Aeldari: Long Living (increased lifespan) -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariLongLiving</defName>
+        <label>long living</label>
+        <description>...</description>
+        <iconPath>Placeholder</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <displayOrderInCategory>9</displayOrderInCategory>
+    </GeneDef>
+
+</Defs>

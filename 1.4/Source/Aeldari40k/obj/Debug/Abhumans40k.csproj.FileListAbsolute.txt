@@ -1,0 +1,4 @@
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kAbhumans\1.4\Assemblies\Abhumans40k.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kAbhumans\1.4\Source\Abhuman40k\obj\Debug\Abhumans40k.csproj.AssemblyReference.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kAbhumans\1.4\Source\Abhuman40k\obj\Debug\Abhumans40k.csproj.CoreCompileInputs.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kAbhumans\1.4\Source\Abhuman40k\obj\Debug\Abhumans40k.dll
