@@ -15,6 +15,10 @@
 			<displayName>Biotech</displayName>
 		</li>
 		<li>
+			<packageId>Ludeon.RimWorld.Royalty</packageId>
+			<displayName>Royalty</displayName>
+		</li>
+		<li>
 			<packageId>Phonicmas.40kCore</packageId>
 			<displayName>Warhammer 40k - Core</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3025477432</steamWorkshopUrl>
@@ -23,6 +27,7 @@
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Royalty</li>
 		<li>brrainz.harmony</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>RedMattis.BetterPrerequisites</li>

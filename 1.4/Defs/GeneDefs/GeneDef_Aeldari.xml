@@ -17,18 +17,7 @@
         <canGenerateInGeneSet>false</canGenerateInGeneSet>
     </GeneDef>
 
-    <!-- Aeldari: Beauty (increased beauty, decreased filth creation and decreased chance to romance with others) -->
-    <GeneDef ParentName="BEWH_Aeldari">
-        <defName>BEWH_AeldariBeauty</defName>
-        <label>aeldari beauty</label>
-        <description>...</description>
-        <iconPath>Placeholder</iconPath>
-        <biostatCpx>1</biostatCpx>
-        <biostatMet>0</biostatMet>
-        <displayOrderInCategory>1</displayOrderInCategory>
-    </GeneDef>
-
-    <!-- Aeldari: Pointed Ears (cosmetic ears) -->
+    <!-- Aeldari: Pointed Ears -->
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariPointedEars</defName>
         <label>pointed ears</label>
@@ -36,7 +25,6 @@
         <iconPath>Placeholder</iconPath>
         <biostatCpx>1</biostatCpx>
         <biostatMet>0</biostatMet>
-        <iconPath>UI/Icons/Genes/Gene_EarPointed</iconPath>
         <endogeneCategory>Ears</endogeneCategory>
         <randomChosen>true</randomChosen>
         <graphicData>
@@ -50,81 +38,178 @@
         <displayOrderInCategory>2</displayOrderInCategory>
     </GeneDef>
 
-    <!-- Aeldari: Graceful (increased dodge and hit chance, and increased move speed + riposte ability?) -->
+    <!-- Aeldari: Beauty -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariBeauty</defName>
+        <label>aeldari beauty</label>
+        <description>...</description>
+        <iconPath>Placeholder</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <missingGeneRomanceChanceFactor>0.3</missingGeneRomanceChanceFactor>
+        <statOffsets>
+            <PawnBeauty>4</PawnBeauty>
+        </statOffsets>
+        <statFactors>
+            <FilthRate>0.5</FilthRate>
+        </statFactors>
+    </GeneDef>
+
+    <!-- Aeldari: Graceful (riposte ability?) -->
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariGraceful</defName>
         <label>graceful</label>
         <description>...</description>
         <iconPath>Placeholder</iconPath>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>0</biostatMet>
+        <biostatMet>-3</biostatMet>
         <displayOrderInCategory>3</displayOrderInCategory>
+        <statOffsets>
+            <MeleeHitChance>4</MeleeHitChance>
+            <MeleeDodgeChance>6</MeleeDodgeChance>
+            <MoveSpeed>0.8</MoveSpeed>
+        </statOffsets>
     </GeneDef>
 
-    <!-- Aeldari: Magnificent Physique (better blood pumping, slightly stronger, taller but not wider) -->
+    <!-- Aeldari: Magnificent Physique -->
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariMagnificentPhysique</defName>
         <label>magnificent physique</label>
         <description>...</description>
         <iconPath>Placeholder</iconPath>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>0</biostatMet>
+        <biostatMet>-3</biostatMet>
         <displayOrderInCategory>4</displayOrderInCategory>
+        <statOffsets>
+            <MeleeDamageFactor>0.2</MeleeDamageFactor>
+        </statOffsets>
+        <capMods>
+            <li>
+                <capacity>BloodPumping</capacity>
+                <offset>0.2</offset>
+            </li>
+            <li>
+                <capacity>Sight</capacity>
+                <offset>0.35</offset>
+            </li>
+        </capMods>
+        <modExtensions>
+            <li Class="VanillaGenesExpanded.GeneExtension">
+                <bodyScaleFactor>(1.15, 1.15)</bodyScaleFactor>
+            </li>
+        </modExtensions>
     </GeneDef>
 
-    <!-- Aeldari: ??? Intellect (increase intellectual and global learning?) -->
+    <!-- Aeldari: Mystical Intellect -->
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariIntellect</defName>
-        <label>??? intellect</label>
+        <label>mystical intellect</label>
         <description>...</description>
         <iconPath>Placeholder</iconPath>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>0</biostatMet>
+        <biostatMet>-2</biostatMet>
         <displayOrderInCategory>5</displayOrderInCategory>
+        <statOffsets>
+            <GlobalLearningFactor>0.15</GlobalLearningFactor>
+        </statOffsets>
+        <aptitudes>
+            <Intellectual>2</Intellectual>
+        </aptitudes>
+        <passionMod>
+            <skill>Intellectual</skill>
+            <modType>AddOneLevel</modType>
+        </passionMod>
     </GeneDef>
 
-    <!-- Aeldari: Naturally Psychic (some sort of psychic increase and possibly ability to do something with wraithbone) -->
+    <!-- Aeldari: Aeldari Psyker (possibly ability to do something with wraithbone?) -->
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariPsyker</defName>
-        <label>naturally psychic</label>
+        <label>aeldari psyker</label>
         <description>...</description>
         <iconPath>Placeholder</iconPath>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>0</biostatMet>
+        <biostatMet>-2</biostatMet>
         <displayOrderInCategory>6</displayOrderInCategory>
+        <statOffsets>
+            <PsychicSensitivity>0.3</PsychicSensitivity>
+            <PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
+        </statOffsets>
+        <abilities>
+            <li>BEWH_CreateWraithbone</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>BEWH_CreateWraithbone</AbilityDef>
+        </descriptionHyperlinks>
     </GeneDef>
 
-    <!-- Aeldari: Meditation Dependency (meditation need) -->
+    <!-- Aeldari: Unsullied Lifespan -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariUnsulliedLifespan</defName>
+        <label>unsullied lifespan</label>
+        <description>...</description>
+        <iconPath>Placeholder</iconPath>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <displayOrderInCategory>9</displayOrderInCategory>
+        <biologicalAgeTickFactorFromAgeCurve>
+            <points>
+                <li>(0, 1)</li>
+                <li>(18, 1)</li>
+                <li>(19, 0.05)</li>
+            </points>
+        </biologicalAgeTickFactorFromAgeCurve>
+        <statFactors>
+            <ImmunityGainSpeed>2</ImmunityGainSpeed>
+        </statFactors>
+        <makeImmuneTo>
+            <li>Flu</li>
+            <li>Malaria</li>
+            <li>SleepingSickness</li>
+            <li>Plague</li>
+            <li>WoundInfection</li>
+            <li>LungRot</li>
+            <li>GutWorms</li>
+            <li>MuscleParasites</li>
+            <li>LungRotExposure</li>
+        </makeImmuneTo>
+        <hediffGiversCannotGive>
+            <li>Carcinoma</li>
+            <li>HeartAttack</li>
+            <li>BadBack</li>
+            <li>Frail</li>
+            <li>Cataract</li>
+            <li>Dementia</li>
+            <li>Alzheimers</li>
+            <li>Asthma</li>
+            <li>HeartArteryBlockage</li>
+            <li>Cirrhosis</li>
+        </hediffGiversCannotGive>
+    </GeneDef>
+
+    <!-- Aeldari: Meditation Dependency (meditation need?) -->
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariMeditationDependency</defName>
         <label>meditation dependency</label>
         <description>...</description>
         <iconPath>Placeholder</iconPath>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>0</biostatMet>
+        <biostatMet>5</biostatMet>
         <displayOrderInCategory>7</displayOrderInCategory>
     </GeneDef>
 
-    <!-- Aeldari: Psychic Burden (increased mental break) -->
+    <!-- Aeldari: Psychic Burden -->
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariPsychicBurden</defName>
         <label>psychic burden</label>
         <description>...</description>
         <iconPath>Placeholder</iconPath>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>0</biostatMet>
+        <biostatMet>3</biostatMet>
         <displayOrderInCategory>8</displayOrderInCategory>
-    </GeneDef>
-
-    <!-- Aeldari: Long Living (increased lifespan) -->
-    <GeneDef ParentName="BEWH_Aeldari">
-        <defName>BEWH_AeldariLongLiving</defName>
-        <label>long living</label>
-        <description>...</description>
-        <iconPath>Placeholder</iconPath>
-        <biostatCpx>1</biostatCpx>
-        <biostatMet>0</biostatMet>
-        <displayOrderInCategory>9</displayOrderInCategory>
+        <statOffsets>
+            <MentalBreakThreshold>0.4</MentalBreakThreshold>
+        </statOffsets>
     </GeneDef>
 
 </Defs>

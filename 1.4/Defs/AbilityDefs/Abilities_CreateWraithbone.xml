@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <AbilityCategoryDef>
-    <defName>BEWH_Aeldari</defName>
-    <displayOrder>1001</displayOrder>
-  </AbilityCategoryDef>
-
-  <!-- Gaze Kill -->
+  <!-- Create Wraithbone (Makes the wriathbone item, costs psyfocus, amount is equal to 1 per 100% psy focus floored so 199% still only gives 1) -->
   <AbilityDef>
-    <defName>BEWH_Riposte</defName>
-    <label>riposte</label>
+    <defName>BEWH_CreateWraithbone</defName>
+    <label>create wraithbone</label>
     <description>...</description>
     <iconPath>Placeholder</iconPath>
-    <cooldownTicksRange>30000</cooldownTicksRange>
+    <cooldownTicksRange>7500</cooldownTicksRange>
     <aiCanUse>true</aiCanUse>
     <category>BEWH_Aeldari</category>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <range>0</range>
-      <warmupTime>0.5</warmupTime>
+      <warmupTime>5</warmupTime>
       <targetParams>
         <canTargetSelf>true</canTargetSelf>
         <canTargetPawns>false</canTargetPawns>
@@ -27,6 +22,5 @@
       </targetParams>
     </verbProperties>
   </AbilityDef>
-
 
 </Defs>

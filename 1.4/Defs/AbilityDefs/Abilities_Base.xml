@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AbilityCategoryDef>
+    <defName>BEWH_Aeldari</defName>
+    <displayOrder>1001</displayOrder>
+  </AbilityCategoryDef>
+
+</Defs>
