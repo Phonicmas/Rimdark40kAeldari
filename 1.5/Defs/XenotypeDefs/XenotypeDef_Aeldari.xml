@@ -10,18 +10,13 @@
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <factionlessGenerationWeight>0.2</factionlessGenerationWeight>
         <genes>
+            <li>PointedEars</li>
             <li>BEWH_AeldariBeauty</li>
-            <li>BEWH_AeldariPointedEars</li>
             <li>BEWH_AeldariGraceful</li>
-            <li>BEWH_AeldariMagnificentPhysique</li>
-            <li>BEWH_AeldariIntellect</li>
+            <li>BEWH_AeldariPhysique</li>
             <li>BEWH_AeldariPsyker</li>
             <li>BEWH_AeldariMeditationDependency</li>
-            <li>BEWH_AeldariPsychicBurden</li>
-            <li>BEWH_AeldariUnsulliedLifespan</li>
-            <li>AptitudePoor_Social</li>
-            <li>AptitudePoor_Animals</li>
-            <li>Body_Thin</li>
+            <li>BEWH_Aeldari???</li>
         </genes>
     </XenotypeDef>
 <!-- -7 metabolism -->

@@ -17,27 +17,6 @@
         <canGenerateInGeneSet>false</canGenerateInGeneSet>
     </GeneDef>
 
-    <!-- Aeldari: Pointed Ears -->
-    <GeneDef ParentName="BEWH_Aeldari">
-        <defName>BEWH_AeldariPointedEars</defName>
-        <label>pointed ears</label>
-        <description>...</description>
-        <iconPath>Placeholder</iconPath>
-        <biostatCpx>1</biostatCpx>
-        <biostatMet>0</biostatMet>
-        <endogeneCategory>Ears</endogeneCategory>
-        <randomChosen>true</randomChosen>
-        <graphicData>
-            <layer>PostHair</layer>
-            <drawNorthAfterHair>true</drawNorthAfterHair>
-            <useSkinShader>true</useSkinShader>
-            <drawLoc>HeadTop</drawLoc>
-            <graphicPath>Things/Pawn/Humanlike/HeadAttachments/PointedEars/PointedEars</graphicPath>
-            <colorType>Skin</colorType>
-        </graphicData>
-        <displayOrderInCategory>2</displayOrderInCategory>
-    </GeneDef>
-
     <!-- Aeldari: Beauty -->
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariBeauty</defName>
@@ -49,14 +28,14 @@
         <displayOrderInCategory>1</displayOrderInCategory>
         <missingGeneRomanceChanceFactor>0.3</missingGeneRomanceChanceFactor>
         <statOffsets>
-            <PawnBeauty>4</PawnBeauty>
+            <PawnBeauty>3</PawnBeauty>
         </statOffsets>
         <statFactors>
             <FilthRate>0.5</FilthRate>
         </statFactors>
     </GeneDef>
 
-    <!-- Aeldari: Graceful (riposte ability?) -->
+    <!-- Aeldari: Graceful -->
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariGraceful</defName>
         <label>graceful</label>
@@ -72,10 +51,10 @@
         </statOffsets>
     </GeneDef>
 
-    <!-- Aeldari: Magnificent Physique -->
+    <!-- Aeldari: Physique -->
     <GeneDef ParentName="BEWH_Aeldari">
-        <defName>BEWH_AeldariMagnificentPhysique</defName>
-        <label>magnificent physique</label>
+        <defName>BEWH_AeldariPhysique</defName>
+        <label>aeldari physique</label>
         <description>...</description>
         <iconPath>Placeholder</iconPath>
         <biostatCpx>1</biostatCpx>
@@ -84,6 +63,9 @@
         <statOffsets>
             <MeleeDamageFactor>0.2</MeleeDamageFactor>
         </statOffsets>
+        <statFactors>
+            <Fertility>0.5</Fertility>
+        </statFactors>
         <capMods>
             <li>
                 <capacity>BloodPumping</capacity>
@@ -101,39 +83,19 @@
         </modExtensions>
     </GeneDef>
 
-    <!-- Aeldari: Mystical Intellect -->
-    <GeneDef ParentName="BEWH_Aeldari">
-        <defName>BEWH_AeldariIntellect</defName>
-        <label>mystical intellect</label>
-        <description>...</description>
-        <iconPath>Placeholder</iconPath>
-        <biostatCpx>1</biostatCpx>
-        <biostatMet>-2</biostatMet>
-        <displayOrderInCategory>5</displayOrderInCategory>
-        <statOffsets>
-            <GlobalLearningFactor>0.15</GlobalLearningFactor>
-        </statOffsets>
-        <aptitudes>
-            <Intellectual>2</Intellectual>
-        </aptitudes>
-        <passionMod>
-            <skill>Intellectual</skill>
-            <modType>AddOneLevel</modType>
-        </passionMod>
-    </GeneDef>
-
-    <!-- Aeldari: Aeldari Psyker (possibly ability to do something with wraithbone?) -->
+    <!-- Aeldari: Aeldari Psyker -->
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariPsyker</defName>
         <label>aeldari psyker</label>
         <description>...</description>
         <iconPath>Placeholder</iconPath>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>-2</biostatMet>
+        <biostatMet>0</biostatMet>
         <displayOrderInCategory>6</displayOrderInCategory>
         <statOffsets>
             <PsychicSensitivity>0.3</PsychicSensitivity>
             <PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
+            <MentalBreakThreshold>0.4</MentalBreakThreshold>
         </statOffsets>
         <abilities>
             <li>BEWH_CreateWraithbone</li>
@@ -162,6 +124,9 @@
         <statFactors>
             <ImmunityGainSpeed>2</ImmunityGainSpeed>
         </statFactors>
+        <statOffsets>
+            <GlobalLearningFactor>0.15</GlobalLearningFactor>
+        </statOffsets>
         <makeImmuneTo>
             <li>Flu</li>
             <li>Malaria</li>
@@ -198,14 +163,14 @@
         <displayOrderInCategory>7</displayOrderInCategory>
     </GeneDef>
 
-    <!-- Aeldari: Psychic Burden -->
+    <!-- Aeldari: ??? - meant to fix metabolism-->
     <GeneDef ParentName="BEWH_Aeldari">
-        <defName>BEWH_AeldariPsychicBurden</defName>
+        <defName>BEWH_Aeldari???</defName>
         <label>psychic burden</label>
         <description>...</description>
         <iconPath>Placeholder</iconPath>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>3</biostatMet>
+        <biostatMet>5</biostatMet>
         <displayOrderInCategory>8</displayOrderInCategory>
         <statOffsets>
             <MentalBreakThreshold>0.4</MentalBreakThreshold>
