@@ -5,6 +5,17 @@
         <defName>BEWH_InfinityCircuit</defName>
         <label>infinity circuit</label>
         <description>...</description>
+        <graphicData>
+            <texPath>Placeholder</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Power">
+              <compClass>Aeldari40k.CompPowerPlantInfinityCircuit</compClass>
+              <basePowerConsumption>-100</basePowerConsumption>
+              <transmitsPower>true</transmitsPower>
+            </li>
+          </comps>
     </ThingDef>
 
 </Defs>

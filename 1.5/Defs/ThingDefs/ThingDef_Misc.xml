@@ -2,9 +2,16 @@
 <Defs>
 
     <ThingDef>
-        <defName>BEWH_SoulStone</defName>
-        <label>soul stone</label>
+        <defName>BEWH_SpiritStone</defName>
+        <label>spirit stone</label>
         <description>...</description>
+        <graphicData>
+            <texPath>Placeholder</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <comps>
+            <li>Abhumans40k.SpiritStoneCompProperties</li>
+        </comps>
     </ThingDef>
 
 </Defs>

@@ -5,6 +5,10 @@
         <defName>BEWH_SoulStoneNecklase</defName>
         <label>soul stone necklase</label>
         <description>...</description>
+        <graphicData>
+            <texPath>Placeholder</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
     </ThingDef>
 
 </Defs>

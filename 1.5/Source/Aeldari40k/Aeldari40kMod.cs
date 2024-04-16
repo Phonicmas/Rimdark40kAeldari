@@ -2,7 +2,7 @@
 using Verse;
 
 
-namespace Abhumans40k
+namespace Aeldari40k
 {
     public class Aeldari40kMod : Mod
     {

@@ -2,9 +2,13 @@
 <Defs>
 
     <ThingDef>
-        <defName>BEWH_SoulStoneNecklase</defName>
-        <label>soul stone necklase</label>
+        <defName>BEWH_Diresword</defName>
+        <label>diresword</label>
         <description>...</description>
+        <graphicData>
+            <texPath>Placeholder</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
     </ThingDef>
 
 </Defs>
