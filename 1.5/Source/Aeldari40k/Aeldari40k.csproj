@@ -76,7 +76,6 @@
     <Compile Include="CompPowerPlantInfinityCircuit.cs" />
     <Compile Include="InfinityCircuitBuilding.cs" />
     <Compile Include="SpiritStoneCompProperties.cs" />
-    <Compile Include="SpiritStoneItem.cs" />
     <Compile Include="SpiritStoneComp.cs" />
     <Compile Include="Aeldari40kMod.cs" />
     <Compile Include="Aeldari40kDefOf.cs" />

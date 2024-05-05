@@ -1,17 +1,27 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Linq;
 using Verse;
 
 
 namespace Aeldari40k
 {
-    public class InfinityCircuitBuilding : Building
+    public class InfinityCircuitBuilding : Building_Storage
     {
-
-        public List<ThingDef> heldStones = new List<ThingDef>();
-
         public int SoulAmount
         {
-            get { return heldStones.Count; }
+            get
+            {
+                //Get storage amount of spirit stones, might be located in this.storageGroup
+                int c = this.storageGroup.HeldThings.Count();
+                Log.Message("Amount: " + c);
+                return c;
+            }
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            //Scribe_Collections.Look(ref heldStones, "heldStones", LookMode.Deep);
         }
 
         public override void TickLong()

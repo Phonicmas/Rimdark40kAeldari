@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef>
+    <!--<ThingDef>
         <defName>BEWH_Diresword</defName>
         <label>diresword</label>
         <description>...</description>
@@ -9,6 +9,6 @@
             <texPath>Placeholder</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-    </ThingDef>
+    </ThingDef>-->
 
 </Defs>

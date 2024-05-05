@@ -5,13 +5,30 @@
         <defName>BEWH_SpiritStone</defName>
         <label>spirit stone</label>
         <description>...</description>
+        <thingClass>ThingWithComps</thingClass>
         <graphicData>
-            <texPath>Placeholder</texPath>
+            <texPath>Things/Item/Special/AIPersonaCore</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <comps>
-            <li>Abhumans40k.SpiritStoneCompProperties</li>
-        </comps>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <MaxHitPoints>400</MaxHitPoints>
+            <Mass>0.1</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>BEWH_SpiritStones</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <techLevel>Spacer</techLevel>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
     </ThingDef>
 
 </Defs>

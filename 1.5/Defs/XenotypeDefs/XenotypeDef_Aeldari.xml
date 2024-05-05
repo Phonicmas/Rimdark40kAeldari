@@ -10,7 +10,7 @@
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <factionlessGenerationWeight>0.2</factionlessGenerationWeight>
         <genes>
-            <li>PointedEars</li>
+            <li>Ears_Pointed</li>
             <li>BEWH_AeldariBeauty</li>
             <li>BEWH_AeldariGraceful</li>
             <li>BEWH_AeldariPhysique</li>
@@ -19,5 +19,5 @@
             <li>BEWH_Aeldari???</li>
         </genes>
     </XenotypeDef>
-<!-- -7 metabolism -->
+
 </Defs>

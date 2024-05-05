@@ -1,14 +1,74 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef>
-        <defName>BEWH_SoulStoneNecklase</defName>
-        <label>soul stone necklase</label>
+    <ThingDef ParentName="ApparelBase">
+        <defName>BEWH_SpiritStoneNecklace</defName>
+        <label>spirit stone necklace</label>
         <description>...</description>
         <graphicData>
-            <texPath>Placeholder</texPath>
+            <texPath>Apparel/SpiritStones/TempNeck</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
+        <thingClass>ThingWithComps</thingClass>
+        <comps>
+            <li Class="Aeldari40k.SpiritStoneCompProperties"/>
+        </comps>
+        <techLevel>Spacer</techLevel>
+        <statBases Inherit="False">
+            <MaxHitPoints>400</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Mass>0.14</Mass>
+            <EquipDelay>0.3</EquipDelay>
+            <MarketValue>800</MarketValue>
+            <Beauty>10</Beauty>
+            <WorkToMake>4000</WorkToMake>
+        </statBases>
+        <!-- ===== Apparel Stuff ===== -->
+        <thingCategories>
+            <li>BEWH_SpiritStones</li>
+        </thingCategories>
+        <stackLimit>1</stackLimit>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <li>Neck</li>
+            </bodyPartGroups>
+            <layers>
+                <li>BEWH_SpiritStoneSlot</li>
+            </layers>
+            <tags>
+                <li>SpiritStone</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <equippedStatOffsets>
+            <PawnBeauty>+1</PawnBeauty>
+        </equippedStatOffsets>
+        <!-- ===== Recipe ===== -->
+        <costList>
+            <Gold>3</Gold>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <effectWorking>CutStone</effectWorking>
+            <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <!--<researchPrerequisite>BEWH_??</researchPrerequisite>-->
+            <workSkill>Crafting</workSkill>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+        </recipeMaker>
     </ThingDef>
 
 </Defs>

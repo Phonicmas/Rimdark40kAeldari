@@ -11,6 +11,8 @@ namespace Aeldari40k
 
         public static ThoughtDef BEWH_InfinityCircuitThought;
 
+        public static ThingDef BEWH_SpiritStone;
+
         static Aeldari40kDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(Aeldari40kDefOf));

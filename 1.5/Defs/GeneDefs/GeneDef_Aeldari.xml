@@ -65,6 +65,7 @@
         </statOffsets>
         <statFactors>
             <Fertility>0.5</Fertility>
+            <VEF_CosmeticBodySize_Multiplier>1.05</VEF_CosmeticBodySize_Multiplier>
         </statFactors>
         <capMods>
             <li>
@@ -76,11 +77,6 @@
                 <offset>0.35</offset>
             </li>
         </capMods>
-        <modExtensions>
-            <li Class="VanillaGenesExpanded.GeneExtension">
-                <bodyScaleFactor>(1.15, 1.15)</bodyScaleFactor>
-            </li>
-        </modExtensions>
     </GeneDef>
 
     <!-- Aeldari: Aeldari Psyker -->
