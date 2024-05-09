@@ -74,9 +74,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompPowerPlantInfinityCircuit.cs" />
+    <Compile Include="Need_Meditation.cs" />
+    <Compile Include="RecipeWorkerCounter_MakeWraithbone.cs" />
+    <Compile Include="DefModExtension_Wraithbone.cs" />
+    <Compile Include="RecipeWorker_MakeWraithbone.cs" />
+    <Compile Include="ThoughtWorker_NeedMeditation.cs" />
+    <Compile Include="WorkGiver_BonesingerDoBill.cs" />
+    <Compile Include="ThoughtWorker_InfinityCircuit.cs" />
+    <Compile Include="ITab_ContentsSpiritStone.cs" />
     <Compile Include="InfinityCircuitBuilding.cs" />
     <Compile Include="SpiritStoneCompProperties.cs" />
     <Compile Include="SpiritStoneComp.cs" />
+    <Compile Include="SpiritStoneApparelCompProperties.cs" />
+    <Compile Include="SpiritStoneApparelComp.cs" />
     <Compile Include="Aeldari40kMod.cs" />
     <Compile Include="Aeldari40kDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

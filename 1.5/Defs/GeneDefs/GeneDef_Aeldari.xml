@@ -22,8 +22,8 @@
         <defName>BEWH_AeldariBeauty</defName>
         <label>aeldari beauty</label>
         <description>...</description>
-        <iconPath>Placeholder</iconPath>
-        <biostatCpx>1</biostatCpx>
+        <iconPath>UI/Genes/Aeldarian_Beauty_icon</iconPath>
+        <biostatCpx>2</biostatCpx>
         <biostatMet>-2</biostatMet>
         <displayOrderInCategory>1</displayOrderInCategory>
         <missingGeneRomanceChanceFactor>0.3</missingGeneRomanceChanceFactor>
@@ -40,8 +40,8 @@
         <defName>BEWH_AeldariGraceful</defName>
         <label>graceful</label>
         <description>...</description>
-        <iconPath>Placeholder</iconPath>
-        <biostatCpx>1</biostatCpx>
+        <iconPath>UI/Genes/Graceful_icon</iconPath>
+        <biostatCpx>2</biostatCpx>
         <biostatMet>-3</biostatMet>
         <displayOrderInCategory>3</displayOrderInCategory>
         <statOffsets>
@@ -56,8 +56,8 @@
         <defName>BEWH_AeldariPhysique</defName>
         <label>aeldari physique</label>
         <description>...</description>
-        <iconPath>Placeholder</iconPath>
-        <biostatCpx>1</biostatCpx>
+        <iconPath>UI/Genes/Aeldari_Physique_icon</iconPath>
+        <biostatCpx>3</biostatCpx>
         <biostatMet>-3</biostatMet>
         <displayOrderInCategory>4</displayOrderInCategory>
         <statOffsets>
@@ -84,8 +84,9 @@
         <defName>BEWH_AeldariPsyker</defName>
         <label>aeldari psyker</label>
         <description>...</description>
-        <iconPath>Placeholder</iconPath>
-        <biostatCpx>1</biostatCpx>
+        <iconPath>UI/Genes/Aeldari_Psyker_icon</iconPath>
+        <biostatCpx>4</biostatCpx>
+        <biostatArc>1</biostatArc>
         <biostatMet>0</biostatMet>
         <displayOrderInCategory>6</displayOrderInCategory>
         <statOffsets>
@@ -93,12 +94,23 @@
             <PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
             <MentalBreakThreshold>0.4</MentalBreakThreshold>
         </statOffsets>
-        <abilities>
-            <li>BEWH_CreateWraithbone</li>
-        </abilities>
-        <descriptionHyperlinks>
-            <AbilityDef>BEWH_CreateWraithbone</AbilityDef>
-        </descriptionHyperlinks>
+        <modExtensions>
+            <li Class="VanillaGenesExpanded.GeneExtension">
+                <hediffsToBodyParts>
+                    <li>
+                        <hediff>PsychicAmplifier</hediff>
+                        <bodyparts>
+                            <li>Brain</li>
+                        </bodyparts>
+                    </li>
+                </hediffsToBodyParts>
+            </li>
+        </modExtensions>
+        <customEffectDescriptions>
+            <li>Allows the pawn to craft wraithbone</li>
+            <li>Mood depending on Infinity Circuit</li>
+            <li>Losing this gene will make the colonist lose all psylink levels, though they will not forget the psycasts they have already learned.</li>
+        </customEffectDescriptions>
     </GeneDef>
 
     <!-- Aeldari: Unsullied Lifespan -->
@@ -106,8 +118,8 @@
         <defName>BEWH_AeldariUnsulliedLifespan</defName>
         <label>unsullied lifespan</label>
         <description>...</description>
-        <iconPath>Placeholder</iconPath>
-        <biostatCpx>1</biostatCpx>
+        <iconPath>UI/Genes/Unsullied Lifespan_icon</iconPath>
+        <biostatCpx>2</biostatCpx>
         <biostatMet>-2</biostatMet>
         <displayOrderInCategory>9</displayOrderInCategory>
         <biologicalAgeTickFactorFromAgeCurve>
@@ -153,24 +165,23 @@
         <defName>BEWH_AeldariMeditationDependency</defName>
         <label>meditation dependency</label>
         <description>...</description>
-        <iconPath>Placeholder</iconPath>
+        <iconPath>UI/Genes/Meditation_Dependency_icon</iconPath>
+        <causesNeed>BEWH_MeditationDependency</causesNeed>
         <biostatCpx>1</biostatCpx>
         <biostatMet>5</biostatMet>
         <displayOrderInCategory>7</displayOrderInCategory>
     </GeneDef>
 
-    <!-- Aeldari: ??? - meant to fix metabolism-->
+    <!-- Aeldari: Creation of the Old Ones -->
     <GeneDef ParentName="BEWH_Aeldari">
-        <defName>BEWH_Aeldari???</defName>
-        <label>psychic burden</label>
+        <defName>BEWH_AeldariCreationOfOldOnes</defName>
+        <label>Creation of the Old Ones</label>
         <description>...</description>
-        <iconPath>Placeholder</iconPath>
-        <biostatCpx>1</biostatCpx>
+        <iconPath>UI/Genes/Aeldari_Physique_icon</iconPath>
+        <biostatCpx>4</biostatCpx>
         <biostatMet>5</biostatMet>
+        <biostatArc>2</biostatArc>
         <displayOrderInCategory>8</displayOrderInCategory>
-        <statOffsets>
-            <MentalBreakThreshold>0.4</MentalBreakThreshold>
-        </statOffsets>
     </GeneDef>
 
 </Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <WorkGiverDef>
+        <defName>BEWH_DoBillsUseWraithbone</defName>
+        <label>make things out of wraithbone</label>
+        <giverClass>Aeldari40k.WorkGiver_BonesingerDoBill</giverClass>
+        <workType>Crafting</workType>
+        <priorityInType>99</priorityInType>
+        <fixedBillGiverDefs>
+            <li>BEWH_WraithboneBench</li>
+        </fixedBillGiverDefs>
+        <verb>bonesing</verb>
+        <gerund>bonesinging at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+</Defs>

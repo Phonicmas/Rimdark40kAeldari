@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>BEWH_NeedMeditation</defName>
+        <workerClass>Aeldari40k.ThoughtWorker_NeedMeditation</workerClass>
+        <requiredGenes>
+            <li>BEWH_AeldariMeditationDependency</li>
+        </requiredGenes>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>psychically filled</label>
+                <description>My psyfocus reserves are filled to the brim, this is the good life!</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+            <li>
+                <label>psychically well</label>
+                <description>My psyfocus reserves are doing great, this is nice.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+            <li>
+                <label>psychically neutral</label>
+                <description>My psyfocus reserves are fine, but they could be better.</description>
+                <baseMoodEffect>0</baseMoodEffect>
+            </li>
+            <li>
+                <label>psychically hungry</label>
+                <description>My psyfocus reserves are low, I should meditate.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <li>
+                <label>psychically deprived</label>
+                <description>My psyfocus reserves are very low, I desperately need to meditate.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+            <li>
+                <label>psychically empty</label>
+                <description>My psyfocus reserves are empty, this is unbearable.</description>
+                <baseMoodEffect>-15</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

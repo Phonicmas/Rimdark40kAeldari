@@ -1,9 +1,4 @@
-﻿using LudeonTK;
-using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using UnityEngine;
+﻿using RimWorld;
 using Verse;
 
 
@@ -32,7 +27,7 @@ namespace Aeldari40k
             }
             if (parent is InfinityCircuitBuilding b)
             {
-                cachedPowerOutput = 0f - Props.PowerConsumption * b.SoulAmount;
+                cachedPowerOutput = 0f - Props.PowerConsumption * b.SoulAmount.Count;
                 return;
             }
             else

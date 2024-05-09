@@ -7,30 +7,15 @@ namespace Aeldari40k
     {
         public SpiritStoneCompProperties Props => (SpiritStoneCompProperties)props;
 
-        private Pawn pawn = null;
+        public Pawn pawn = null;
 
-        public Pawn SoulOfPawn
+        public override string CompInspectStringExtra()
         {
-            get
+            if (pawn != null)
             {
-                if(this.pawn == null && ParentHolder is Pawn pawn)
-                {
-                    this.pawn = pawn;
-                }
-                return this.pawn;
+                return "ContainsSoulOf".Translate(pawn.NameFullColored);
             }
-        }
-
-        public override void Notify_WearerDied()
-        {
-            base.Notify_WearerDied();
-
-            Thing spiritStone = ThingMaker.MakeThing(Aeldari40kDefOf.BEWH_SpiritStone);
-            spiritStone.Position = parent.Position;
-            if (parent != null && !parent.Destroyed)
-            {
-                parent.Destroy();
-            }
+            return "ContainsNoSoul".Translate();
         }
 
         public override void PostExposeData()
@@ -38,7 +23,6 @@ namespace Aeldari40k
             base.PostExposeData();
             Scribe_References.Look(ref pawn, "pawn");
         }
-
 
     }
 }

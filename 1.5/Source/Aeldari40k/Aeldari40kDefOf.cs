@@ -13,6 +13,12 @@ namespace Aeldari40k
 
         public static ThingDef BEWH_SpiritStone;
 
+        public static ThingDef BEWH_InfinityCircuit;
+
+        public static ThingDef BEWH_Wraithbone;
+
+        public static NeedDef BEWH_MeditationDependency;
+
         static Aeldari40kDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(Aeldari40kDefOf));

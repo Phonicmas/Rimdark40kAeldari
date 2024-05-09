@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-    
+    <ContainsSoulOf>Contains the Spirit of {0}</ContainsSoulOf>
+
+    <ContainsNoSoul>Contains no spirit</ContainsNoSoul>
+
+    <ContainsXSouls>Contains {0} spirits</ContainsXSouls>
 
 </LanguageData>

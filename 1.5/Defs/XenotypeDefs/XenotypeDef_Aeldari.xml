@@ -5,18 +5,20 @@
         <defName>BEWH_Aeldari</defName>
         <label>aeldari</label>
         <description>...</description>
-        <iconPath>Placeholder</iconPath>
+        <iconPath>UI/Xenotypes/Eldar_Xenotype</iconPath>
         <inheritable>true</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <factionlessGenerationWeight>0.2</factionlessGenerationWeight>
         <genes>
             <li>Ears_Pointed</li>
+            <li>Body_Thin</li>
+            <li>Body_Standard</li>
             <li>BEWH_AeldariBeauty</li>
             <li>BEWH_AeldariGraceful</li>
             <li>BEWH_AeldariPhysique</li>
             <li>BEWH_AeldariPsyker</li>
             <li>BEWH_AeldariMeditationDependency</li>
-            <li>BEWH_Aeldari???</li>
+            <li>BEWH_AeldariCreationOfOldOnes</li>
         </genes>
     </XenotypeDef>
 

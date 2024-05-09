@@ -19,6 +19,43 @@
         <rect>(0.3,0,5.4,6)</rect>
       </damageData>
     </graphicData>
+    <statBases>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <WorkToBuild>20000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <size>(5,5)</size>
+    <tickerType>Normal</tickerType>
+    <costList>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <BEWH_Wraithbone>300</BEWH_Wraithbone>
+    </costList>
+    <building>
+      <!--<soundAmbient>GeothermalPlant_Ambience</soundAmbient> Some sound maybe?-->
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+      <!-- Storage Stuff -->
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>100</maxItemsInCell>
+      <storageGroupTag>BEWH_InfinityCircuit</storageGroupTag>
+      <fixedStorageSettings>
+        <priority>Critical</priority>
+        <filter>
+          <categories Inherit="False">
+            <li>BEWH_SpiritStones</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Critical</priority>
+        <filter>
+          <categories>
+            <li>BEWH_SpiritStones</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <surfaceType>None</surfaceType>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <blockWind>true</blockWind>
@@ -26,51 +63,19 @@
     <fillPercent>1</fillPercent>
     <blockLight>true</blockLight>
     <canOverlapZones>false</canOverlapZones>
-    <statBases>
-      <MaxHitPoints>5000</MaxHitPoints>
-      <WorkToBuild>20000</WorkToBuild>
-      <Flammability>0</Flammability>
-      <Beauty>10</Beauty>
-    </statBases>
-    <tickerType>Normal</tickerType>
-    <size>(5,5)</size>
-    <costList>
-      <Steel>340</Steel>
-      <Plasteel>340</Plasteel>
-      <ComponentIndustrial>8</ComponentIndustrial>
-      <!-- Wraithbone? -->
-    </costList>
     <rotatable>false</rotatable>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
     <uiOrder>2300</uiOrder>
-    <building>
-      <ai_chillDestination>false</ai_chillDestination>
-      <!--<soundAmbient>GeothermalPlant_Ambience</soundAmbient> Some sound maybe?-->
-      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
-      <!-- Storage Stuff -->
-      <storageGroupTag>BEWH_InfinityCircuit</storageGroupTag>
-      <blueprintClass>Blueprint_Storage</blueprintClass>
-      <fixedStorageSettings>
-        <filter>
-          <disallowNotEverStorable>true</disallowNotEverStorable>
-          <categories>
-            <li>BEWH_SpiritStones</li>
-          </categories>
-        </filter>
-      </fixedStorageSettings>
-      <defaultStorageSettings>
-        <priority>Critical</priority>
-      </defaultStorageSettings>
-    </building>
     <constructEffect>ConstructMetal</constructEffect>
     <designationHotKey>Misc6</designationHotKey>
-    <!--<researchPrerequisites>
-      <li>GeothermalPower</li>
-    </researchPrerequisites>-->
+    <researchPrerequisites>
+      <li>BEWH_AeldariInfinityCircuit</li>
+    </researchPrerequisites>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <inspectorTabs>
       <li>ITab_Storage</li>
+      <li>Aeldari40k.ITab_ContentsSpiritStone</li>
     </inspectorTabs>
     <comps>
       <li Class="CompProperties_Power">

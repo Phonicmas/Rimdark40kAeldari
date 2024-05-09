@@ -4,6 +4,12 @@
   <ThingCategoryDef>
     <defName>BEWH_SpiritStones</defName>
     <label>spirit stones</label>
+    <parent>Items</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>BEWH_SpiritStonesAccessories</defName>
+    <label>spirit stones accessories</label>
     <parent>Apparel</parent>
   </ThingCategoryDef>
 

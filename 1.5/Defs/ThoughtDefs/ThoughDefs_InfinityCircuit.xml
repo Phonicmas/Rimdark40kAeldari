@@ -3,14 +3,22 @@
 
     <ThoughtDef>
         <defName>BEWH_InfinityCircuitThought</defName>
-        <durationDays>0.1</durationDays>
-        <stackLimit>1</stackLimit>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>Aeldari40k.ThoughtWorker_InfinityCircuit</workerClass>
+        <requiredGenes>
+            <li>BEWH_AeldariPsyker</li>
+        </requiredGenes>
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>
             <li>
+                <label>No Infinity circuit</label>
+                <description>Missing an infinity circuit</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+            <li>
                 <label>Infinity circuit</label>
-                <description>...</description>
-                <baseMoodEffect>-5</baseMoodEffect>
+                <description>Got an infinity circuit</description>
+                <baseMoodEffect>5</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>

@@ -10,9 +10,9 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
-        <thingClass>ThingWithComps</thingClass>
+        <!--<thingClass>ThingWithComps</thingClass>-->
         <comps>
-            <li Class="Aeldari40k.SpiritStoneCompProperties"/>
+            <li Class="Aeldari40k.SpiritStoneApparelCompProperties"/>
         </comps>
         <techLevel>Spacer</techLevel>
         <statBases Inherit="False">
@@ -27,7 +27,7 @@
         </statBases>
         <!-- ===== Apparel Stuff ===== -->
         <thingCategories>
-            <li>BEWH_SpiritStones</li>
+            <li>BEWH_SpiritStonesAccessories</li>
         </thingCategories>
         <stackLimit>1</stackLimit>
         <apparel>
@@ -60,7 +60,7 @@
             <effectWorking>CutStone</effectWorking>
             <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
             <recipeUsers>
-                <li>FabricationBench</li>
+                <li>BEWH_WraithboneBench</li>
             </recipeUsers>
             <!--<researchPrerequisite>BEWH_??</researchPrerequisite>-->
             <workSkill>Crafting</workSkill>

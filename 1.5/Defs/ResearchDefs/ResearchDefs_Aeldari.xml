@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>BEWH_AeldarWraithbone</defName>
+        <label>Bonesinging</label>
+        <description>???</description>
+        <tab>BEWH_WH40kTab</tab>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <researchViewX>10</researchViewX>
+        <researchViewY>1</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>BEWH_AeldariInfinityCircuit</defName>
+        <label>Infinity Circuit</label>
+        <description>???</description>
+        <tab>BEWH_WH40kTab</tab>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>BEWH_AeldarWraithbone</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <researchViewX>10</researchViewX>
+        <researchViewY>1</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>
