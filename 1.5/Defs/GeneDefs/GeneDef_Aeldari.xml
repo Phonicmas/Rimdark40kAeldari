@@ -26,6 +26,7 @@
         <biostatCpx>2</biostatCpx>
         <biostatMet>-2</biostatMet>
         <displayOrderInCategory>1</displayOrderInCategory>
+        <marketValueFactor>1.2</marketValueFactor>
         <missingGeneRomanceChanceFactor>0.3</missingGeneRomanceChanceFactor>
         <statOffsets>
             <PawnBeauty>3</PawnBeauty>
@@ -44,6 +45,7 @@
         <biostatCpx>2</biostatCpx>
         <biostatMet>-3</biostatMet>
         <displayOrderInCategory>3</displayOrderInCategory>
+        <marketValueFactor>1.1</marketValueFactor>
         <statOffsets>
             <MeleeHitChance>4</MeleeHitChance>
             <MeleeDodgeChance>6</MeleeDodgeChance>
@@ -60,6 +62,7 @@
         <biostatCpx>3</biostatCpx>
         <biostatMet>-3</biostatMet>
         <displayOrderInCategory>4</displayOrderInCategory>
+        <marketValueFactor>1.1</marketValueFactor>
         <statOffsets>
             <MeleeDamageFactor>0.2</MeleeDamageFactor>
         </statOffsets>
@@ -89,6 +92,7 @@
         <biostatArc>1</biostatArc>
         <biostatMet>0</biostatMet>
         <displayOrderInCategory>6</displayOrderInCategory>
+        <marketValueFactor>1.5</marketValueFactor>
         <statOffsets>
             <PsychicSensitivity>0.3</PsychicSensitivity>
             <PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
@@ -178,9 +182,9 @@
         <label>Creation of the Old Ones</label>
         <description>...</description>
         <iconPath>UI/Genes/Aeldari_Physique_icon</iconPath>
-        <biostatCpx>4</biostatCpx>
-        <biostatMet>5</biostatMet>
-        <biostatArc>2</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>3</biostatMet>
+        <biostatArc>1</biostatArc>
         <displayOrderInCategory>8</displayOrderInCategory>
     </GeneDef>
 

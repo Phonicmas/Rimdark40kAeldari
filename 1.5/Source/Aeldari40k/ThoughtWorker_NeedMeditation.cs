@@ -15,7 +15,7 @@ namespace Aeldari40k
 
             float psyfocusLevel = p.needs.TryGetNeed(Aeldari40kDefOf.BEWH_MeditationDependency).CurLevelPercentage;
 
-            if (psyfocusLevel >= 1f)
+            if (psyfocusLevel >= 0.95f)
             {
                 return ThoughtState.ActiveAtStage(0);
             }
@@ -23,21 +23,21 @@ namespace Aeldari40k
             {
                 return ThoughtState.ActiveAtStage(1);
             }
-            else if (psyfocusLevel >= 0.5f)
+            else if (psyfocusLevel >= 0.6f)
             {
-                return ThoughtState.ActiveAtStage(1);
+                return ThoughtState.ActiveAtStage(2);
             }
             else if (psyfocusLevel >= 0.3f)
             {
-                return ThoughtState.ActiveAtStage(1);
+                return ThoughtState.ActiveAtStage(3);
             }
             else if (psyfocusLevel >= 0.15f)
             {
-                return ThoughtState.ActiveAtStage(1);
+                return ThoughtState.ActiveAtStage(4);
             }
             else if (psyfocusLevel >= 0.02f)
             {
-                return ThoughtState.ActiveAtStage(1);
+                return ThoughtState.ActiveAtStage(5);
             }
 
             return ThoughtState.Inactive;

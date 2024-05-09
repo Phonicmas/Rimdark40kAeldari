@@ -4,7 +4,7 @@
   <NeedDef>
     <defName>BEWH_MeditationDependency</defName>
     <needClass>Aeldari40k.Need_Meditation</needClass>
-    <label>meditation satiety</label>
+    <label>psychic connection</label>
     <description>...</description>
     <baseLevel>0</baseLevel>
     <minIntelligence>ToolUser</minIntelligence>
