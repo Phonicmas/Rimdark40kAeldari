@@ -22,6 +22,7 @@
     </costList>
     <recipes>
       <li>BEWH_Make_Wraithbone</li>
+      <li>BEWH_Make_Diresword</li>
     </recipes>
     <graphicData>
       <texPath>Things/Building/Production/FabricationBench</texPath>

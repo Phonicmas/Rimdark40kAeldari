@@ -21,7 +21,7 @@ namespace Aeldari40k
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_References.Look(ref pawn, "pawn");
+            Scribe_References.Look(ref pawn, "pawn", saveDestroyedThings: true);
         }
 
     }

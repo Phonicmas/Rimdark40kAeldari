@@ -73,11 +73,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompProperties_BladelinkWeapon_AeldariSpirit.cs" />
     <Compile Include="CompPowerPlantInfinityCircuit.cs" />
+    <Content Include="HarmonyPatch_DontPlaceProductPatch.cs.txt" />
+    <Compile Include="WeaponTraitDef_AeldariSpirit.cs" />
     <Compile Include="Need_Meditation.cs" />
-    <Compile Include="RecipeWorkerCounter_MakeWraithbone.cs" />
-    <Compile Include="DefModExtension_Wraithbone.cs" />
+    <Compile Include="DefModExtension_WraithboneCreatedStuff.cs" />
+    <Compile Include="RecipeWorker_MakeSpiritWeapon.cs" />
     <Compile Include="RecipeWorker_MakeWraithbone.cs" />
+    <Compile Include="CompBladelinkWeapon_AeldariSpirit.cs" />
     <Compile Include="ThoughtWorker_NeedMeditation.cs" />
     <Compile Include="WorkGiver_BonesingerDoBill.cs" />
     <Compile Include="ThoughtWorker_InfinityCircuit.cs" />

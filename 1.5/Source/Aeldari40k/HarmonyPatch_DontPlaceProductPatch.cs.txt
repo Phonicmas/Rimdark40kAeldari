@@ -1,0 +1,45 @@
+﻿using HarmonyLib;
+using RimWorld;
+using System;
+using Verse;
+
+namespace Aeldari40k
+{
+    [HarmonyPatch]
+    public class DontPlaceProductPatch
+    {
+        [HarmonyPatch(typeof(GenPlace), nameof(GenPlace.TryPlaceThing), new Type[]
+        {
+            typeof(Thing),
+            typeof(IntVec3),
+            typeof(Map),
+            typeof(ThingPlaceMode),
+            typeof(Action<Thing, int>),
+            typeof(Predicate<IntVec3>),
+            typeof(Rot4)
+        }, new ArgumentType[]
+        {
+            ArgumentType.Normal,
+            ArgumentType.Normal,
+            ArgumentType.Normal,
+            ArgumentType.Normal,
+            ArgumentType.Normal,
+            ArgumentType.Normal,
+            ArgumentType.Normal
+        })]
+        [HarmonyPrefix]
+        public static bool Prefix(ref bool __result, Thing thing)
+        {
+            Log.Message(thing);
+            Log.Message(thing.def);
+            Log.Message(thing.def.HasModExtension<DefModExtension_WraithboneCreatedStuff>());
+            if (thing.def.HasModExtension<DefModExtension_WraithboneCreatedStuff>())
+            {
+                __result = false;
+                return true;
+            }
+            Log.Message("Here");
+            return false;
+        }
+    }
+}

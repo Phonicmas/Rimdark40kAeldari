@@ -4,7 +4,7 @@
     <!-- Gene Category -->
     <!-- Abhuman -->
     <GeneCategoryDef>
-        <defName>BEWHAeldari</defName>
+        <defName>BEWH_Aeldari</defName>
         <label>Aeldari</label>
         <displayPriorityInXenotype>542</displayPriorityInXenotype>
     </GeneCategoryDef>
@@ -12,7 +12,7 @@
     <!-- Parent Genes -->
     <!-- Aeldari Base -->
     <GeneDef Name="BEWH_Aeldari" Abstract="True">
-        <displayCategory>BEWHAeldari</displayCategory>
+        <displayCategory>BEWH_Aeldari</displayCategory>
         <marketValueFactor>1</marketValueFactor>
         <canGenerateInGeneSet>false</canGenerateInGeneSet>
     </GeneDef>
@@ -109,6 +109,7 @@
                     </li>
                 </hediffsToBodyParts>
             </li>
+            <li Class="Core40k.DefModExtension_InheritableArchite" />
         </modExtensions>
         <customEffectDescriptions>
             <li>Allows the pawn to craft wraithbone</li>
@@ -186,6 +187,9 @@
         <biostatMet>3</biostatMet>
         <biostatArc>1</biostatArc>
         <displayOrderInCategory>8</displayOrderInCategory>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_InheritableArchite" />
+        </modExtensions>
     </GeneDef>
 
 </Defs>

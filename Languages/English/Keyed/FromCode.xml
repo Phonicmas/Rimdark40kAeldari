@@ -7,4 +7,6 @@
 
     <ContainsXSouls>Contains {0} spirits</ContainsXSouls>
 
+    <InhabitedBy>Inhabited by {0}'s spirit</InhabitedBy>
+
 </LanguageData>
