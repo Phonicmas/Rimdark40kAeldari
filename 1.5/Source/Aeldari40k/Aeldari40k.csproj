@@ -75,7 +75,7 @@
   <ItemGroup>
     <Compile Include="CompProperties_BladelinkWeapon_AeldariSpirit.cs" />
     <Compile Include="CompPowerPlantInfinityCircuit.cs" />
-    <Content Include="HarmonyPatch_DontPlaceProductPatch.cs.txt" />
+    <Compile Include="HarmonyPatch_DontPlaceProductPatch.cs" />
     <Compile Include="WeaponTraitDef_AeldariSpirit.cs" />
     <Compile Include="Need_Meditation.cs" />
     <Compile Include="DefModExtension_WraithboneCreatedStuff.cs" />

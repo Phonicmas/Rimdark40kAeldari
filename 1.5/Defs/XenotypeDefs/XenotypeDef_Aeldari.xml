@@ -18,6 +18,7 @@
             <li>BEWH_AeldariPhysique</li>
             <li>BEWH_AeldariPsyker</li>
             <li>BEWH_AeldariMeditationDependency</li>
+            <li>BEWH_AeldariUnsulliedLifespan</li>
             <li>BEWH_AeldariCreationOfOldOnes</li>
         </genes>
     </XenotypeDef>

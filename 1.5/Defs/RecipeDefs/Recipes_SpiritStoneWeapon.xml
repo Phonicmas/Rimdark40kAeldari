@@ -43,7 +43,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <BEWH_Diresword>0</BEWH_Diresword>
+            <BEWH_Diresword>1</BEWH_Diresword>
         </products>
         <modExtensions>
             <li Class="Aeldari40k.DefModExtension_WraithboneCreatedStuff">

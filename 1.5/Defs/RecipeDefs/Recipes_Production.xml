@@ -4,7 +4,7 @@
     <RecipeDef>
         <defName>BEWH_Make_Wraithbone</defName>
         <label>make wraithbone</label>
-        <description>Make some wraithbone, amount made depends on pawns psychic sensitivity.</description>
+        <description>Make some wraithbone, final amount made depends on pawns psychic sensitivity.</description>
         <researchPrerequisite>BEWH_AeldarWraithbone</researchPrerequisite>
         <jobString>Making wraithbone.</jobString>
         <workerClass>Aeldari40k.RecipeWorker_MakeWraithbone</workerClass>
