@@ -22,7 +22,7 @@
         <defName>BEWH_AeldariBeauty</defName>
         <label>aeldari beauty</label>
         <description>...</description>
-        <iconPath>UI/Genes/Aeldarian_Beauty_icon</iconPath>
+        <iconPath>UI/Genes/AeldariBeauty_icon</iconPath>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-2</biostatMet>
         <displayOrderInCategory>1</displayOrderInCategory>
@@ -41,7 +41,7 @@
         <defName>BEWH_AeldariGraceful</defName>
         <label>graceful</label>
         <description>...</description>
-        <iconPath>UI/Genes/Graceful_icon</iconPath>
+        <iconPath>UI/Genes/AeldariGraceful_icon</iconPath>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-3</biostatMet>
         <displayOrderInCategory>3</displayOrderInCategory>
@@ -58,7 +58,7 @@
         <defName>BEWH_AeldariPhysique</defName>
         <label>aeldari physique</label>
         <description>...</description>
-        <iconPath>UI/Genes/Aeldari_Physique_icon</iconPath>
+        <iconPath>UI/Genes/AeldariPhysique_icon</iconPath>
         <biostatCpx>3</biostatCpx>
         <biostatMet>-3</biostatMet>
         <displayOrderInCategory>4</displayOrderInCategory>
@@ -87,7 +87,7 @@
         <defName>BEWH_AeldariPsyker</defName>
         <label>aeldari psyker</label>
         <description>...</description>
-        <iconPath>UI/Genes/Aeldari_Psyker_icon</iconPath>
+        <iconPath>UI/Genes/AeldariPsyker_icon</iconPath>
         <biostatCpx>4</biostatCpx>
         <biostatArc>1</biostatArc>
         <biostatMet>0</biostatMet>
@@ -123,7 +123,7 @@
         <defName>BEWH_AeldariUnsulliedLifespan</defName>
         <label>unsullied lifespan</label>
         <description>...</description>
-        <iconPath>UI/Genes/Unsullied Lifespan_icon</iconPath>
+        <iconPath>UI/Genes/AeldariUnsulliedLifespan_icon</iconPath>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-2</biostatMet>
         <displayOrderInCategory>9</displayOrderInCategory>
@@ -170,7 +170,7 @@
         <defName>BEWH_AeldariMeditationDependency</defName>
         <label>meditation dependency</label>
         <description>...</description>
-        <iconPath>UI/Genes/Meditation_Dependency_icon</iconPath>
+        <iconPath>UI/Genes/AeldariMeditationDependency_icon</iconPath>
         <causesNeed>BEWH_MeditationDependency</causesNeed>
         <biostatCpx>1</biostatCpx>
         <biostatMet>5</biostatMet>
@@ -182,7 +182,7 @@
         <defName>BEWH_AeldariCreationOfOldOnes</defName>
         <label>Creation of the Old Ones</label>
         <description>...</description>
-        <iconPath>UI/Genes/Aeldari_Physique_icon</iconPath>
+        <iconPath>UI/Genes/AeldariCreationOfOldOnes_icon</iconPath>
         <biostatCpx>3</biostatCpx>
         <biostatMet>3</biostatMet>
         <biostatArc>1</biostatArc>
