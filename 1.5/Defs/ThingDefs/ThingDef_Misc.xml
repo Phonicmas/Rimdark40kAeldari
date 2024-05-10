@@ -41,7 +41,7 @@
     <label>Wraithbone</label>
     <description>...</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Plasteel</texPath>
+      <texPath>Resource/Wraithbone</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
