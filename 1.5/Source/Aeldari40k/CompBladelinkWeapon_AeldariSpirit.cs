@@ -105,6 +105,8 @@ namespace Aeldari40k
 
             validTraits.AddRange(GetWeaponTraitsFromSkills(allDefs.Where(x => x.HasModExtension<DefModExtension_WeaponTraitExtra>() && x.GetModExtension<DefModExtension_WeaponTraitExtra>().isSkillRelated)));
             validTraits.AddRange(GetWeaponTraitsFromTraits(allDefs.Where(x => x.HasModExtension<DefModExtension_WeaponTraitExtra>() && x.GetModExtension<DefModExtension_WeaponTraitExtra>().isTraitRelated)));
+            validTraits.AddRange(GetWeaponTraitsFromStats(allDefs.Where(x => x.HasModExtension<DefModExtension_WeaponTraitExtra>() && x.GetModExtension<DefModExtension_WeaponTraitExtra>().isStatRelated)));
+
 
             return validTraits;
         }
@@ -116,6 +118,23 @@ namespace Aeldari40k
             foreach (Trait trait in spirit.story.traits.allTraits)
             {
                 weaponTraits.AddRange(weaponTraitDefs.Where(x => x.GetModExtension<DefModExtension_WeaponTraitExtra>().traitDef == trait.def));
+            }
+
+            return weaponTraits;
+        }
+
+        private List<WeaponTraitDef_AeldariSpirit> GetWeaponTraitsFromStats(IEnumerable<WeaponTraitDef_AeldariSpirit> weaponTraitDefs)
+        {
+            List<WeaponTraitDef_AeldariSpirit> weaponTraits = new List<WeaponTraitDef_AeldariSpirit>();
+
+
+            foreach (WeaponTraitDef_AeldariSpirit weaponTraitDef in weaponTraitDefs)
+            {
+                StatDef statDef = weaponTraitDef.GetModExtension<DefModExtension_WeaponTraitExtra>().statDef;
+                if (spirit.GetStatValue(statDef) >= weaponTraitDef.GetModExtension<DefModExtension_WeaponTraitExtra>().statThreshold)
+                {
+                    weaponTraits.Add(weaponTraitDef);
+                }
             }
 
             return weaponTraits;

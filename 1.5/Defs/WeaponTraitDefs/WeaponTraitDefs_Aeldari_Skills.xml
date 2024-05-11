@@ -4,8 +4,11 @@
   <!-- ANIMALS -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillAnimals</defName>
-    <label>animals skill</label>
+    <label>Spirit of the Hunter</label>
     <description>...</description>
+    <equippedStatOffsets>
+      <HuntingStealth>6</HuntingStealth>
+    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -17,8 +20,11 @@
   <!-- ARTISTIC -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillArtistic</defName>
-    <label>artistic skill</label>
+    <label>Spirit of the Artist</label>
     <description>...</description>
+    <equippedStatOffsets>
+      <PawnBeauty>1</PawnBeauty>
+    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -30,8 +36,11 @@
   <!-- CONSTRUCTION -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillConstruction</defName>
-    <label>construction skill</label>
+    <label>Spirit of the Builder</label>
     <description>...</description>
+    <equippedStatOffsets>
+      <ConstructionSpeed>0.4</ConstructionSpeed>
+    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -43,7 +52,7 @@
   <!-- COOKING -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillCooking</defName>
-    <label>cooking skill</label>
+    <label>Spirit of the Cook</label>
     <description>...</description>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
@@ -56,7 +65,7 @@
   <!-- CRAFTING -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillCrafting</defName>
-    <label>crafting skill</label>
+    <label>Spirit of the Bonesinger</label>
     <description>...</description>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
@@ -69,7 +78,7 @@
   <!-- MEDICAL -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillMedical</defName>
-    <label>medical skill</label>
+    <label>Spirit of the Healer</label>
     <description>...</description>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
@@ -82,7 +91,7 @@
   <!-- MELEE -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillMelee</defName>
-    <label>melee skill</label>
+    <label>Spirit of the Warrior</label>
     <description>...</description>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
@@ -95,7 +104,7 @@
   <!-- MINING -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillMining</defName>
-    <label>mining skill</label>
+    <label>Spirit of the Labourer</label>
     <description>...</description>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
@@ -108,7 +117,7 @@
   <!-- INTELLECTUAL -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillIntellectual</defName>
-    <label>intellectual skill</label>
+    <label>Spirit of the Scholar</label>
     <description>...</description>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
@@ -121,7 +130,7 @@
   <!-- PLANTS -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillPlants</defName>
-    <label>plants skill</label>
+    <label>Spirit of the Gardener</label>
     <description>...</description>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
@@ -134,7 +143,7 @@
   <!-- SHOOTING -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillShooting</defName>
-    <label>shooting skill</label>
+    <label>Spirit of the Ranger</label>
     <description>...</description>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
@@ -147,7 +156,7 @@
   <!-- SOCIAL -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillSocial</defName>
-    <label>social skill</label>
+    <label>Spirit of the </label>
     <description>...</description>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">

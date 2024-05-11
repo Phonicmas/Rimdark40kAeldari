@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- PSYSENS -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritStatPsychicSensitivity</defName>
+    <label>Spirit of the Seer</label>
+    <description>...</description>
+    <equippedStatOffsets Inherit="False">
+      <PsychicSensitivity>0.6</PsychicSensitivity>
+      <PsychicEntropyMax>30</PsychicEntropyMax>
+      <PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isStatRelated>true</isStatRelated>
+        <statDef>PsychicSensitivity</statDef>
+        <statThreshold>2.5</statThreshold>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+</Defs>

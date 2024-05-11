@@ -4,7 +4,7 @@
   <!-- TOUGH -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritTraitTough</defName>
-    <label>tough trait</label>
+    <label>Spirit of the Brute</label>
     <description>...</description>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
