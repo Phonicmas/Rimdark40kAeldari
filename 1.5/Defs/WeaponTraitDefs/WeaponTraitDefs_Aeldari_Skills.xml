@@ -2,13 +2,10 @@
 <Defs>
 
   <!-- ANIMALS -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitSkillBase">
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillAnimals</defName>
     <label>animals skill</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -18,13 +15,10 @@
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
   <!-- ARTISTIC -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit>
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillArtistic</defName>
     <label>artistic skill</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -34,13 +28,10 @@
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
   <!-- CONSTRUCTION -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit>
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillConstruction</defName>
     <label>construction skill</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -50,13 +41,10 @@
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
   <!-- COOKING -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit>
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillCooking</defName>
     <label>cooking skill</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -66,13 +54,10 @@
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
   <!-- CRAFTING -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit>
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillCrafting</defName>
     <label>crafting skill</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -82,13 +67,10 @@
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
   <!-- MEDICAL -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit>
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillMedical</defName>
     <label>medical skill</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -98,13 +80,10 @@
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
   <!-- MELEE -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit>
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillMelee</defName>
     <label>melee skill</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -114,13 +93,10 @@
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
   <!-- MINING -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit>
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillMining</defName>
     <label>mining skill</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -130,13 +106,10 @@
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
   <!-- INTELLECTUAL -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit>
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillIntellectual</defName>
     <label>intellectual skill</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -146,13 +119,10 @@
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
   <!-- PLANTS -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit>
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillPlants</defName>
     <label>plants skill</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -162,13 +132,10 @@
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
   <!-- SHOOTING -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit>
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillShooting</defName>
     <label>shooting skill</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -178,13 +145,10 @@
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
   <!-- SOCIAL -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit>
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritSkillSocial</defName>
     <label>social skill</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Verse;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Aeldari40k
 {
@@ -12,6 +11,8 @@ namespace Aeldari40k
         private int lastKillTick = -1;
 
         private List<WeaponTraitDef_AeldariSpirit> traits = new List<WeaponTraitDef_AeldariSpirit>();
+
+        public new List<WeaponTraitDef_AeldariSpirit> TraitsListForReading => traits;
 
         private static readonly IntRange TraitsRange = new IntRange(1, 2);
 

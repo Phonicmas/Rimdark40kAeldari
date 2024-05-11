@@ -76,6 +76,9 @@
     <Compile Include="CompProperties_BladelinkWeapon_AeldariSpirit.cs" />
     <Compile Include="CompPowerPlantInfinityCircuit.cs" />
     <Compile Include="DefModExtension_WeaponTraitExtra.cs" />
+    <Content Include="HarmonyPatch_PopulateMutableStatsPatch.cs.txt" />
+    <Compile Include="HarmonyPatch_GearHasCompsThatAffectStatPatch.cs" />
+    <Compile Include="HarmonyPatch_StatOffsetFromGearPatch.cs" />
     <Compile Include="HarmonyPatch_DontPlaceProductPatch.cs" />
     <Compile Include="WeaponTraitDef_AeldariSpirit.cs" />
     <Compile Include="Need_Meditation.cs" />

@@ -2,13 +2,10 @@
 <Defs>
 
   <!-- TOUGH -->
-  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitSkillBase">
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritTraitTough</defName>
     <label>tough trait</label>
     <description>...</description>
-    <equippedStatOffsets>
-      <PsychicSensitivity>0.4</PsychicSensitivity>
-    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>

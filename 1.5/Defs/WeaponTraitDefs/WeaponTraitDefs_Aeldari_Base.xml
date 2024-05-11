@@ -4,6 +4,9 @@
   <!-- BASE -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit Name="BEWH_WeaponTraitBase" Abstract="True">
     <commonality>0</commonality>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.2</PsychicSensitivity>
+    </equippedStatOffsets>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
 </Defs>
