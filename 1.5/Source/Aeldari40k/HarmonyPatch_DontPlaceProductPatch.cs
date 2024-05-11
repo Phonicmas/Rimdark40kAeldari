@@ -11,8 +11,6 @@ namespace Aeldari40k
     {
         public static bool Prefix(ref IEnumerable<Thing> __result, RecipeDef recipeDef)
         {
-            Log.Message(recipeDef);
-            Log.Message(recipeDef.HasModExtension<DefModExtension_WraithboneCreatedStuff>());
             if (recipeDef.HasModExtension<DefModExtension_WraithboneCreatedStuff>())
             {
 				__result = new List<Thing>();

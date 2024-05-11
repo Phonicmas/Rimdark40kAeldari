@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <XenotypeDef>
-        <defName>BEWH_Aeldari</defName>
-        <label>aeldari</label>
-        <description>...</description>
-        <iconPath>UI/Xenotypes/Eldar_Xenotype</iconPath>
+    <XenotypeDef Name="BEWH_AeldariXenoBase" Abstract="True">
         <inheritable>true</inheritable>
         <canGenerateAsCombatant>true</canGenerateAsCombatant>
         <factionlessGenerationWeight>0.2</factionlessGenerationWeight>
@@ -13,6 +9,7 @@
             <li>Ears_Pointed</li>
             <li>Body_Thin</li>
             <li>Body_Standard</li>
+            <li>Beard_NoBeardOnly</li>
             <li>BEWH_AeldariBeauty</li>
             <li>BEWH_AeldariGraceful</li>
             <li>BEWH_AeldariPhysique</li>
@@ -20,6 +17,24 @@
             <li>BEWH_AeldariMeditationDependency</li>
             <li>BEWH_AeldariUnsulliedLifespan</li>
             <li>BEWH_AeldariCreationOfOldOnes</li>
+        </genes>
+    </XenotypeDef>
+
+    <XenotypeDef ParentName="BEWH_AeldariXenoBase">
+        <defName>BEWH_Aeldari</defName>
+        <label>aeldari</label>
+        <description>...</description>
+        <iconPath>UI/Xenotypes/Eldar_Xenotype</iconPath>
+    </XenotypeDef>
+
+    <XenotypeDef ParentName="BEWH_AeldariXenoBase">
+        <defName>BEWH_Drukhari</defName>
+        <label>Drukhari</label>
+        <description>...</description>
+        <iconPath>UI/Xenotypes/Drukhari_Xenotype</iconPath>
+        <genes>
+            <li>Skin_SheerWhite</li>
+            <li>Skin_LightGray</li>
         </genes>
     </XenotypeDef>
 

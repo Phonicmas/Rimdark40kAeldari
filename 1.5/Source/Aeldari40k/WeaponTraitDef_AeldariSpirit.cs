@@ -14,5 +14,21 @@ namespace Aeldari40k
                 yield return $"WeaponTraitDef {defName} has worker class {workerClass}, which is not deriving from {typeof(WeaponTraitWorker).FullName}";
             }
         }
+
+        public bool Overlaps(WeaponTraitDef_AeldariSpirit other)
+        {
+            if (other == this)
+            {
+                return true;
+            }
+
+            if (exclusionTags.NullOrEmpty() || other.exclusionTags.NullOrEmpty())
+            {
+                return false;
+            }
+
+            return exclusionTags.Any((string x) => other.exclusionTags.Contains(x));
+        }
+
     }
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- BASE -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit Name="BEWH_WeaponTraitBase" Abstract="True">
+    <commonality>0</commonality>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+</Defs>
