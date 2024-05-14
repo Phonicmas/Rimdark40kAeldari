@@ -1,10 +1,153 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- TOUGH -->
+  <!-- TOUGH - increase toughess of pawn -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritTraitTough</defName>
     <label>Spirit of the Brute</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Tough</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- PYROMANIAC - add some flame damage to hits -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitPyromaniac</defName>
+    <label>Spirit of the Arson</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Tough</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- BLOODLUST - increase damage whilst decreasing survivability -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitBloodlust</defName>
+    <label>Spirit of the Ruthless</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Tough</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- NIMBLE - increase dodge -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitNimble</defName>
+    <label>Spirit of the Graceful</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Tough</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- FAST LEARNER - increase melee skill learn, or overall if former not possible -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitFastLearner</defName>
+    <label>Spirit of the Insightful</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Tough</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- QUICK SLEEPER - reduce sleep amount needed -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitQuickSleep</defName>
+    <label>Spirit of the Restful</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Tough</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- JOGGER - increase move speed -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitJogger</defName>
+    <label>Spirit of the Hasty</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Tough</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- FAST WALKER - increase move speed less than above -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitFastWalker</defName>
+    <label>Spirit of the Quick</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Tough</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- SANGUINE - increase mood -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitSanguine</defName>
+    <label>Spirit of the Joyful</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Tough</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- OPTIMIST - increase mood -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitOptimist</defName>
+    <label>Spirit of the Cheerful</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Tough</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- IRON-WILLED - decrease mental break chance -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitIronWilled</defName>
+    <label>Spirit of the Stalwart</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Tough</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- STEADFAST - decrease mental break chance but less than above -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitSteadfast</defName>
+    <label>Spirit of the Steadfast</label>
     <description>...</description>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
