@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>BEWH_Bonesinger</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>bonesinger</label>
+        <description>{PAWN_nameDef} is a bonesinger, able to sing wraithbone into shape</description>
+        <allowedMeditationFocusTypes>
+          <li>BEWH_Bonesinger</li>
+        </allowedMeditationFocusTypes>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

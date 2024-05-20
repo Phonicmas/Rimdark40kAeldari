@@ -53,14 +53,15 @@
         </equippedStatOffsets>
         <!-- ===== Recipe ===== -->
         <costList>
-            <Gold>3</Gold>
+            <BEWH_Wraithbone>25</BEWH_Wraithbone>
+            <BEWH_SpiritStone>25</BEWH_SpiritStone>
         </costList>
         <recipeMaker>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <effectWorking>CutStone</effectWorking>
             <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
             <recipeUsers>
-                <li>BEWH_WraithboneBench</li>
+                <li>BEWH_WraithboneBenchMeditation</li>
             </recipeUsers>
             <!--<researchPrerequisite>BEWH_??</researchPrerequisite>-->
             <workSkill>Crafting</workSkill>

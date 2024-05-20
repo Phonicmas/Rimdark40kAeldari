@@ -13,6 +13,11 @@ namespace Aeldari40k
         {
             base.Notify_WearerDied();
 
+            if (pawn.genes != null && pawn.genes.HasGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh))
+            {
+                ((Gene_CurseOfSlaanesh)pawn.genes.GetGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh)).hadSpiritStone = true;
+            }
+
             Thing spiritStone = GenSpawn.Spawn(Aeldari40kDefOf.BEWH_SpiritStone, parent.PositionHeld, parent.MapHeld);
 
             spiritStone.TryGetComp<SpiritStoneComp>().pawn = pawn;
@@ -28,6 +33,22 @@ namespace Aeldari40k
             if (this.pawn == null)
             {
                 this.pawn = pawn;
+            }
+            if (pawn.genes != null && pawn.genes.HasGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh))
+            {
+                ((Gene_CurseOfSlaanesh)pawn.genes.GetGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh)).carryingSpiritStone = true;
+            }
+        }
+
+        public override void Notify_Unequipped(Pawn pawn)
+        {
+            if (this.pawn == null)
+            {
+                this.pawn = pawn;
+            }
+            if (pawn.genes != null && pawn.genes.HasGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh))
+            {
+                ((Gene_CurseOfSlaanesh)pawn.genes.GetGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh)).carryingSpiritStone = false;
             }
         }
 

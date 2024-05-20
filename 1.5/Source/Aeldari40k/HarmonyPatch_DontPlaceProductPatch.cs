@@ -1,11 +1,9 @@
 ﻿using HarmonyLib;
-using RimWorld;
-using System;
 using System.Collections.Generic;
 using Verse;
 
 namespace Aeldari40k
-{
+{   
     [HarmonyPatch(typeof(GenRecipe), "MakeRecipeProducts")]
     public class DontPlaceProductPatch
     {

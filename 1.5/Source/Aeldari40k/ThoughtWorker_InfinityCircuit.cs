@@ -17,8 +17,12 @@ namespace Aeldari40k
 
         public override float MoodMultiplier(Pawn p)
         {
+            if (CurrentStateInternal(p).StageIndex == 0)
+            {
+                return 1;
+            }
             Map playerHome = Find.AnyPlayerHomeMap;
-            float mult = -1;
+            float mult = 0;
             if (playerHome.listerBuildings.ColonistsHaveBuilding(Aeldari40kDefOf.BEWH_InfinityCircuit))
             {
                 foreach (Building building in playerHome.listerBuildings.AllBuildingsColonistOfDef(Aeldari40kDefOf.BEWH_InfinityCircuit))
@@ -29,7 +33,7 @@ namespace Aeldari40k
                     }
                 }
             }
-                return mult;
+            return mult;
         }
 
     }

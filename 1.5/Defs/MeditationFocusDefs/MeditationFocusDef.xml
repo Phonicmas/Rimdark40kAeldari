@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MeditationFocusDef>
+    <defName>BEWH_Bonesinger</defName>
+    <label>Bonesinging</label>
+  </MeditationFocusDef>
+
+</Defs>

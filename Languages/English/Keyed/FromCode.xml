@@ -9,4 +9,9 @@
 
     <InhabitedBy>Inhabited by {0}'s spirit</InhabitedBy>
 
+
+
+    <CannotResurrectMessage>An attempt was made to try and resurrect {0}, however their soul no longer with them and their body is an empty husk that cannot function without its soul.</CannotResurrectMessage>
+    <CannotResurrectTitle>Resurrection Failed</CannotResurrectTitle>
+
 </LanguageData>

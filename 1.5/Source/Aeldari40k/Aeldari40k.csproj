@@ -75,13 +75,22 @@
   <ItemGroup>
     <Compile Include="CompProperties_BladelinkWeapon_AeldariSpirit.cs" />
     <Compile Include="CompPowerPlantInfinityCircuit.cs" />
+    <Compile Include="CompMeditationSpawn.cs" />
     <Compile Include="DefModExtension_WeaponTraitExtra.cs" />
+    <Compile Include="DefModExtension_WraithbonePlant.cs" />
+    <Compile Include="Gene_CurseOfSlaanesh.cs" />
+    <Compile Include="HarmonyPatch_PreventAeldariResurrectPatch2.cs" />
+    <Compile Include="HarmonyPatch_PreventAeldariResurrectPatch1.cs" />
     <Compile Include="HarmonyPatch_PopulateMutableStatsPatch.cs" />
     <Compile Include="HarmonyPatch_GearHasCompsThatAffectStatPatch.cs" />
     <Compile Include="HarmonyPatch_StatOffsetFromGearPatch.cs" />
     <Compile Include="HarmonyPatch_DontPlaceProductPatch.cs" />
-    <Compile Include="WeaponTraitDef_AeldariSpirit.cs" />
+    <Compile Include="AeldariUtils.cs" />
+    <Compile Include="HarmonyPatch_TickWraithboneGrowthPatch.cs" />
     <Compile Include="Need_Meditation.cs" />
+    <Compile Include="ThoughtWorker_CarryingSpiritStone.cs" />
+    <Compile Include="WeaponTraitDef_AeldariSpirit.cs" />
+    <Compile Include="CompProperties_MeditationSpawn.cs" />
     <Compile Include="DefModExtension_WraithboneCreatedStuff.cs" />
     <Compile Include="RecipeWorker_MakeSpiritWeapon.cs" />
     <Compile Include="RecipeWorker_MakeWraithbone.cs" />

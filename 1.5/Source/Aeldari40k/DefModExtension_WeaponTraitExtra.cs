@@ -10,6 +10,7 @@ namespace Aeldari40k
 
         public bool isTraitRelated = false;
         public TraitDef traitDef = null;
+        public int degree = 0;
 
         public bool isStatRelated = false;
         public StatDef statDef = null;

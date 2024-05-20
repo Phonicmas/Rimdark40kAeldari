@@ -117,7 +117,7 @@ namespace Aeldari40k
 
             foreach (Trait trait in spirit.story.traits.allTraits)
             {
-                weaponTraits.AddRange(weaponTraitDefs.Where(x => x.GetModExtension<DefModExtension_WeaponTraitExtra>().traitDef == trait.def));
+                weaponTraits.AddRange(weaponTraitDefs.Where(x => x.GetModExtension<DefModExtension_WeaponTraitExtra>().traitDef == trait.def && x.GetModExtension<DefModExtension_WeaponTraitExtra>().degree == trait.Degree));
             }
 
             return weaponTraits;

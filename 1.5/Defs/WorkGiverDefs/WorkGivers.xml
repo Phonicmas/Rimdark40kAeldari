@@ -6,9 +6,9 @@
         <label>make things out of wraithbone</label>
         <giverClass>Aeldari40k.WorkGiver_BonesingerDoBill</giverClass>
         <workType>Crafting</workType>
-        <priorityInType>99</priorityInType>
+        <priorityInType>88</priorityInType>
         <fixedBillGiverDefs>
-            <li>BEWH_WraithboneBench</li>
+            <li>BEWH_WraithboneBenchMeditation</li>
         </fixedBillGiverDefs>
         <verb>bonesing</verb>
         <gerund>bonesinging at</gerund>

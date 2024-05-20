@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- ON DEATH -->
+    <ThoughtDef>
+        <defName>BEWH_NoSoulStoneDeathThought</defName>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <durationDays>1</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>Aeldari without spirit stone died</label>
+                <description>One of our kin died without a soulstone, and was their soul was taken by Slaanesh.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef>
+        <defName>BEWH_SoulStoneDeathThought</defName>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <durationDays>1</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>Aeldari with spirit stone died</label>
+                <description>One of our kin died with a soulstone, and was their soul was saved from Slaanesh.</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+
+    <!-- INFINITY CIRCUIT -->
+    <ThoughtDef>
+        <defName>BEWH_InfinityCircuitThought</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>Aeldari40k.ThoughtWorker_InfinityCircuit</workerClass>
+        <requiredGenes>
+            <li>BEWH_AeldariCurseOfSlaanesh</li>
+        </requiredGenes>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>No Infinity circuit</label>
+                <description>Missing an infinity circuit</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <li>
+                <label>Infinity circuit</label>
+                <description>Got an infinity circuit</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+
+    <!-- CARRYING SPIRIT STONE -->
+    <ThoughtDef>
+        <defName>BEWH_CarryingSpiritStoneThought</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>Aeldari40k.ThoughtWorker_CarryingSpiritStone</workerClass>
+        <requiredGenes>
+            <li>BEWH_AeldariCurseOfSlaanesh</li>
+        </requiredGenes>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>Not carrying spirit stone</label>
+                <description>I'm not carrying a spirit stone, should my time come, Slaanesh will surely claim me.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <li>
+                <label>Carrying spirit stone</label>
+                <description>I'm carrying a spirit stone, should my time come, my soul will be save from Slaanesh</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

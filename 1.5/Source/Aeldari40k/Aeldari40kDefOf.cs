@@ -8,16 +8,24 @@ namespace Aeldari40k
     {
 
         public static GeneDef BEWH_AeldariPsyker;
+        public static GeneDef BEWH_AeldariCurseOfSlaanesh;
+
 
         public static ThoughtDef BEWH_InfinityCircuitThought;
+        public static ThoughtDef BEWH_SoulStoneDeathThought;
+        public static ThoughtDef BEWH_NoSoulStoneDeathThought;
 
-        public static ThingDef BEWH_SpiritStone;
 
         public static ThingDef BEWH_InfinityCircuit;
-
+        public static ThingDef BEWH_SpiritStone;
         public static ThingDef BEWH_Wraithbone;
+        public static ThingDef BEWH_WraithboneBenchMeditation;
+
 
         public static NeedDef BEWH_MeditationDependency;
+
+
+        public static MeditationFocusDef BEWH_Bonesinger;
 
         static Aeldari40kDefOf()
         {

@@ -24,7 +24,7 @@
         <description>...</description>
         <iconPath>UI/Genes/AeldariBeauty_icon</iconPath>
         <biostatCpx>2</biostatCpx>
-        <biostatMet>-2</biostatMet>
+        <biostatMet>-3</biostatMet>
         <displayOrderInCategory>1</displayOrderInCategory>
         <marketValueFactor>1.2</marketValueFactor>
         <missingGeneRomanceChanceFactor>0.3</missingGeneRomanceChanceFactor>
@@ -60,7 +60,7 @@
         <description>...</description>
         <iconPath>UI/Genes/AeldariPhysique_icon</iconPath>
         <biostatCpx>3</biostatCpx>
-        <biostatMet>-3</biostatMet>
+        <biostatMet>-4</biostatMet>
         <displayOrderInCategory>4</displayOrderInCategory>
         <marketValueFactor>1.1</marketValueFactor>
         <statOffsets>
@@ -78,6 +78,10 @@
             <li>
                 <capacity>Sight</capacity>
                 <offset>0.35</offset>
+            </li>
+            <li>
+                <capacity>Hearing</capacity>
+                <offset>0.25</offset>
             </li>
         </capMods>
     </GeneDef>
@@ -98,6 +102,11 @@
             <PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
             <MentalBreakThreshold>0.4</MentalBreakThreshold>
         </statOffsets>
+        <forcedTraits>
+            <li>
+                <def>BEWH_Bonesinger</def>
+            </li>
+        </forcedTraits>
         <modExtensions>
             <li Class="VanillaGenesExpanded.GeneExtension">
                 <hediffsToBodyParts>
@@ -113,8 +122,24 @@
         </modExtensions>
         <customEffectDescriptions>
             <li>Allows the pawn to craft wraithbone</li>
-            <li>Mood depending on Infinity Circuit</li>
             <li>Losing this gene will make the colonist lose all psylink levels, though they will not forget the psycasts they have already learned.</li>
+        </customEffectDescriptions>
+    </GeneDef>
+
+    <!-- Aeldari: Curse of Slaneesh -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariCurseOfSlaanesh</defName>
+        <label>curse of Slaanesh</label>
+        <description>...</description>
+        <iconPath>UI/Genes/AeldariPsyker_icon</iconPath>
+        <geneClass>Aeldari40k.Gene_CurseOfSlaanesh</geneClass>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>3</biostatMet>
+        <displayOrderInCategory>6</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Mood will wary depending on Infinity Circuit</li>
+            <li>Mood will wary depending on Spirit Stones</li>
+            <li>Pawn cannot be resurrected should they die</li>
         </customEffectDescriptions>
     </GeneDef>
 

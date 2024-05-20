@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BenchBase">
-    <defName>BEWH_WraithboneBenchMeditation</defName>
-    <label>wraithbone meditation</label>
+  <!--<ThingDef ParentName="BenchBase">
+    <defName>BEWH_WraithboneBench</defName>
+    <label>wraithbone bench</label>
     <description>...</description>
     <thingClass>Building_WorkTable</thingClass>
-    <tickerType>Long</tickerType>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
@@ -14,8 +13,6 @@
       <MaxHitPoints>300</MaxHitPoints>
       <WorkToBuild>5000</WorkToBuild>
       <Flammability>1.0</Flammability>
-      <MeditationFocusStrength>0.5</MeditationFocusStrength>
-      <MeditationPlantGrowthOffset>0.2</MeditationPlantGrowthOffset>
     </statBases>
     <minifiedDef />
     <thingCategories Inherit="false" />
@@ -62,36 +59,6 @@
     <researchPrerequisites>
       <li>BEWH_AeldarWraithbone</li>
     </researchPrerequisites>
-    <comps>
-      <li Class="Aeldari40k.CompProperties_MeditationSpawn">
-        <compClass>Aeldari40k.CompMeditationSpawn</compClass>
-        <spawnThing>BEWH_Wraithbone</spawnThing>
-        <spawnSound>AnimaTreeProgress</spawnSound>
-        <spawnAmount>10</spawnAmount>
-        <multAmount>1</multAmount>
-        <statMult>PsychicSensitivity</statMult>
-      </li>
-      <li Class="CompProperties_MeditationFocus">
-        <statDef>MeditationFocusStrength</statDef>
-        <focusTypes>
-          <li>BEWH_Bonesinger</li>
-        </focusTypes>
-        <!--<offsets>
-          <li Class="FocusStrengthOffset_BuildingDefs">
-            <defs>
-              <AnimusStone>0.02</AnimusStone>
-              <NatureShrine_Small>0.01</NatureShrine_Small>
-              <NatureShrine_Large>0.01</NatureShrine_Large>
-            </defs>
-            <radius>9.9</radius>
-            <maxBuildings>4</maxBuildings>
-            <explanationKey>MeditationFocusPerAnimusStoneAndShrine</explanationKey>
-            <explanationKeyAbstract>MeditationFocusPerAnimusStoneAndShrineAbstract</explanationKeyAbstract>
-          </li>
-        </offsets>-->
-      </li>
-      <!--<li Class="CompProperties_ToggleDrawAffectedMeditationFoci" />-->
-    </comps>
-  </ThingDef>
+  </ThingDef>-->
 
 </Defs>

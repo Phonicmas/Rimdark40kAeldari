@@ -32,8 +32,6 @@ namespace Aeldari40k
             labelKey = "TabCasketContents";
             containedItemsKey = "TabCasketContents";
         }
-
-
         
     }
 }

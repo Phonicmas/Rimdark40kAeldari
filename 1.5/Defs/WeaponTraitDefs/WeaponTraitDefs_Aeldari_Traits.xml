@@ -22,7 +22,7 @@
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>
-        <traitDef>Tough</traitDef>
+        <traitDef>Pyromaniac</traitDef>
       </li>
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
@@ -35,7 +35,7 @@
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>
-        <traitDef>Tough</traitDef>
+        <traitDef>Bloodlust</traitDef>
       </li>
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
@@ -48,7 +48,7 @@
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>
-        <traitDef>Tough</traitDef>
+        <traitDef>Nimble</traitDef>
       </li>
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
@@ -61,7 +61,7 @@
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>
-        <traitDef>Tough</traitDef>
+        <traitDef>FastLearner</traitDef>
       </li>
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
@@ -74,7 +74,7 @@
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>
-        <traitDef>Tough</traitDef>
+        <traitDef>QuickSleeper</traitDef>
       </li>
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
@@ -87,7 +87,8 @@
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>
-        <traitDef>Tough</traitDef>
+        <traitDef>SpeedOffset</traitDef>
+        <degree>2</degree>
       </li>
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
@@ -100,7 +101,8 @@
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>
-        <traitDef>Tough</traitDef>
+        <traitDef>SpeedOffset</traitDef>
+        <degree>1</degree>
       </li>
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
@@ -113,7 +115,8 @@
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>
-        <traitDef>Tough</traitDef>
+        <traitDef>NaturalMood</traitDef>
+        <degree>2</degree>
       </li>
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
@@ -126,7 +129,8 @@
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>
-        <traitDef>Tough</traitDef>
+        <traitDef>NaturalMood</traitDef>
+        <degree>1</degree>
       </li>
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
@@ -139,7 +143,8 @@
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>
-        <traitDef>Tough</traitDef>
+        <traitDef>Nerves</traitDef>
+        <degree>2</degree>
       </li>
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
@@ -152,7 +157,47 @@
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>
-        <traitDef>Tough</traitDef>
+        <traitDef>Nerves</traitDef>
+        <degree>1</degree>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- BRAWLER - increase melee -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitBrawler</defName>
+    <label>Spirit of the Swordman</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Brawler</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- JOYOUS - increase melee -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitJoyous</defName>
+    <label>Spirit of the Joyous</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>Joyous</traitDef>
+      </li>
+    </modExtensions>
+  </Aeldari40k.WeaponTraitDef_AeldariSpirit>
+
+  <!-- GREAT MEMORY - decrease melee skill learn loss, or overall if former not possible -->
+  <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
+    <defName>BEWH_SpiritTraitGreatMemory</defName>
+    <label>Spirit of the Retained</label>
+    <description>...</description>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
+        <isTraitRelated>true</isTraitRelated>
+        <traitDef>GreatMemory</traitDef>
       </li>
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
