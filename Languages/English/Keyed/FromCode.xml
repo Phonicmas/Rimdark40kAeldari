@@ -9,6 +9,8 @@
 
     <InhabitedBy>Inhabited by {0}'s spirit</InhabitedBy>
 
+    <EmptySpiritStone>Spirit stone contains no spirit</EmptySpiritStone>
+
 
 
     <CannotResurrectMessage>An attempt was made to try and resurrect {0}, however their soul no longer with them and their body is an empty husk that cannot function without its soul.</CannotResurrectMessage>

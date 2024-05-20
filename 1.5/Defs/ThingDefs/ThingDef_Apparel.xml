@@ -22,7 +22,7 @@
             <Mass>0.14</Mass>
             <EquipDelay>0.3</EquipDelay>
             <MarketValue>800</MarketValue>
-            <Beauty>10</Beauty>
+            <Beauty>4</Beauty>
             <WorkToMake>4000</WorkToMake>
         </statBases>
         <!-- ===== Apparel Stuff ===== -->
@@ -54,7 +54,7 @@
         <!-- ===== Recipe ===== -->
         <costList>
             <BEWH_Wraithbone>25</BEWH_Wraithbone>
-            <BEWH_SpiritStone>25</BEWH_SpiritStone>
+            <BEWH_SpiritStone>1</BEWH_SpiritStone>
         </costList>
         <recipeMaker>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

@@ -4,7 +4,7 @@
     <!-- ON DEATH -->
     <ThoughtDef>
         <defName>BEWH_NoSoulStoneDeathThought</defName>
-        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <developmentalStageFilter>Adult</developmentalStageFilter>
         <durationDays>1</durationDays>
         <stackLimit>1</stackLimit>
         <stages>
@@ -17,7 +17,7 @@
     </ThoughtDef>
     <ThoughtDef>
         <defName>BEWH_SoulStoneDeathThought</defName>
-        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <developmentalStageFilter>Adult</developmentalStageFilter>
         <durationDays>1</durationDays>
         <stackLimit>1</stackLimit>
         <stages>
@@ -38,7 +38,7 @@
         <requiredGenes>
             <li>BEWH_AeldariCurseOfSlaanesh</li>
         </requiredGenes>
-        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <developmentalStageFilter>Adult</developmentalStageFilter>
         <stages>
             <li>
                 <label>No Infinity circuit</label>
@@ -62,7 +62,8 @@
         <requiredGenes>
             <li>BEWH_AeldariCurseOfSlaanesh</li>
         </requiredGenes>
-        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <!--<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>-->
+        <developmentalStageFilter>Adult</developmentalStageFilter>
         <stages>
             <li>
                 <label>Not carrying spirit stone</label>

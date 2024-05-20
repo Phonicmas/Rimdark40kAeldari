@@ -26,7 +26,6 @@ namespace Aeldari40k
 
         public override void PostPostMake()
         {
-            //Make it such that it generates a random pawn and random traits from that pawn - to make it compatible with being dev spawned
             return;
         }
 
@@ -35,6 +34,10 @@ namespace Aeldari40k
             if (traits == null)
             {
                 traits = new List<WeaponTraitDef_AeldariSpirit>();
+            }
+            if (spirit == null)
+            {
+                return;
             }
             Rand.PushState(parent.HashOffset());
             int randomInRange = TraitsRange.RandomInRange;
@@ -66,7 +69,14 @@ namespace Aeldari40k
                 text = ((base.CodedPawn != null) ? (text + "BondedWith".Translate(base.CodedPawnLabel.ApplyTag(TagType.Name)).Resolve()) : ((string)(text + "NotBonded".Translate())));
             }
             text += "\n";
-            text += "InhabitedBy".Translate(spirit.Label);
+            if (spirit != null)
+            {
+                text += "InhabitedBy".Translate(spirit.Label);
+            }
+            else
+            {
+                text += "EmptySpiritStone".Translate();
+            }
             return text;
         }
 

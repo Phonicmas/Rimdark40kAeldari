@@ -94,7 +94,7 @@
         <iconPath>UI/Genes/AeldariPsyker_icon</iconPath>
         <biostatCpx>4</biostatCpx>
         <biostatArc>1</biostatArc>
-        <biostatMet>0</biostatMet>
+        <biostatMet>2</biostatMet>
         <displayOrderInCategory>6</displayOrderInCategory>
         <marketValueFactor>1.5</marketValueFactor>
         <statOffsets>
@@ -134,7 +134,7 @@
         <iconPath>UI/Genes/AeldariPsyker_icon</iconPath>
         <geneClass>Aeldari40k.Gene_CurseOfSlaanesh</geneClass>
         <biostatCpx>3</biostatCpx>
-        <biostatMet>3</biostatMet>
+        <biostatMet>5</biostatMet>
         <displayOrderInCategory>6</displayOrderInCategory>
         <customEffectDescriptions>
             <li>Mood will wary depending on Infinity Circuit</li>
@@ -150,7 +150,7 @@
         <description>...</description>
         <iconPath>UI/Genes/AeldariUnsulliedLifespan_icon</iconPath>
         <biostatCpx>2</biostatCpx>
-        <biostatMet>-2</biostatMet>
+        <biostatMet>-3</biostatMet>
         <displayOrderInCategory>9</displayOrderInCategory>
         <biologicalAgeTickFactorFromAgeCurve>
             <points>
@@ -208,8 +208,8 @@
         <label>Creation of the Old Ones</label>
         <description>...</description>
         <iconPath>UI/Genes/AeldariCreationOfOldOnes_icon</iconPath>
-        <biostatCpx>3</biostatCpx>
-        <biostatMet>3</biostatMet>
+        <biostatCpx>4</biostatCpx>
+        <biostatMet>4</biostatMet>
         <biostatArc>1</biostatArc>
         <displayOrderInCategory>8</displayOrderInCategory>
         <modExtensions>
