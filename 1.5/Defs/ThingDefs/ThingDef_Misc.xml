@@ -20,8 +20,35 @@
     <stackLimit>1</stackLimit>
     <useHitPoints>true</useHitPoints>
     <statBases>
-      <MarketValue>800</MarketValue>
-      <MaxHitPoints>400</MaxHitPoints>
+      <MarketValue>1650</MarketValue>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Mass>0.1</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>BEWH_SpiritStones</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <techLevel>Spacer</techLevel>
+  </ThingDef>
+
+  <!-- Spirit Stone unmounted -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>BEWH_SpiritStoneUnmounted</defName>
+    <label>unmounted spirit stone</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>550</MarketValue>
+      <MaxHitPoints>350</MaxHitPoints>
       <Mass>0.1</Mass>
       <Flammability>0</Flammability>
     </statBases>

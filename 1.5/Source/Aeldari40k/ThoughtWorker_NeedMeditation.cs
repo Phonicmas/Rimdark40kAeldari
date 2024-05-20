@@ -23,15 +23,15 @@ namespace Aeldari40k
             {
                 return ThoughtState.ActiveAtStage(1);
             }
-            else if (psyfocusLevel >= 0.6f)
+            else if (psyfocusLevel >= 0.75f)
             {
                 return ThoughtState.ActiveAtStage(2);
             }
-            else if (psyfocusLevel >= 0.3f)
+            else if (psyfocusLevel >= 0.5f)
             {
                 return ThoughtState.ActiveAtStage(3);
             }
-            else if (psyfocusLevel >= 0.15f)
+            else if (psyfocusLevel >= 0.2f)
             {
                 return ThoughtState.ActiveAtStage(4);
             }

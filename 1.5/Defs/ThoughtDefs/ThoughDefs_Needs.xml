@@ -11,32 +11,32 @@
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <stages>
             <li>
-                <label>psychically filled</label>
+                <label>psychically filled</label> <!-- 90% -->
                 <description>My psyfocus reserves are filled to the brim, this is the good life!</description>
-                <baseMoodEffect>5</baseMoodEffect>
+                <baseMoodEffect>8</baseMoodEffect>
             </li>
             <li>
-                <label>psychically well</label>
+                <label>psychically well</label> <!-- 80% -->
                 <description>My psyfocus reserves are doing great, this is nice.</description>
                 <baseMoodEffect>5</baseMoodEffect>
             </li>
             <li>
-                <label>psychically neutral</label>
+                <label>psychically neutral</label> <!-- 75% -->
                 <description>My psyfocus reserves are fine, but they could be better.</description>
                 <baseMoodEffect>0</baseMoodEffect>
             </li>
             <li>
-                <label>psychically hungry</label>
+                <label>psychically hungry</label> <!-- 50% -->
                 <description>My psyfocus reserves are low, I should meditate.</description>
                 <baseMoodEffect>-5</baseMoodEffect>
             </li>
             <li>
-                <label>psychically deprived</label>
+                <label>psychically deprived</label> <!-- 20% -->
                 <description>My psyfocus reserves are very low, I desperately need to meditate.</description>
                 <baseMoodEffect>-10</baseMoodEffect>
             </li>
             <li>
-                <label>psychically empty</label>
+                <label>psychically empty</label><!-- 2% -->
                 <description>My psyfocus reserves are empty, this is unbearable.</description>
                 <baseMoodEffect>-15</baseMoodEffect>
             </li>
