@@ -30,7 +30,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>BEWH_SpiritStone</li>
+                        <li>BEWH_Waystone</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -39,7 +39,7 @@
         <fixedIngredientFilter>
             <thingDefs>
                 <li>BEWH_Wraithbone</li>
-                <li>BEWH_SpiritStone</li>
+                <li>BEWH_Waystone</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <XenotypeIconDef>
+        <defName>BEWH_AeldariIcon</defName>
+        <texPath>UI/Xenotypes/Eldar_Xenotype</texPath>
+    </XenotypeIconDef>
+
+    <XenotypeIconDef>
+        <defName>BEWH_DrukhariIcon</defName>
+        <texPath>UI/Xenotypes/Drukhari_Xenotype</texPath>
+    </XenotypeIconDef>
+
+</Defs>

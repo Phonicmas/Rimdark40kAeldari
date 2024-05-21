@@ -54,7 +54,7 @@
         <!-- ===== Recipe ===== -->
         <costList>
             <BEWH_Wraithbone>25</BEWH_Wraithbone>
-            <BEWH_SpiritStoneUnmounted>1</BEWH_SpiritStoneUnmounted>
+            <BEWH_Waystone>1</BEWH_Waystone>
         </costList>
         <recipeMaker>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

@@ -32,10 +32,10 @@
     <techLevel>Spacer</techLevel>
   </ThingDef>
 
-  <!-- Spirit Stone unmounted -->
+  <!-- Waystone -->
   <ThingDef ParentName="ResourceBase">
-    <defName>BEWH_SpiritStoneUnmounted</defName>
-    <label>unmounted spirit stone</label>
+    <defName>BEWH_Waystone</defName>
+    <label>Waystone</label>
     <description>...</description>
     <graphicData>
       <texPath>Things/Item/Special/AIPersonaCore</texPath>
@@ -55,7 +55,7 @@
     <thingCategories>
       <li>BEWH_SpiritStones</li>
     </thingCategories>
-    <drawGUIOverlay>false</drawGUIOverlay>
+    <drawGUIOverlay>true</drawGUIOverlay>
     <techLevel>Spacer</techLevel>
     <tradeTags>
       <li>ExoticMisc</li>

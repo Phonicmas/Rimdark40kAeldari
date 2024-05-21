@@ -28,7 +28,7 @@
         <iconPath>UI/Xenotypes/Eldar_Xenotype</iconPath>
     </XenotypeDef>
 
-    <XenotypeDef ParentName="BEWH_AeldariXenoBase">
+    <!--<XenotypeDef ParentName="BEWH_AeldariXenoBase">
         <defName>BEWH_Drukhari</defName>
         <label>Drukhari</label>
         <description>...</description>
@@ -37,6 +37,6 @@
             <li>Skin_SheerWhite</li>
             <li>Skin_LightGray</li>
         </genes>
-    </XenotypeDef>
+    </XenotypeDef>-->   
 
 </Defs>
