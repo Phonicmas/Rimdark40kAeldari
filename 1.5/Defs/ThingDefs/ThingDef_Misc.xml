@@ -11,7 +11,7 @@
       <li Class="Aeldari40k.SpiritStoneCompProperties"/>
     </comps>
     <graphicData>
-      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <texPath>Apparel/SpiritStones/SpiritStone</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -38,7 +38,7 @@
     <label>Waystone</label>
     <description>...</description>
     <graphicData>
-      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <texPath>Apparel/SpiritStones/Waystone</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
