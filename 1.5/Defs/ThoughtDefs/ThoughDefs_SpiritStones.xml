@@ -10,7 +10,7 @@
         <stages>
             <li>
                 <label>Aeldari without spirit stone died</label>
-                <description>One of our kin died without a soulstone, and was their soul was taken by Slaanesh.</description>
+                <description>One of our kin died without a spirit stone, and their soul was taken by Slaanesh.</description>
                 <baseMoodEffect>-10</baseMoodEffect>
             </li>
         </stages>
@@ -23,7 +23,7 @@
         <stages>
             <li>
                 <label>Aeldari with spirit stone died</label>
-                <description>One of our kin died with a soulstone, and was their soul was saved from Slaanesh.</description>
+                <description>One of our kin died with a spirit stone, and their soul was saved from Slaanesh.</description>
                 <baseMoodEffect>10</baseMoodEffect>
             </li>
         </stages>
@@ -72,7 +72,7 @@
             </li>
             <li>
                 <label>Carrying spirit stone</label>
-                <description>I'm carrying a spirit stone, should my time come, my soul will be save from Slaanesh</description>
+                <description>I'm carrying a spirit stone, should my time come, my soul will be saved from Slaanesh.</description>
                 <baseMoodEffect>3</baseMoodEffect>
             </li>
         </stages>
