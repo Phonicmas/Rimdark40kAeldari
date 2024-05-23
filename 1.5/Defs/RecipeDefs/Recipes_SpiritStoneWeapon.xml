@@ -30,7 +30,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>BEWH_Waystone</li>
+                        <li>BEWH_SpiritStone</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>

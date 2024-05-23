@@ -7,6 +7,9 @@ namespace Aeldari40k
 {
     public class WeaponTraitDef_AeldariSpirit : WeaponTraitDef
     {
+
+        public List<SkillGain> skillGains = new List<SkillGain>();
+
         public override IEnumerable<string> ConfigErrors()
         {
             if (!typeof(WeaponTraitWorker).IsAssignableFrom(workerClass))

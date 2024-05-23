@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>BEWH_SpiritTraitSanguineMoodOffset</defName>
+    <workerClass>Aeldari40k.ThoughtWorker_SanguineWeaponTrait</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>sanguine</label>
+        <description>Natural bonus from 'sanguine' weapon trait.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>BEWH_SpiritTraitOptimistMoodOffset</defName>
+    <workerClass>Aeldari40k.ThoughtWorker_OptimistWeaponTrait</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>optimist</label>
+        <description>Natural bonus from 'optimist' weapon trait.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>BEWH_SpiritTraitJoyousMoodOffset</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>Aeldari40k.ThoughtWorker_JoyousWeaponTrait</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>joyous</label>
+        <baseOpinionOffset>10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

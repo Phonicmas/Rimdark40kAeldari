@@ -31,13 +31,13 @@ namespace Aeldari40k
 
         public void InitializeTraits()
         {
-            if (traits == null)
-            {
-                traits = new List<WeaponTraitDef_AeldariSpirit>();
-            }
             if (spirit == null)
             {
                 return;
+            }
+            if (traits == null)
+            {
+                traits = new List<WeaponTraitDef_AeldariSpirit>();
             }
             Rand.PushState(parent.HashOffset());
             int randomInRange = TraitsRange.RandomInRange;

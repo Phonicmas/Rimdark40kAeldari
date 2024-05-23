@@ -27,6 +27,12 @@ namespace Aeldari40k
 
         public static MeditationFocusDef BEWH_Bonesinger;
 
+
+        public static WeaponTraitDef_AeldariSpirit BEWH_SpiritTraitJoyous;
+        public static WeaponTraitDef_AeldariSpirit BEWH_SpiritTraitSanguine;
+        public static WeaponTraitDef_AeldariSpirit BEWH_SpiritTraitOptimist;
+        public static WeaponTraitDef_AeldariSpirit BEWH_SpiritTraitGreatMemory;
+
         static Aeldari40kDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(Aeldari40kDefOf));

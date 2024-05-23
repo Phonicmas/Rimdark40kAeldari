@@ -7,7 +7,9 @@
     <label>Spirit of the Hunter</label>
     <description>...</description>
     <equippedStatOffsets>
-      <HuntingStealth>6</HuntingStealth>
+      <TameAnimalChance>0.15</TameAnimalChance>
+      <TrainAnimalChance>0.2</TrainAnimalChance>
+      <HuntingStealth>0.4</HuntingStealth>
     </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
@@ -54,6 +56,10 @@
     <defName>BEWH_SpiritSkillCooking</defName>
     <label>Spirit of the Cook</label>
     <description>...</description>
+    <equippedStatOffsets>
+      <FoodPoisonChance>-0.03</FoodPoisonChance>
+      <CookSpeed>4</CookSpeed>
+    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -67,6 +73,9 @@
     <defName>BEWH_SpiritSkillCrafting</defName>
     <label>Spirit of the Bonesinger</label>
     <description>...</description>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -80,6 +89,10 @@
     <defName>BEWH_SpiritSkillMedical</defName>
     <label>Spirit of the Healer</label>
     <description>...</description>
+    <equippedStatOffsets>
+      <MedicalTendSpeed>0.25</MedicalTendSpeed>
+      <MedicalTendQuality>0.4</MedicalTendQuality>
+    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -93,6 +106,10 @@
     <defName>BEWH_SpiritSkillMelee</defName>
     <label>Spirit of the Warrior</label>
     <description>...</description>
+    <equippedStatOffsets>
+      <MeleeCooldownFactor>-0.1</MeleeCooldownFactor>
+      <MeleeHitChance>4</MeleeHitChance>
+    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -106,6 +123,10 @@
     <defName>BEWH_SpiritSkillMining</defName>
     <label>Spirit of the Labourer</label>
     <description>...</description>
+    <equippedStatOffsets>
+      <MiningSpeed>0.4</MiningSpeed>
+      <MiningYield>0.3</MiningYield>
+    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -119,6 +140,10 @@
     <defName>BEWH_SpiritSkillIntellectual</defName>
     <label>Spirit of the Scholar</label>
     <description>...</description>
+    <equippedStatOffsets>
+      <ResearchSpeed>0.4</ResearchSpeed>
+      <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.1</HackingSpeed>
+    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -132,6 +157,10 @@
     <defName>BEWH_SpiritSkillPlants</defName>
     <label>Spirit of the Gardener</label>
     <description>...</description>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.4</PlantWorkSpeed>
+      <PlantHarvestYield>0.4</PlantHarvestYield>
+    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -145,6 +174,10 @@
     <defName>BEWH_SpiritSkillShooting</defName>
     <label>Spirit of the Ranger</label>
     <description>...</description>
+    <equippedStatOffsets>
+      <RangedCooldownFactor>-0.1</RangedCooldownFactor>
+      <ShootingAccuracyPawn>4</ShootingAccuracyPawn>
+    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>
@@ -158,6 +191,10 @@
     <defName>BEWH_SpiritSkillSocial</defName>
     <label>Spirit of the </label>
     <description>...</description>
+    <equippedStatOffsets>
+      <NegotiationAbility>0.3</NegotiationAbility>
+      <SocialImpact>0.1</SocialImpact>
+    </equippedStatOffsets>
     <modExtensions>
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isSkillRelated>true</isSkillRelated>

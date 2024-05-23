@@ -12,7 +12,7 @@
         <requiredResearchFacilities>
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
-        <researchViewX>10</researchViewX>
+        <researchViewX>6</researchViewX>
         <researchViewY>1</researchViewY>
     </ResearchProjectDef>
 
@@ -30,7 +30,7 @@
         <requiredResearchFacilities>
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
-        <researchViewX>10</researchViewX>
+        <researchViewX>7</researchViewX>
         <researchViewY>1</researchViewY>
     </ResearchProjectDef>
 

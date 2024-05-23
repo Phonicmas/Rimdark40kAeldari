@@ -79,6 +79,8 @@
     <Compile Include="DefModExtension_WeaponTraitExtra.cs" />
     <Compile Include="DefModExtension_WraithbonePlant.cs" />
     <Compile Include="Gene_CurseOfSlaanesh.cs" />
+    <Compile Include="HarmonyPatch_WeaponTraitMemoryPatch.cs" />
+    <Compile Include="HarmonyPatch_WeaponTraitSkillGainPatch.cs" />
     <Compile Include="HarmonyPatch_PreventAeldariResurrectPatch2.cs" />
     <Compile Include="HarmonyPatch_PreventAeldariResurrectPatch1.cs" />
     <Compile Include="HarmonyPatch_PopulateMutableStatsPatch.cs" />
@@ -89,6 +91,9 @@
     <Compile Include="HarmonyPatch_TickWraithboneGrowthPatch.cs" />
     <Compile Include="Need_Meditation.cs" />
     <Compile Include="ThoughtWorker_CarryingSpiritStone.cs" />
+    <Compile Include="ThoughtWorker_OptimistWeaponTrait.cs" />
+    <Compile Include="ThoughtWorker_SanguineWeaponTrait.cs" />
+    <Compile Include="ThoughtWorker_JoyousWeaponTrait.cs" />
     <Compile Include="WeaponTraitDef_AeldariSpirit.cs" />
     <Compile Include="CompProperties_MeditationSpawn.cs" />
     <Compile Include="DefModExtension_WraithboneCreatedStuff.cs" />
