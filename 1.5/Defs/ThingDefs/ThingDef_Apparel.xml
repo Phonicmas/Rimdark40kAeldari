@@ -6,9 +6,9 @@
         <label>spirit stone necklace</label>
         <description>...</description>
         <graphicData>
-            <texPath>Apparel/SpiritStones/TempNeck</texPath>
+            <texPath>Apparel/SpiritStones/SpiritStoneNecklace</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
+            <!-- <shaderType>CutoutComplex</shaderType> -->
         </graphicData>
         <!--<thingClass>ThingWithComps</thingClass>-->
         <comps>
@@ -48,9 +48,9 @@
         <tradeTags>
             <li>ExoticMisc</li>
         </tradeTags>
-        <equippedStatOffsets>
+        <!-- <equippedStatOffsets>
             <PawnBeauty>+1</PawnBeauty>
-        </equippedStatOffsets>
+        </equippedStatOffsets> -->
         <!-- ===== Recipe ===== -->
         <costList>
             <BEWH_Wraithbone>25</BEWH_Wraithbone>

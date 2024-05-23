@@ -21,7 +21,7 @@
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariBeauty</defName>
         <label>aeldari beauty</label>
-        <description>...</description>
+        <description>Carriers of this gene have faces with beautiful, distinctive features. Their skin is pale and flawless, resembling polished marble. Yet beneath this seemingly delicate exterior lies a surprising resilience. Each of them radiate an inhuman elegance and poise. They are generally considered to be stunningly beautiful.</description>
         <iconPath>UI/Genes/AeldariBeauty_icon</iconPath>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-3</biostatMet>
@@ -40,7 +40,7 @@
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariGraceful</defName>
         <label>graceful</label>
-        <description>...</description>
+        <description>Carriers of this gene have a different muscle structure and lighter, more flexible bones, allowing them to make sudden, strong and precise movements.</description>
         <iconPath>UI/Genes/AeldariGraceful_icon</iconPath>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-3</biostatMet>
@@ -57,7 +57,7 @@
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariPhysique</defName>
         <label>aeldari physique</label>
-        <description>...</description>
+        <description>Carriers of this gene have a physiology that is drastically different from that of a basic human. Their hearts beat faster, they have better eyesight and hearing. Their minds process emotions and possibilities at an incredible rate. However, their reproductive capabilities are severely limited.</description>
         <iconPath>UI/Genes/AeldariPhysique_icon</iconPath>
         <biostatCpx>3</biostatCpx>
         <biostatMet>-4</biostatMet>
@@ -68,7 +68,7 @@
         </statOffsets>
         <statFactors>
             <Fertility>0.5</Fertility>
-            <VEF_CosmeticBodySize_Multiplier>1.05</VEF_CosmeticBodySize_Multiplier>
+            <VEF_CosmeticBodySize_Multiplier>1.20</VEF_CosmeticBodySize_Multiplier>
         </statFactors>
         <capMods>
             <li>
@@ -90,7 +90,7 @@
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariPsyker</defName>
         <label>aeldari psyker</label>
-        <description>...</description>
+        <description>Carriers of this gene exhibit incredible psychic sensitivity. All members of the Aeldari race possess innate psychic abilities, ranging from simple premonitions to powerful psychic attacks and reality manipulation.</description>
         <iconPath>UI/Genes/AeldariPsyker_icon</iconPath>
         <biostatCpx>4</biostatCpx>
         <biostatArc>1</biostatArc>
@@ -130,8 +130,8 @@
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariCurseOfSlaanesh</defName>
         <label>curse of Slaanesh</label>
-        <description>...</description>
-        <iconPath>UI/Genes/AeldariPsyker_icon</iconPath>
+        <description>Carriers of this gene fall under the watchful eye of She Who Thirsts. They cannot be resurrected after death, as their spirit immediately falls into the grasp of Slaanesh, a sinister entity that feeds on souls. The only way to escape this dreadful fate is to possess a Spirit Stone, which can capture and preserve the carrier’s soul after death.</description>
+        <iconPath>UI/Genes/AeldariCurseOfSlaanesh_icon</iconPath>
         <geneClass>Aeldari40k.Gene_CurseOfSlaanesh</geneClass>
         <biostatCpx>3</biostatCpx>
         <biostatMet>5</biostatMet>
@@ -147,7 +147,7 @@
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariUnsulliedLifespan</defName>
         <label>unsullied lifespan</label>
-        <description>...</description>
+        <description>Carriers of this gene have an extended lifespan, untainted by disease, frailty, or infirmity. The Aeldari can live for over a thousand Terran years, maintaining their vitality and strength throughout their long lives, unless they are killed in battle or suffer a fatal accident.</description>
         <iconPath>UI/Genes/AeldariUnsulliedLifespan_icon</iconPath>
         <biostatCpx>2</biostatCpx>
         <biostatMet>-3</biostatMet>

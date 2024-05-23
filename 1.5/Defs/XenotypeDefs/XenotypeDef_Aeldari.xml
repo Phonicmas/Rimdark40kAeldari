@@ -7,6 +7,9 @@
         <factionlessGenerationWeight>0.2</factionlessGenerationWeight>
         <genes>
             <li>Ears_Pointed</li>
+			<li>Skin_Melanin2</li>
+			<li>Skin_Melanin3</li>
+			<li>Skin_Melanin4</li>
             <li>Body_Thin</li>
             <li>Body_Standard</li>
             <li>Beard_NoBeardOnly</li>
