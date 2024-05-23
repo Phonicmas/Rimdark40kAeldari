@@ -19,6 +19,7 @@
     <soundDrop>Metal_Drop</soundDrop>
     <stackLimit>1</stackLimit>
     <useHitPoints>true</useHitPoints>
+    <tickerType>Long</tickerType>
     <statBases>
       <MarketValue>1650</MarketValue>
       <MaxHitPoints>1000</MaxHitPoints>

@@ -24,7 +24,6 @@
       <Steel>200</Steel>
     </costList>
     <recipes>
-      <li>BEWH_Make_Wraithbone</li>
       <li>BEWH_Make_Diresword</li>
     </recipes>
     <graphicData>

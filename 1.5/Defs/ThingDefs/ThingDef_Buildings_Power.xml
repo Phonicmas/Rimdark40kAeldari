@@ -41,17 +41,17 @@
       <fixedStorageSettings>
         <priority>Critical</priority>
         <filter>
-          <categories Inherit="False">
-            <li>BEWH_SpiritStones</li>
-          </categories>
+          <thingDefs Inherit="False">
+            <li>BEWH_SpiritStone</li>
+          </thingDefs>
         </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <priority>Critical</priority>
         <filter>
-          <categories>
-            <li>BEWH_SpiritStones</li>
-          </categories>
+          <thingDefs>
+            <li>BEWH_SpiritStone</li>
+          </thingDefs>
         </filter>
       </defaultStorageSettings>
     </building>

@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System.Linq;
 using Verse;
 
 namespace Aeldari40k
@@ -29,7 +30,7 @@ namespace Aeldari40k
                 {
                     if (building is InfinityCircuitBuilding infBuild)
                     {
-                        mult = infBuild.SoulAmount.Count;
+                        mult = infBuild.SoulAmount.Count();
                     }
                 }
             }

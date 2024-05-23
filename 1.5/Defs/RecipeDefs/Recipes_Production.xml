@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <RecipeDef>
+    <!--<RecipeDef>
         <defName>BEWH_Make_Wraithbone</defName>
         <label>make wraithbone</label>
-        <description>Make some wraithbone, final amount made depends on pawns psychic sensitivity.</description>
+        <description>Make some wraithbone, the final amount made depends on pawns psychic sensitivity.</description>
         <researchPrerequisite>BEWH_AeldarWraithbone</researchPrerequisite>
         <jobString>Making wraithbone.</jobString>
         <workerClass>Aeldari40k.RecipeWorker_MakeWraithbone</workerClass>
@@ -12,7 +12,7 @@
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>3000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>        <!-- Change this ? -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <skillRequirements>
             <Crafting>8</Crafting>
         </skillRequirements>
@@ -28,6 +28,6 @@
                 <createdThing>BEWH_Wraithbone</createdThing>
             </li>
         </modExtensions>
-    </RecipeDef>
+    </RecipeDef>-->
 
 </Defs>

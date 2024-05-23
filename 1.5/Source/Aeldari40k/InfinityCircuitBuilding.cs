@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Verse;
 
@@ -10,7 +11,7 @@ namespace Aeldari40k
     {
         public int MaximumSpiritStones => def.building.maxItemsInCell * def.size.Area;
 
-        public IReadOnlyList<Thing> SoulAmount => innerContainer.InnerListForReading;
+        public IEnumerable<Thing> SoulAmount => innerContainer.InnerListForReading.Where(x => x.TryGetComp<SpiritStoneComp>()?.pawn != null);
 
 
         private ThingOwner<Thing> innerContainer;
@@ -95,7 +96,7 @@ namespace Aeldari40k
         {
             string s = base.GetInspectString();
             s += "\n";
-            s += "ContainsXSouls".Translate(SoulAmount.Count);
+            s += "ContainsXSouls".Translate(SoulAmount.Count());
             return s;
         }
 
@@ -129,7 +130,7 @@ namespace Aeldari40k
 
         public bool Accepts(Thing t)
         {
-            if (GetStoreSettings().AllowedToAccept(t))
+            if (GetStoreSettings().AllowedToAccept(t) && t.TryGetComp<SpiritStoneComp>()?.pawn != null)
             {
                 return innerContainer.CanAcceptAnyOf(t);
             }
@@ -138,7 +139,7 @@ namespace Aeldari40k
 
         public int SpaceRemainingFor(ThingDef _)
         {
-            return MaximumSpiritStones - SoulAmount.Count;
+            return MaximumSpiritStones - SoulAmount.Count();
         }
 
         public StorageSettings GetStoreSettings()
@@ -161,23 +162,6 @@ namespace Aeldari40k
             Scribe_Deep.Look(ref innerContainer, "innerContainer", this);
             Scribe_Deep.Look(ref settings, "settings", this);
             Scribe_References.Look(ref storageGroup, "storageGroup");
-        }
-
-        public override void TickLong()
-        {
-            base.TickLong();
-            //Put this logic in thought instead?
-            if (SoulAmount.Count >= 1)
-            {
-                foreach (Pawn pawn in Map.mapPawns.FreeColonists)
-                {
-                    if (pawn.genes != null && pawn.genes.HasGene(Aeldari40kDefOf.BEWH_AeldariPsyker))
-                    {
-                        pawn.needs?.mood?.thoughts?.memories?.TryGainMemory(Aeldari40kDefOf.BEWH_InfinityCircuitThought);
-                    }
-                }
-            }
-            
         }
 
     }

@@ -27,6 +27,12 @@
         <biostatMet>-3</biostatMet>
         <displayOrderInCategory>1</displayOrderInCategory>
         <marketValueFactor>1.2</marketValueFactor>
+        <forcedHeadTypes>
+            <li>Male_AveragePointy</li>
+            <li>Male_NarrowPointy</li>
+            <li>Female_AveragePointy</li>
+            <li>Female_NarrowPointy</li>
+        </forcedHeadTypes>
         <missingGeneRomanceChanceFactor>0.3</missingGeneRomanceChanceFactor>
         <statOffsets>
             <PawnBeauty>3</PawnBeauty>
@@ -60,7 +66,7 @@
         <description>Carriers of this gene have a physiology that is drastically different from that of a basic human. Their hearts beat faster, they have better eyesight and hearing. Their minds process emotions and possibilities at an incredible rate. However, their reproductive capabilities are severely limited.</description>
         <iconPath>UI/Genes/AeldariPhysique_icon</iconPath>
         <biostatCpx>3</biostatCpx>
-        <biostatMet>-4</biostatMet>
+        <biostatMet>-3</biostatMet>
         <displayOrderInCategory>4</displayOrderInCategory>
         <marketValueFactor>1.1</marketValueFactor>
         <statOffsets>
@@ -94,7 +100,7 @@
         <iconPath>UI/Genes/AeldariPsyker_icon</iconPath>
         <biostatCpx>4</biostatCpx>
         <biostatArc>1</biostatArc>
-        <biostatMet>2</biostatMet>
+        <biostatMet>-3</biostatMet>
         <displayOrderInCategory>6</displayOrderInCategory>
         <marketValueFactor>1.5</marketValueFactor>
         <statOffsets>
@@ -123,23 +129,6 @@
         <customEffectDescriptions>
             <li>Allows the pawn to craft wraithbone</li>
             <li>Losing this gene will make the colonist lose all psylink levels, though they will not forget the psycasts they have already learned.</li>
-        </customEffectDescriptions>
-    </GeneDef>
-
-    <!-- Aeldari: Curse of Slaneesh -->
-    <GeneDef ParentName="BEWH_Aeldari">
-        <defName>BEWH_AeldariCurseOfSlaanesh</defName>
-        <label>curse of Slaanesh</label>
-        <description>Carriers of this gene fall under the watchful eye of She Who Thirsts. They cannot be resurrected after death, as their spirit immediately falls into the grasp of Slaanesh, a sinister entity that feeds on souls. The only way to escape this dreadful fate is to possess a Spirit Stone, which can capture and preserve the carrier’s soul after death.</description>
-        <iconPath>UI/Genes/AeldariCurseOfSlaanesh_icon</iconPath>
-        <geneClass>Aeldari40k.Gene_CurseOfSlaanesh</geneClass>
-        <biostatCpx>3</biostatCpx>
-        <biostatMet>5</biostatMet>
-        <displayOrderInCategory>6</displayOrderInCategory>
-        <customEffectDescriptions>
-            <li>Mood will wary depending on Infinity Circuit</li>
-            <li>Mood will wary depending on Spirit Stones</li>
-            <li>Pawn cannot be resurrected should they die</li>
         </customEffectDescriptions>
     </GeneDef>
 
@@ -190,7 +179,24 @@
         </hediffGiversCannotGive>
     </GeneDef>
 
-    <!-- Aeldari: Meditation Dependency (meditation need?) -->
+    <!-- Aeldari: Curse of Slaneesh -->
+    <GeneDef ParentName="BEWH_Aeldari">
+        <defName>BEWH_AeldariCurseOfSlaanesh</defName>
+        <label>curse of Slaanesh</label>
+        <description>Carriers of this gene fall under the watchful eye of She Who Thirsts. They cannot be resurrected after death, as their spirit immediately falls into the grasp of Slaanesh, a sinister entity that feeds on souls. The only way to escape this dreadful fate is to possess a Spirit Stone, which can capture and preserve the carrier’s soul after death.</description>
+        <iconPath>UI/Genes/AeldariCurseOfSlaanesh_icon</iconPath>
+        <geneClass>Aeldari40k.Gene_CurseOfSlaanesh</geneClass>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>6</biostatMet>
+        <displayOrderInCategory>6</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Mood will wary depending on Infinity Circuit</li>
+            <li>Mood will wary depending on Spirit Stones</li>
+            <li>Pawn cannot be resurrected should they die</li>
+        </customEffectDescriptions>
+    </GeneDef>
+
+    <!-- Aeldari: Meditation Dependency -->
     <GeneDef ParentName="BEWH_Aeldari">
         <defName>BEWH_AeldariMeditationDependency</defName>
         <label>meditation dependency</label>
@@ -198,7 +204,7 @@
         <iconPath>UI/Genes/AeldariMeditationDependency_icon</iconPath>
         <causesNeed>BEWH_MeditationDependency</causesNeed>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>5</biostatMet>
+        <biostatMet>4</biostatMet>
         <displayOrderInCategory>7</displayOrderInCategory>
     </GeneDef>
 

@@ -18,6 +18,15 @@ namespace Aeldari40k
             return "ContainsNoSoul".Translate();
         }
 
+        public override void CompTickLong()
+        {
+            if (pawn == null)
+            {
+                parent.Destroy();
+            }
+            base.CompTickLong();
+        }
+
         public override void PostExposeData()
         {
             base.PostExposeData();

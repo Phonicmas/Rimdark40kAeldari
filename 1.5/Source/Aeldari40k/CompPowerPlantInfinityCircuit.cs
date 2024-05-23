@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System.Linq;
 using Verse;
 
 
@@ -27,7 +28,7 @@ namespace Aeldari40k
             }
             if (parent is InfinityCircuitBuilding b)
             {
-                cachedPowerOutput = 0f - Props.PowerConsumption * b.SoulAmount.Count;
+                cachedPowerOutput = 0f - Props.PowerConsumption * b.SoulAmount.Count();
                 return;
             }
             else
