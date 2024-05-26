@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenarioDef Name="Crashlanded">
+    <defName>BEWH_ArldariScenario</defName>
+    <label>Aeldari on the Rim</label>
+    <description>....</description>
+    <scenario>
+      <summary>Three Aeldari start</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>3</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+          <xenotypeCounts>
+            <li>
+              <xenotype>BEWH_Aeldari</xenotype>
+              <count>8</count>
+              <description>aeldari</description>
+              <requiredAtStart>true</requiredAtStart>
+              <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+            </li>
+          </xenotypeCounts>
+        </li>
+
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+          <visible>false</visible>
+        </li>
+
+        <!-- Player pawns modifiers -->
+        <!--<li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>0.5</chance>
+          <hediff>CryptosleepSickness</hediff>
+          <hideOffMap>true</hideOffMap>
+          <severityRange>1~1</severityRange>
+        </li>-->
+
+        <!-- Player starting things -->
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>800</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>50</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineIndustrial</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>30</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>BEWH_SpiritStoneNecklace</thingDef>
+          <count>2</count>
+        </li>
+
+        <!-- Scatter some things near player start -->
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>WoodLog</thingDef>
+          <count>150</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>BEWH_Wraithbone</thingDef>
+          <count>200</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>BEWH_Waystone</thingDef>
+          <count>1</count>
+        </li>
+
+        <!-- Scatter some things anywhere -->
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ShipChunk</thingDef>
+          <allowRoofed>false</allowRoofed>
+          <count>3</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>Steel</thingDef>
+          <count>800</count>
+        </li>
+
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">          <!-- Idk what this is -->
+          <def>GameStartDialog</def>
+          <textKey>GameStartDialog</textKey>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

@@ -197,7 +197,7 @@ namespace Aeldari40k
         {
             base.PostExposeData();
             Scribe_Values.Look(ref lastKillTick, "lastKillTick", -1);
-            Scribe_Collections.Look(ref traits, "traits", LookMode.Def);
+            Scribe_Collections.Look(ref traits, "traits", LookMode.Def); //Not working properly
             Scribe_References.Look(ref spirit, "spirit", saveDestroyedThings: true);
             if (Scribe.mode != LoadSaveMode.Saving)
             {

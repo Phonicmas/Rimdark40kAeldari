@@ -18,6 +18,7 @@
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Metal_Drop</soundDrop>
     <stackLimit>1</stackLimit>
+    <tradeability>None</tradeability>
     <useHitPoints>true</useHitPoints>
     <tickerType>Long</tickerType>
     <statBases>
