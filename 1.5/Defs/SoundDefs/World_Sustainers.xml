@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<SoundDef>
+		<defName>BEWH_WorkBonesinging</defName>
+		<context>MapOnly</context>
+		<sustain>true</sustain>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode> 
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>BonesingingCycle1</clipPath>
+					</li>
+				</grains>
+				<volumeRange>15~16</volumeRange>
+				<pitchRange>0.97~1.1</pitchRange>
+       			<sustainAttack>2.5</sustainAttack>      
+        		<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

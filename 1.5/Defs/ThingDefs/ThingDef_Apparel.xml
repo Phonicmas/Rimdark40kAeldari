@@ -59,7 +59,7 @@
         <recipeMaker>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <effectWorking>CutStone</effectWorking>
-            <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+            <soundWorking>BEWH_WorkBonesinging</soundWorking>
             <recipeUsers>
                 <li>BEWH_WraithboneBenchMeditation</li>
             </recipeUsers>
