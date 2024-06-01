@@ -10,7 +10,7 @@
         <workerClass>Aeldari40k.RecipeWorker_MakeSpiritWeapon</workerClass>
         <workSpeedStat>PsychicSensitivity</workSpeedStat>
         <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
+        <soundWorking>BEWH_WorkBonesinging</soundWorking>
         <workAmount>3000</workAmount>
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>        <!-- Change this -->
         <skillRequirements>
