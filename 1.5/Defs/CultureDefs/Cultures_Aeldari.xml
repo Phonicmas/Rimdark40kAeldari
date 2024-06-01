@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+  <CultureDef>
+    <defName>BEWH_CultureAeldari</defName>
+    <label>asurian</label>
+    <description>...</description>
+    <pawnNameMaker>BEWH_NamerAeldariMale</pawnNameMaker>
+    <pawnNameMakerFemale>BEWH_NamerAeldariFemale</pawnNameMakerFemale>
+<!--     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">...</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">...</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">...</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">...</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">...</leaderTitleMaker> -->
+    <allowedPlaceTags>
+      <li>OriginSpacer</li>
+    </allowedPlaceTags>
+    <iconPath>World/WorldObjects/Expanding/Town</iconPath>  <!-- change this -->
+    <iconColor>(0.8, 0.8, 0.8)</iconColor>
+    <preferredWeaponClasses>
+      <noble>Ultratech</noble>
+      <despised>Neolithic</despised>
+    </preferredWeaponClasses>
+    <styleItemTags>
+    <li>
+        <tag>Urban</tag>                                    <!-- vanilla style placeholder -->
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+</Defs>

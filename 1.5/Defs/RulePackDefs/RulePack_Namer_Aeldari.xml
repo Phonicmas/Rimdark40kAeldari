@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<RulePackDef>
+    <defName>BEWH_NamerAeldariFull</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>Aeldari_First_Male->Names/firstMaleAeldari</li>
+        <li>Aeldari_First_Female->Names/firstFemaleAeldari</li>
+        <li>Aeldari_Last->Names/lastAeldari</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+ <RulePackDef>
+    <defName>BEWH_NamerAeldariMale</defName>
+  <include>
+      <li>BEWH_NamerAeldariFull</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[Aeldari_First_Male] [Aeldari_Last]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+ <RulePackDef>
+    <defName>BEWH_NamerAeldariFemale</defName>
+  <include>
+      <li>BEWH_NamerAeldariFull</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[Aeldari_First_Female] [Aeldari_Last]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
