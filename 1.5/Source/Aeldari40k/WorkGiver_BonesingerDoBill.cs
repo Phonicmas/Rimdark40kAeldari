@@ -12,7 +12,7 @@ namespace Aeldari40k
             {
                 return null;
             }
-            if (!pawn.genes.HasGene(Aeldari40kDefOf.BEWH_AeldariPsyker))
+            if (!pawn.genes.HasActiveGene(Aeldari40kDefOf.BEWH_AeldariPsyker))
             {
                 return null;
             }

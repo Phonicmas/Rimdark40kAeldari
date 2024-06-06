@@ -9,10 +9,10 @@ namespace Aeldari40k
         {
             Thing weapon = GenSpawn.Spawn(recipe.GetModExtension<DefModExtension_WraithboneCreatedStuff>().createdThing, billDoer.PositionHeld, billDoer.MapHeld);
 
-            Thing spiritStone = ingredients.Find(x => x.HasComp<SpiritStoneComp>());
+            Thing spiritStone = ingredients.Find(x => x.HasComp<CompSpiritStone>());
 
             CompBladelinkWeapon_AeldariSpirit weaponComp = weapon.TryGetComp<CompBladelinkWeapon_AeldariSpirit>();
-            weaponComp.spirit = spiritStone.TryGetComp<SpiritStoneComp>().pawn;
+            weaponComp.spirit = spiritStone.TryGetComp<CompSpiritStone>().pawn;
             weaponComp.InitializeTraits();  
         }
     }

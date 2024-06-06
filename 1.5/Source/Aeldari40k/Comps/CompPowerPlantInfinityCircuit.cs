@@ -26,7 +26,7 @@ namespace Aeldari40k
                 cachedPowerOutput = 0f;
                 return;
             }
-            if (parent is InfinityCircuitBuilding b)
+            if (parent is Building_InfinityCircuit b)
             {
                 cachedPowerOutput = 0f - Props.PowerConsumption * b.SoulAmount.Count();
                 return;

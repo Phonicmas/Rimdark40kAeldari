@@ -3,9 +3,9 @@
 
 namespace Aeldari40k
 {
-    public class SpiritStoneComp : ThingComp
+    public class CompSpiritStone : ThingComp
     {
-        public SpiritStoneCompProperties Props => (SpiritStoneCompProperties)props;
+        public CompProperties_SpiritStone Props => (CompProperties_SpiritStone)props;
 
         public Pawn pawn = null;
 

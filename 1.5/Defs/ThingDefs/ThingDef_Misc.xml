@@ -8,7 +8,7 @@
     <description>...</description>
     <thingClass>ThingWithComps</thingClass>
     <comps>
-      <li Class="Aeldari40k.SpiritStoneCompProperties"/>
+      <li Class="Aeldari40k.CompProperties_SpiritStone"/>
     </comps>
     <graphicData>
       <texPath>Apparel/SpiritStones/SpiritStone</texPath>

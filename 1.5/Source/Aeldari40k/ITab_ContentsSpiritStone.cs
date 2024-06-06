@@ -23,7 +23,7 @@ namespace Aeldari40k
             }
         }
 
-        public InfinityCircuitBuilding InfinityCircuit => base.SelThing as InfinityCircuitBuilding;
+        public Building_InfinityCircuit InfinityCircuit => base.SelThing as Building_InfinityCircuit;
 
         public override bool VisibleInBlueprintMode => false;
 

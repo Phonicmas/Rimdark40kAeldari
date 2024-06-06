@@ -28,7 +28,7 @@ namespace Aeldari40k
             {
                 foreach (Building building in playerHome.listerBuildings.AllBuildingsColonistOfDef(Aeldari40kDefOf.BEWH_InfinityCircuit))
                 {
-                    if (building is InfinityCircuitBuilding infBuild)
+                    if (building is Building_InfinityCircuit infBuild)
                     {
                         mult = infBuild.SoulAmount.Count();
                     }

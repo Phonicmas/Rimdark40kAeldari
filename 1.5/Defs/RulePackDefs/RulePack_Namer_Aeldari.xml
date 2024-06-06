@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-
 <Defs>
-<RulePackDef>
+  
+  <RulePackDef>
     <defName>BEWH_NamerAeldariFull</defName>
     <rulePack>
       <rulesFiles>
@@ -12,9 +12,9 @@
     </rulePack>
   </RulePackDef>
 
- <RulePackDef>
+  <RulePackDef>
     <defName>BEWH_NamerAeldariMale</defName>
-  <include>
+    <include>
       <li>BEWH_NamerAeldariFull</li>
     </include>
     <rulePack>
@@ -24,9 +24,9 @@
     </rulePack>
   </RulePackDef>
 
- <RulePackDef>
+  <RulePackDef>
     <defName>BEWH_NamerAeldariFemale</defName>
-  <include>
+    <include>
       <li>BEWH_NamerAeldariFull</li>
     </include>
     <rulePack>

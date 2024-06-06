@@ -12,7 +12,7 @@
         </graphicData>
         <!--<thingClass>ThingWithComps</thingClass>-->
         <comps>
-            <li Class="Aeldari40k.SpiritStoneApparelCompProperties"/>
+            <li Class="Aeldari40k.CompProperties_SpiritStoneApparel"/>
         </comps>
         <techLevel>Spacer</techLevel>
         <statBases Inherit="False">

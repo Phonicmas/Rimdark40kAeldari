@@ -7,11 +7,11 @@ using Verse;
 namespace Aeldari40k
 {
     [StaticConstructorOnStartup]
-    public class InfinityCircuitBuilding : Building, IThingHolderEvents<Thing>, IHaulEnroute, ILoadReferenceable, IStorageGroupMember, IHaulDestination, IStoreSettingsParent, IHaulSource, IThingHolder, ISearchableContents
+    public class Building_InfinityCircuit : Building, IThingHolderEvents<Thing>, IHaulEnroute, ILoadReferenceable, IStorageGroupMember, IHaulDestination, IStoreSettingsParent, IHaulSource, IThingHolder, ISearchableContents
     {
         public int MaximumSpiritStones => def.building.maxItemsInCell * def.size.Area;
 
-        public IEnumerable<Thing> SoulAmount => innerContainer.InnerListForReading.Where(x => x.TryGetComp<SpiritStoneComp>()?.pawn != null);
+        public IEnumerable<Thing> SoulAmount => innerContainer.InnerListForReading.Where(x => x.TryGetComp<CompSpiritStone>()?.pawn != null);
 
 
         private ThingOwner<Thing> innerContainer;
@@ -52,7 +52,7 @@ namespace Aeldari40k
 
 
 
-        public InfinityCircuitBuilding()
+        public Building_InfinityCircuit()
         {
             innerContainer = new ThingOwner<Thing>(this, oneStackOnly: false);
         }
@@ -130,7 +130,7 @@ namespace Aeldari40k
 
         public bool Accepts(Thing t)
         {
-            if (GetStoreSettings().AllowedToAccept(t) && t.TryGetComp<SpiritStoneComp>()?.pawn != null)
+            if (GetStoreSettings().AllowedToAccept(t) && t.TryGetComp<CompSpiritStone>()?.pawn != null)
             {
                 return innerContainer.CanAcceptAnyOf(t);
             }

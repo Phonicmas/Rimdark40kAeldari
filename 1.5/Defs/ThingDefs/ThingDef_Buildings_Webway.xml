@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>BEWH_CraftworldWebwayGate</defName>
+    <label>Craftworld Webway Gate</label>
+    <description>... connected to another craftworld</description>
+    <thingClass>Aeldari40k.Building_CraftworldWebwayGate</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Power/GeothermalPlant</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shadowData>
+        <volume>(6.03,1.0,5.25)</volume>
+        <offset>(0,0,-0.25)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0,5.4,6)</rect>
+      </damageData>
+    </graphicData>
+    <size>(3,3)</size>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,-1,0)</interactionCellOffset>
+    <rotatable>false</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <stealable>false</stealable>
+    <pathCost>3</pathCost>
+    <constructEffect>ConstructMetal</constructEffect>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <fillPercent>0.20</fillPercent>
+    <canOverlapZones>true</canOverlapZones>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <building>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+    </building>
+    <designationCategory>Misc</designationCategory>
+    <costList>
+      <BEWH_Wraithbone>500</BEWH_Wraithbone>
+      <BEWH_Waystone>3</BEWH_Waystone>
+      <ComponentIndustrial>20</ComponentIndustrial>
+      <ComponentSpacer>10</ComponentSpacer>
+      <Gold>100</Gold>
+      <Uranium>100</Uranium>
+    </costList>
+    <statBases>
+      <MarketValue>7000</MarketValue>
+      <WorkToBuild>15000</WorkToBuild>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>250</Mass>
+    </statBases>
+    <researchPrerequisites>
+      <li>BEWH_AeldariWebwayGates</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+      <li>Aeldari40k.PlaceWorker_OnlyOnePerMap</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(115,171,224,0)</glowColor>        <!-- Idk what colour, maybe blue? -->
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>10000</storedEnergyMax>
+        <efficiency>1</efficiency>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="Aeldari40k.DefModExtension_WebwayGate">
+        <powerToActivate>10000</powerToActivate>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

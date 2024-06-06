@@ -8,7 +8,7 @@ namespace Aeldari40k
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
             int thoughtState = 0;
-            if (p.genes != null && p.genes.HasGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh))
+            if (p.genes != null && p.genes.HasActiveGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh))
             {
                 thoughtState = ((Gene_CurseOfSlaanesh)p.genes.GetGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh)).carryingSpiritStone ? 1 : 0;
             }

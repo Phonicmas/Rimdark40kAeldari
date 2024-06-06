@@ -16,12 +16,11 @@
         <!-- Config pages -->
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
           <def>ConfigPage_ConfigureStartingPawns</def>
-          <pawnCount>3</pawnCount>
           <pawnChoiceCount>8</pawnChoiceCount>
           <xenotypeCounts>
             <li>
               <xenotype>BEWH_Aeldari</xenotype>
-              <count>8</count>
+              <count>3</count>
               <description>aeldari</description>
               <requiredAtStart>true</requiredAtStart>
               <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
@@ -105,7 +104,7 @@
         </li>
 
         <!-- Game start dialog -->
-        <li Class="ScenPart_GameStartDialog">          <!-- Idk what this is -->
+        <li Class="ScenPart_GameStartDialog">          <!-- Idk what this is, prob some text given at start -->
           <def>GameStartDialog</def>
           <textKey>GameStartDialog</textKey>
           <closeSound>GameStartSting</closeSound>

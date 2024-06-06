@@ -34,7 +34,7 @@ namespace Aeldari40k
 
             foreach (Pawn colonist in pawns)
             {
-                if (!colonist.Dead && colonist.genes != null && colonist.genes.HasGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh))
+                if (!colonist.Dead && colonist.genes != null && colonist.genes.HasActiveGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh))
                 {
                     if (hadSpiritStone)
                     {

@@ -1,37 +1,46 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ResearchProjectDef>
-        <defName>BEWH_AeldarWraithbone</defName>
-        <label>Bonesinging</label>
-        <description>???</description>
+    <ResearchProjectDef Name="BEWH_AeldariResearchBase" Abstract="True">
         <tab>BEWH_WH40kTab</tab>
-        <baseCost>1000</baseCost>
         <techLevel>Spacer</techLevel>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <requiredResearchFacilities>
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="BEWH_AeldariResearchBase">
+        <defName>BEWH_AeldarWraithbone</defName>
+        <label>Bonesinging</label>
+        <description>???</description>
+        <baseCost>1000</baseCost>
         <researchViewX>6</researchViewX>
         <researchViewY>1</researchViewY>
     </ResearchProjectDef>
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="BEWH_AeldariResearchBase">
         <defName>BEWH_AeldariInfinityCircuit</defName>
         <label>Infinity Circuit</label>
         <description>???</description>
-        <tab>BEWH_WH40kTab</tab>
-        <baseCost>1000</baseCost>
-        <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>BEWH_AeldarWraithbone</li>
         </prerequisites>
-        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-        <requiredResearchFacilities>
-            <li>MultiAnalyzer</li>
-        </requiredResearchFacilities>
+        <baseCost>2000</baseCost>
         <researchViewX>7</researchViewX>
-        <researchViewY>1</researchViewY>
+        <researchViewY>0.5</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="BEWH_AeldariResearchBase">
+        <defName>BEWH_AeldariWebwayGates</defName>
+        <label>Webway Gates</label>
+        <description>???</description>
+        <prerequisites>
+            <li>BEWH_AeldarWraithbone</li>
+        </prerequisites>
+        <baseCost>4000</baseCost>
+        <researchViewX>7</researchViewX>
+        <researchViewY>1.5</researchViewY>
     </ResearchProjectDef>
 
 </Defs>

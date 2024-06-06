@@ -14,7 +14,7 @@ namespace Aeldari40k
             {
                 return true;
             }
-            if (pawn.genes != null && pawn.genes.HasGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh))
+            if (pawn.genes != null && pawn.genes.HasActiveGene(Aeldari40kDefOf.BEWH_AeldariCurseOfSlaanesh))
             {
                 Letter_JumpTo letter = new Letter_JumpTo
                 {

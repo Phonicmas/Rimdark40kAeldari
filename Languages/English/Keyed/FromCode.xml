@@ -12,8 +12,18 @@
     <EmptySpiritStone>Spirit stone contains no spirit</EmptySpiritStone>
 
 
+    <OnlyOneBuildingAllowedPerMap>You may only place one {0} per map.</OnlyOneBuildingAllowedPerMap>
+
+
+    <ReadyIn>Ready in {0}{1}</ReadyIn>
+    <NoPowerToRecharge>Not recharging due to insufficient power</NoPowerToRecharge>
+
 
     <CannotResurrectMessage>An attempt was made to try and resurrect {0}, however their soul no longer with them and their body is an empty husk that cannot function without its soul.</CannotResurrectMessage>
     <CannotResurrectTitle>Resurrection Failed</CannotResurrectTitle>
+
+
+    <CommandUsePortal>Activate Webway Gate</CommandUsePortal>
+    <CommandUsePortalDesc>Activating the Webway Gate will give you an option between 3 rewards to choose from. This procedure uses a lot of power.</CommandUsePortalDesc>
 
 </LanguageData>
