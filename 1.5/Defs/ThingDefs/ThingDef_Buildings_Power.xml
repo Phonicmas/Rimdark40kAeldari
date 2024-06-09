@@ -3,14 +3,14 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>BEWH_InfinityCircuit</defName>
-    <label>infinity circuit</label>
+    <label>infinity matrix</label>
     <description>...</description>
     <thingClass>Aeldari40k.Building_InfinityCircuit</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Building/Power/GeothermalPlant</texPath>
+      <texPath>Structures/InfinityCircuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(5,5)</drawSize>
+      <drawSize>(4,6)</drawSize>
       <shadowData>
         <volume>(6.03,1.0,5.25)</volume>
         <offset>(0,0,-0.25)</offset>
@@ -25,7 +25,7 @@
       <Flammability>0</Flammability>
       <Beauty>10</Beauty>
     </statBases>
-    <size>(5,5)</size>
+    <size>(4,4)</size>
     <tickerType>Normal</tickerType>
     <costList>
       <ComponentIndustrial>8</ComponentIndustrial>
