@@ -73,6 +73,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comps\CompPowerBatteryTrader.cs" />
     <Compile Include="Comps\CompProperties_BladelinkWeapon_AeldariSpirit.cs" />
     <Compile Include="Comps\CompPowerPlantInfinityCircuit.cs" />
     <Compile Include="Comps\CompMeditationSpawn.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="HarmonyPatches\HarmonyPatch_DontPlaceProductPatch.cs" />
     <Compile Include="AeldariUtils.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatch_TickWraithboneGrowthPatch.cs" />
+    <Compile Include="Dialog_ChooseRewards.cs" />
     <Compile Include="PlaceWorker_OnlyOne.cs" />
     <Compile Include="Need_Meditation.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_CarryingSpiritStone.cs" />

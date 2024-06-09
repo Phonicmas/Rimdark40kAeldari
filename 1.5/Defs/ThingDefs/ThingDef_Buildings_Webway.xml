@@ -10,10 +10,6 @@
       <texPath>Things/Building/Power/GeothermalPlant</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
-      <shadowData>
-        <volume>(6.03,1.0,5.25)</volume>
-        <offset>(0,0,-0.25)</offset>
-      </shadowData>
       <damageData>
         <rect>(0.3,0,5.4,6)</rect>
       </damageData>
@@ -66,13 +62,14 @@
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>5</glowRadius>
-        <glowColor>(115,171,224,0)</glowColor>        <!-- Idk what colour, maybe blue? -->
+        <glowColor>(115,171,224,0)</glowColor>
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>100</basePowerConsumption>
       </li>
       <li Class="CompProperties_Battery">
+        <compClass>Aeldari40k.CompPowerBatteryTrader</compClass>
         <storedEnergyMax>10000</storedEnergyMax>
         <efficiency>1</efficiency>
         <shortCircuitInRain>true</shortCircuitInRain>

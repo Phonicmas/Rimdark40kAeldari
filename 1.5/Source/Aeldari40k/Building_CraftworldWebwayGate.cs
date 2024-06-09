@@ -9,10 +9,11 @@ using Verse.Noise;
 
 namespace Aeldari40k
 {
+    [StaticConstructorOnStartup]
     public class Building_CraftworldWebwayGate : Building
     {
 
-        private int cooldownTimeTotal = 90000/*0*/;
+        readonly private int cooldownTimeTotal = 900000;
         private int cooldownTimeCharged = 0;
 
         private float CooldownTimeRemaining
@@ -29,9 +30,19 @@ namespace Aeldari40k
             {
                 yield return gizmo;
             }
-            if (cooldownTimeCharged >= cooldownTimeTotal) //Also check if there is enough power in the power grid it is attached to and then drain it
+            if (DebugSettings.ShowDevGizmos)
             {
-                CompPowerBattery cpb = this.TryGetComp<CompPowerBattery>();
+                Command_Action command_Action2 = new Command_Action();
+                command_Action2.defaultLabel = "DEV: Finish Cooldown";
+                command_Action2.action = delegate
+                {
+                    cooldownTimeCharged = cooldownTimeTotal;
+                };
+                yield return command_Action2;
+            }
+            if (cooldownTimeCharged >= cooldownTimeTotal)
+            {
+                CompPowerBatteryTrader cpb = this.TryGetComp<CompPowerBatteryTrader>();
                 DefModExtension_WebwayGate dfwg = def.GetModExtension<DefModExtension_WebwayGate>();
 
                 if (cpb != null && dfwg != null && cpb.StoredEnergy >= dfwg.powerToActivate)
@@ -43,7 +54,7 @@ namespace Aeldari40k
                     command_Action1.activateSound = SoundDefOf.Designate_Cancel;
                     command_Action1.action = delegate
                     {
-                        //Maybe do job for pawn to go to portal and do some work
+                        //Do job for pawn to go to portal and then disappear for some time
                         GiveRewardOptions();
                         cpb.DrawPower(dfwg.powerToActivate);
                         cooldownTimeCharged = 0;
@@ -65,50 +76,40 @@ namespace Aeldari40k
 
         private void GiveRewardOptions()
         {
-            Log.Message("Rewards");
+            List<Thing> choices = new List<Thing>();
+
+            Thing wraithbone = ThingMaker.MakeThing(Aeldari40kDefOf.BEWH_Wraithbone);
+            wraithbone.stackCount = 200;
+            choices.Add(wraithbone);
+
+            Thing wraithbone2 = ThingMaker.MakeThing(Aeldari40kDefOf.BEWH_Wraithbone);
+            wraithbone2.stackCount = 300;
+            choices.Add(wraithbone2);
+
+            Thing wraithbone3 = ThingMaker.MakeThing(Aeldari40kDefOf.BEWH_Wraithbone);
+            wraithbone3.stackCount = 400;
+            choices.Add(wraithbone3);
+
+
+            Find.WindowStack.Add(new Dialog_ChooseRewards(choices));
             return;
         }
 
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            
-            //stringBuilder.Append(base.GetInspectString());
+            stringBuilder.Append(base.GetInspectString());
+            stringBuilder.Append("\n");
 
-            CompPowerBattery cpb = this.TryGetComp<CompPowerBattery>();
             CompPowerTrader cpt = this.TryGetComp<CompPowerTrader>();
-
-            string text = "";
-
-            if (cpt != null)
-            {
-                if (cpt.PowerNet == null)
-                {
-                    text += "PowerNotConnected".Translate();
-                }
-                else
-                {
-                    string tempText = (cpt.PowerNet.CurrentEnergyGainRate() / 1.66666669E-05f).ToString("F0");
-                    string tempText2 = cpt.PowerNet.CurrentStoredEnergy().ToString("F0");
-                    text += "PowerConnectedRateStored".Translate(tempText, tempText2);
-                }
-                text += "\n";
-            }
-
-            if (cpb != null)
-            {
-                text += "PowerBatteryStored".Translate() + ": " + cpb.StoredEnergy.ToString("F0") + " / " + cpb.Props.storedEnergyMax.ToString("F0") + " Wd";
-                text += "\n" + "PowerBatteryEfficiency".Translate() + ": " + (cpb.Props.efficiency * 100f).ToString("F0") + "%";
-                if (cpb.StoredEnergy > 0f)
-                {
-                    text += "\n" + "SelfDischarging".Translate() + ": " + 5f.ToString("F0") + " W";
-                }
-                text += "\n";
-            }
 
             if (!cpt.PowerOn)
             {
-                text += "NoPowerToRecharge".Translate();
+                stringBuilder.Append("NoPowerToRecharge".Translate());
+            }
+            else if (CooldownTimeRemaining <= 0)
+            {
+                stringBuilder.Append("ReadyNow".Translate());
             }
             else
             {
@@ -120,10 +121,10 @@ namespace Aeldari40k
                     divider = 2500f;
                     timeDenoter = "LetterHour".Translate();
                 }
-                text += "ReadyIn".Translate(Math.Round(CooldownTimeRemaining / divider, 2), timeDenoter);
+                stringBuilder.Append("ReadyIn".Translate(Math.Round(CooldownTimeRemaining / divider, 2), timeDenoter));
             }
 
-            return text;
+            return stringBuilder.ToString();
         }
 
         public override void ExposeData()
