@@ -43,9 +43,10 @@ namespace Aeldari40k
             if (cooldownTimeCharged >= cooldownTimeTotal)
             {
                 CompPowerBatteryTrader cpb = this.TryGetComp<CompPowerBatteryTrader>();
+                CompPowerTrader cpt = this.TryGetComp<CompPowerTrader>();
                 DefModExtension_WebwayGate dfwg = def.GetModExtension<DefModExtension_WebwayGate>();
 
-                if (cpb != null && dfwg != null && cpb.StoredEnergy >= dfwg.powerToActivate)
+                if (cpb != null && dfwg != null && cpb.StoredEnergy >= dfwg.powerToActivate && cpt.PowerOn)
                 {
                     Command_Action command_Action1 = new Command_Action();
                     command_Action1.defaultLabel = "CommandUsePortal".Translate();
@@ -83,15 +84,14 @@ namespace Aeldari40k
             choices.Add(wraithbone);
 
             Thing wraithbone2 = ThingMaker.MakeThing(Aeldari40kDefOf.BEWH_Wraithbone);
-            wraithbone2.stackCount = 300;
+            wraithbone2.stackCount = 100;
             choices.Add(wraithbone2);
 
-            Thing wraithbone3 = ThingMaker.MakeThing(Aeldari40kDefOf.BEWH_Wraithbone);
-            wraithbone3.stackCount = 400;
-            choices.Add(wraithbone3);
+            PawnGenerationRequest request = new PawnGenerationRequest(Aeldari40kDefOf.BEWH_WebwayAeldariReward, Faction.OfPlayer);
+            Pawn pawn = PawnGenerator.GeneratePawn(request);
+            choices.Add(pawn);
 
-
-            Find.WindowStack.Add(new Dialog_ChooseRewards(choices));
+            Find.WindowStack.Add(new Dialog_ChooseRewards(choices, this, Map));
             return;
         }
 

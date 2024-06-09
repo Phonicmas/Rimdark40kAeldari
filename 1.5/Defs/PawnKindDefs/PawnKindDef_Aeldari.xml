@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Aeldari Base -->
+    <PawnKindDef Name="BEWH_AeldariPawnKindBase" Abstract="True">
+        <race>Human</race>
+        <initialWillRange>10~15</initialWillRange>
+        <initialResistanceRange>15~24</initialResistanceRange>
+        <!--<defaultFactionType>BEWH_ImperiumFaction</defaultFactionType>-->
+        <invNutrition>2.55</invNutrition>
+        <backstoryCryptosleepCommonality>1.0</backstoryCryptosleepCommonality>
+        <combatPower>50</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <gearHealthRange>
+            <min>1</min>
+            <max>1</max>
+        </gearHealthRange>
+        <apparelRequired>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Pants</li>
+        </apparelRequired>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <countRange>
+                        <min>1</min>
+                        <max>2</max>
+                    </countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineUltratech</thingDef>
+                    <countRange>
+                        <min>1</min>
+                        <max>2</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_Aeldari>1</BEWH_Aeldari>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Aeldari Webway Reward -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindBase">
+        <defName>BEWH_WebwayAeldariReward</defName>
+        <apparelRequired>
+            <li>Apparel_Duster</li>
+        </apparelRequired>
+        <!--<skills>
+            <li>
+                <skill>Mining</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Plants</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Cooking</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Crafting</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Construction</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Animals</skill>
+                <range>5~12</range>
+            </li>
+        </skills>-->
+    </PawnKindDef>
+
+</Defs>

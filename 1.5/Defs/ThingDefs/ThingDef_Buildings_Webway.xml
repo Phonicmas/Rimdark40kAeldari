@@ -10,6 +10,7 @@
       <texPath>Structures/WebwayGate</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,6)</drawSize>
+      <drawOffset>(0,-2,0)</drawOffset>
       <shadowData>
         <volume>(4.03,1.0,6.25)</volume>
         <offset>(0,0,-0.25)</offset>
@@ -19,14 +20,13 @@
       </damageData>
     </graphicData>
     <size>(3,3)</size>
+    <passability>Standable</passability>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,-1,0)</interactionCellOffset>
     <rotatable>false</rotatable>
     <minifiedDef>MinifiedThing</minifiedDef>
     <stealable>false</stealable>
-    <pathCost>3</pathCost>
     <constructEffect>ConstructMetal</constructEffect>
-    <altitudeLayer>BuildingOnTop</altitudeLayer>
     <fillPercent>0.20</fillPercent>
     <canOverlapZones>true</canOverlapZones>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
@@ -59,7 +59,6 @@
       <li>BEWH_AeldariWebwayGates</li>
     </researchPrerequisites>
     <placeWorkers>
-      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
       <li>Aeldari40k.PlaceWorker_OnlyOnePerMap</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>

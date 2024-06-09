@@ -73,6 +73,7 @@
       <texPath>Resource/Wraithbone</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+    <stackLimit>200</stackLimit>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Metal_Drop</soundDrop>
     <useHitPoints>false</useHitPoints>

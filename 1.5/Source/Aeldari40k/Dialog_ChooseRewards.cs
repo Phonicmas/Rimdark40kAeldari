@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using UnityEngine;
 using Verse;
 
@@ -13,12 +14,18 @@ namespace Aeldari40k
     {
         private readonly List<Thing> choices;
 
+        private readonly Building_CraftworldWebwayGate webway;
+
+        private readonly Map map;
+
         public Dialog_ChooseRewards()
         {}
 
-        public Dialog_ChooseRewards(List<Thing> choices)
+        public Dialog_ChooseRewards(List<Thing> choices, Building_CraftworldWebwayGate webway, Map map)
         {
             this.choices = choices;
+            this.webway = webway;
+            this.map = map;
         }
 
         public override Vector2 InitialSize => new Vector2(500f, 300f);
@@ -34,12 +41,29 @@ namespace Aeldari40k
                 Thing thing = choices[i];
                 Rect item3 = rects[i];
                 Rect rect2 = new Rect(item3.x, item3.y, 80f, 80f);
-                Rect rect3 = new Rect(item3.x + 5f, item3.y + 170f, 100f, 30f);
-                GUI.DrawTexture(rect2, thing.def.uiIcon);
-                TooltipHandler.TipRegion(rect2, new TipSignal($"{thing.def.LabelCap}\n\n{thing.def.description}\n\nAmount: x{thing.stackCount}"));
+                Rect rect3 = new Rect(item3.x -10, item3.y + 150f, 100f, 30f);
+                if (thing is Pawn pawn)
+                {
+                    Widgets.ThingIcon(rect2, pawn);
+
+                    if (Widgets.ButtonInvisible(rect2))
+                    {
+                        Find.WindowStack.Add(new Dialog_InfoCard(pawn));
+                    }
+                }
+                else
+                {
+                    TooltipHandler.TipRegion(rect2, new TipSignal($"{thing.def.LabelCap} x{thing.stackCount}"));
+                    if (Widgets.ButtonImage(rect2, thing.def.uiIcon))
+                    {
+                        Find.WindowStack.Add(new Dialog_InfoCard(thing.def));
+                    }
+                }
                 if (Widgets.ButtonText(rect3, "SelectReward".Translate()))
                 {
-                    //Give reward
+                    IntVec3 spawnLoc = webway.InteractionCell;
+                    spawnLoc.y = 0;
+                    GenSpawn.Spawn(thing, spawnLoc, map);
                     Close();
                     break;
                 }

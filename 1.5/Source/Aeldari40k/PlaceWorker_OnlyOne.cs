@@ -11,7 +11,7 @@ namespace Aeldari40k
         {
             if (map.listerBuildings.ColonistsHaveBuilding((ThingDef)checkingDef))
             {
-                return "OnlyOneBuildingAllowedPerMap".Translate(((ThingDef)checkingDef).label);
+                return "OnlyOneBuildingAllowedPerMap".Translate(((ThingDef)checkingDef).label.CapitalizeFirst());
             }
             return true;
         }

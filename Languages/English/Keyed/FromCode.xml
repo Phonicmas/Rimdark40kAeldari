@@ -20,8 +20,9 @@
     <NoPowerToRecharge>Not recharging due to insufficient power</NoPowerToRecharge>
 
 
-    <ChooseReward>Choose rewards from Webway gate</ChooseReward>
+    <ChooseReward>Choose a reward from the Webway gate</ChooseReward>
     <SelectReward>Select reward</SelectReward>
+    <SeePawnInfo>Check bio</SeePawnInfo>
 
 
     <CannotResurrectMessage>An attempt was made to try and resurrect {0}, however their soul no longer with them and their body is an empty husk that cannot function without its soul.</CannotResurrectMessage>
