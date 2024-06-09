@@ -3,15 +3,15 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>BEWH_CraftworldWebwayGate</defName>
-    <label>Craftworld Webway Gate</label>
+    <label>craftworld Webway gate</label>
     <description>... connected to another craftworld</description>
     <thingClass>Aeldari40k.Building_CraftworldWebwayGate</thingClass>
     <graphicData>
-      <texPath>Things/Building/Power/GeothermalPlant</texPath>
+      <texPath>Structures/WebwayGate</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3,3)</drawSize>
+      <drawSize>(4,6)</drawSize>
       <shadowData>
-        <volume>(6.03,1.0,5.25)</volume>
+        <volume>(4.03,1.0,6.25)</volume>
         <offset>(0,0,-0.25)</offset>
       </shadowData>
       <damageData>
@@ -66,7 +66,7 @@
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>5</glowRadius>
-        <glowColor>(115,171,224,0)</glowColor>        <!-- Idk what colour, maybe blue? -->
+        <glowColor>(169,74,58,0)</glowColor>        <!-- Idk what colour, maybe blue? -->
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
