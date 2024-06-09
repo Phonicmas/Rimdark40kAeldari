@@ -73,6 +73,7 @@
         <basePowerConsumption>100</basePowerConsumption>
       </li>
       <li Class="CompProperties_Battery">
+        <compClass>Aeldari40k.CompPowerBatteryTrader</compClass>
         <storedEnergyMax>10000</storedEnergyMax>
         <efficiency>1</efficiency>
         <shortCircuitInRain>true</shortCircuitInRain>

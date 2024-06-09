@@ -16,7 +16,12 @@
 
 
     <ReadyIn>Ready in {0}{1}</ReadyIn>
+    <ReadyNow>Ready now</ReadyNow>
     <NoPowerToRecharge>Not recharging due to insufficient power</NoPowerToRecharge>
+
+
+    <ChooseReward>Choose rewards from Webway gate</ChooseReward>
+    <SelectReward>Select reward</SelectReward>
 
 
     <CannotResurrectMessage>An attempt was made to try and resurrect {0}, however their soul no longer with them and their body is an empty husk that cannot function without its soul.</CannotResurrectMessage>

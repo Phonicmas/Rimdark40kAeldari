@@ -195,7 +195,13 @@ namespace Aeldari40k
 
         public override void PostExposeData()
         {
-            base.PostExposeData();
+            Scribe_Values.Look(ref biocoded, "biocoded", defaultValue: false);
+            Scribe_Values.Look(ref codedPawnLabel, "biocodedPawnLabel");
+            if (Scribe.mode == LoadSaveMode.Saving && codedPawn != null && codedPawn.Discarded)
+            {
+                codedPawn = null;
+            }
+            Scribe_References.Look(ref codedPawn, "codedPawn", saveDestroyedThings: true);
             Scribe_Values.Look(ref lastKillTick, "lastKillTick", -1);
             Scribe_Collections.Look(ref traits, "traits", LookMode.Def); //Not working properly
             Scribe_References.Look(ref spirit, "spirit", saveDestroyedThings: true);
