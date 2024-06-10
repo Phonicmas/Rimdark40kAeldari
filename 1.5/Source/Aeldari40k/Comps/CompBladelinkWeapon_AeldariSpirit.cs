@@ -24,9 +24,13 @@ namespace Aeldari40k
 
         public Pawn spirit = null;
 
-        public override void PostPostMake()
+        public override void Notify_Equipped(Pawn pawn)
         {
-            return;
+            if (spirit == null)
+            {
+                spirit = PawnGenerator.GeneratePawn(new PawnGenerationRequest(Aeldari40kDefOf.BEWH_WeaponSpiritAeldariPawn, Faction.OfAncients));
+                InitializeTraits();
+            }
         }
 
         public void InitializeTraits()

@@ -13,6 +13,8 @@
         <itemQuality>Normal</itemQuality>
         <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
         <useFactionXenotypes>false</useFactionXenotypes>
+        <nameMaker>BEWH_NamerAeldariMale</nameMaker>
+        <nameMakerFemale>BEWH_NamerAeldariFemale</nameMakerFemale>
         <gearHealthRange>
             <min>1</min>
             <max>1</max>
@@ -48,10 +50,41 @@
 
     <!-- Aeldari Webway Reward -->
     <PawnKindDef ParentName="BEWH_AeldariPawnKindBase">
-        <defName>BEWH_WebwayAeldariReward</defName>
+        <defName>BEWH_WebwayAeldariPawn</defName>
         <apparelRequired>
             <li>Apparel_Duster</li>
         </apparelRequired>
+        <!--<skills>
+            <li>
+                <skill>Mining</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Plants</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Cooking</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Crafting</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Construction</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Animals</skill>
+                <range>5~12</range>
+            </li>
+        </skills>-->
+    </PawnKindDef>
+
+    <!-- Aeldari Weapon Spirit -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindBase">
+        <defName>BEWH_WeaponSpiritAeldariPawn</defName>
         <!--<skills>
             <li>
                 <skill>Mining</skill>

@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 using Verse;
-using Verse.Noise;
 
 
 namespace Aeldari40k
@@ -14,6 +13,7 @@ namespace Aeldari40k
     {
 
         readonly private int cooldownTimeTotal = 900000;
+
         private int cooldownTimeCharged = 0;
 
         private float CooldownTimeRemaining
@@ -21,7 +21,7 @@ namespace Aeldari40k
             get { return cooldownTimeTotal - cooldownTimeCharged; }
         }
 
-        private static readonly Texture2D UsePortalIcon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel");
+        private static readonly Texture2D UsePortalIcon = ContentFinder<Texture2D>.Get("UI/Genes/AeldariPsyker_icon");
 
 
         public override IEnumerable<Gizmo> GetGizmos()
@@ -77,19 +77,46 @@ namespace Aeldari40k
 
         private void GiveRewardOptions()
         {
+            int rewardCount = 3;
+
+            System.Random rand = new System.Random();
+
+            List<WebwayRewardDef> possibleChoices = new List<WebwayRewardDef>();
+            possibleChoices.AddRange((List<WebwayRewardDef>)DefDatabase<WebwayRewardDef>.AllDefs);
             List<Thing> choices = new List<Thing>();
 
-            Thing wraithbone = ThingMaker.MakeThing(Aeldari40kDefOf.BEWH_Wraithbone);
-            wraithbone.stackCount = 200;
-            choices.Add(wraithbone);
+            for (int i = 0; i < rewardCount; i++)
+            {
+                int chosen = rand.Next(0, possibleChoices.Count);
+                WebwayRewardDef reward = possibleChoices[chosen];
 
-            Thing wraithbone2 = ThingMaker.MakeThing(Aeldari40kDefOf.BEWH_Wraithbone);
-            wraithbone2.stackCount = 100;
-            choices.Add(wraithbone2);
+                if (reward.rewardPawn != null)
+                {
+                    Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(reward.rewardPawn, Faction.OfPlayer));
+                    choices.Add(pawn);
+                }
+                else
+                {
+                    Thing thing = ThingMaker.MakeThing(reward.rewardThing);
+                    thing.stackCount = reward.rewardThingCount;
+                    if (reward.giveQuality)
+                    {
+                        List<QualityCategory> possibleQuality = new List<QualityCategory>();
 
-            PawnGenerationRequest request = new PawnGenerationRequest(Aeldari40kDefOf.BEWH_WebwayAeldariReward, Faction.OfPlayer);
-            Pawn pawn = PawnGenerator.GeneratePawn(request);
-            choices.Add(pawn);
+                        foreach (QualityCategory quality in Enum.GetValues(typeof(QualityCategory)))
+                        {
+                            if (quality >= reward.rewardCategoryMinimum)
+                            {
+                                possibleQuality.Add(quality);
+                            }
+                        }
+
+                        thing.TryGetComp<CompQuality>()?.SetQuality(possibleQuality.RandomElement(), null);
+                    }
+                    choices.Add(thing);
+                }
+                possibleChoices.RemoveAt(chosen);
+            }
 
             Find.WindowStack.Add(new Dialog_ChooseRewards(choices, this, Map));
             return;

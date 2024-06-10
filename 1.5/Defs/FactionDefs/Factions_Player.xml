@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--<FactionDef>
+    <defName>BEWH_AeldariCraftworldHidden</defName>
+    <label>aeldari craftworld</label>
+    <description>Aeldari from a faraway craftworld.</description>
+    <pawnSingular>aeldari</pawnSingular>
+    <pawnsPlural>aeldari</pawnsPlural>
+    <techLevel>Ultra</techLevel>
+    <hidden>true</hidden>
+    <factionNameMaker>BEWH_NamerAeldariFull</factionNameMaker>
+    <allowedCultures>
+      <li>BEWH_CultureAeldari</li>
+    </allowedCultures>
+    <factionIconPath>UI/Xenotypes/Eldar_Xenotype</factionIconPath>
+  </FactionDef>-->
+
+</Defs>

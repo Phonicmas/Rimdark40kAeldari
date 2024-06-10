@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Wraithstone x200-->
+    <Aeldari40k.WebwayRewardDef>
+        <defName>BEWH_WebwayRewardWraithstone</defName>
+        <label>wraithstone reward</label>
+        <rewardThing>BEWH_Wraithbone</rewardThing>
+        <rewardThingCount>200</rewardThingCount>
+    </Aeldari40k.WebwayRewardDef>
+
+    <!-- Waystone x2-->
+    <Aeldari40k.WebwayRewardDef>
+        <defName>BEWH_WebwayRewardWaystone</defName>
+        <label>waystone reward</label>
+        <rewardThing>BEWH_Waystone</rewardThing>
+        <rewardThingCount>2</rewardThingCount>
+    </Aeldari40k.WebwayRewardDef>
+
+    <!-- Aeldari Pawn-->
+    <Aeldari40k.WebwayRewardDef>
+        <defName>BEWH_WebwayRewardAeldariPawn</defName>
+        <label>aeldari pawn reward</label>
+        <rewardPawn>BEWH_WebwayAeldariPawn</rewardPawn>
+        <showAmountInTooltip>false</showAmountInTooltip>
+    </Aeldari40k.WebwayRewardDef>
+
+    <!-- Diresword, minimum quality normal-->
+    <Aeldari40k.WebwayRewardDef>
+        <defName>BEWH_WebwayRewardDiresword</defName>
+        <label>diresword reward</label>
+        <rewardThing>BEWH_Diresword</rewardThing>
+        <giveQuality>true</giveQuality>
+        <rewardCategoryMinimum>Good</rewardCategoryMinimum>
+    </Aeldari40k.WebwayRewardDef>
+
+</Defs>

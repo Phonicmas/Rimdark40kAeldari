@@ -22,7 +22,13 @@ namespace Aeldari40k
         public static ThingDef BEWH_WraithboneBenchMeditation;
 
 
-        public static PawnKindDef BEWH_WebwayAeldariReward;
+        public static WebwayRewardDef BEWH_WebwayRewardWraithstone;
+
+
+        public static RulePackDef BEWH_NamerAeldariFull;
+
+
+        public static PawnKindDef BEWH_WeaponSpiritAeldariPawn;
 
 
         public static NeedDef BEWH_MeditationDependency;
