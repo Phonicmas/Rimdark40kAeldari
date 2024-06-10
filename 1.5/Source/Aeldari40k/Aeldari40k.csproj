@@ -95,6 +95,7 @@
     <Compile Include="Dialog_ChooseRewards.cs" />
     <Compile Include="PlaceWorker_OnlyOne.cs" />
     <Compile Include="Need_Meditation.cs" />
+    <Compile Include="WebwayRewardDef.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_CarryingSpiritStone.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_OptimistWeaponTrait.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_SanguineWeaponTrait.cs" />

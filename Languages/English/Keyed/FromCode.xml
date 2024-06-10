@@ -23,6 +23,10 @@
     <ChooseReward>Choose a reward from the Webway gate</ChooseReward>
     <SelectReward>Select reward</SelectReward>
     <SeePawnInfo>Check bio</SeePawnInfo>
+    <PawnCannotMove>Pawn unable to move</PawnCannotMove>
+    <PawnNotAeldariPsyker>Pawn is not an aeldari psyker and cannot navigate the webway</PawnNotAeldariPsyker>
+    <TravelTimeRemaining>{0} will return in {1}</TravelTimeRemaining>
+    <NoValidPawns>No valid pawns</NoValidPawns>
 
 
     <CannotResurrectMessage>An attempt was made to try and resurrect {0}, however their soul no longer with them and their body is an empty husk that cannot function without its soul.</CannotResurrectMessage>

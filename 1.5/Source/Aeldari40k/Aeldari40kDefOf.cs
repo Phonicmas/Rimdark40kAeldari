@@ -17,6 +17,7 @@ namespace Aeldari40k
 
 
         public static ThingDef BEWH_InfinityCircuit;
+        public static ThingDef BEWH_CraftworldWebwayGate;
         public static ThingDef BEWH_SpiritStone;
         public static ThingDef BEWH_Wraithbone;
         public static ThingDef BEWH_WraithboneBenchMeditation;

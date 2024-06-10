@@ -1,20 +1,25 @@
 ﻿using RimWorld;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using UnityEngine;
 using Verse;
-
+using Verse.AI;
 
 namespace Aeldari40k
 {
     [StaticConstructorOnStartup]
-    public class Building_CraftworldWebwayGate : Building
+    public class Building_CraftworldWebwayGate : Building_Enterable
     {
 
-        readonly private int cooldownTimeTotal = 900000;
+        private readonly int cooldownTimeTotal = 900000;
 
         private int cooldownTimeCharged = 0;
+
+        private readonly int ticksTimeTotal = 30000;
+
+        private int ticksRemaining = 0;
 
         private float CooldownTimeRemaining
         {
@@ -23,6 +28,102 @@ namespace Aeldari40k
 
         private static readonly Texture2D UsePortalIcon = ContentFinder<Texture2D>.Get("UI/Genes/AeldariPsyker_icon");
 
+        [Unsaved(false)]
+        private CompPowerTrader cachedPowerComp;
+
+        private CompPowerTrader PowerTraderComp
+        {
+            get
+            {
+                if (cachedPowerComp == null)
+                {
+                    cachedPowerComp = this.TryGetComp<CompPowerTrader>();
+                }
+                return cachedPowerComp;
+            }
+        }
+
+
+        [Unsaved(false)]
+        private CompPowerBatteryTrader cachedBatteryComp;
+
+        private CompPowerBatteryTrader PowerBatteryComp
+        {
+            get
+            {
+                if (cachedBatteryComp == null)
+                {
+                    cachedBatteryComp = this.TryGetComp<CompPowerBatteryTrader>();
+                }
+                return cachedBatteryComp;
+            }
+        }
+
+
+        [Unsaved(false)]
+        private DefModExtension_WebwayGate cachedWebwayGateDefMod;
+
+        private DefModExtension_WebwayGate WebwayGateDefMod
+        {
+            get
+            {
+                if (cachedWebwayGateDefMod == null)
+                {
+                    cachedWebwayGateDefMod = def.GetModExtension<DefModExtension_WebwayGate>();
+                }
+                return cachedWebwayGateDefMod;
+            }
+        }
+
+
+        [Unsaved(false)]
+        private Effecter progressBar;
+
+        private Pawn ContainedPawn => innerContainer.FirstOrDefault() as Pawn;
+
+
+        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
+        {
+            if (progressBar != null)
+            {
+                progressBar.Cleanup();
+                progressBar = null;
+            }
+            base.DeSpawn(mode);
+        }
+
+
+        public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
+        {
+            foreach (FloatMenuOption floatMenuOption in base.GetFloatMenuOptions(selPawn))
+            {
+                yield return floatMenuOption;
+            }
+            if (!selPawn.CanReach(this, PathEndMode.InteractionCell, Danger.Deadly))
+            {
+                yield return new FloatMenuOption("CannotEnterBuilding".Translate(this) + ": " + "NoPath".Translate().CapitalizeFirst(), null);
+                yield break;
+            }
+            AcceptanceReport acceptanceReport = CanAcceptPawn(selPawn);
+            if (acceptanceReport.Accepted)
+            {
+                yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption("EnterBuilding".Translate(this), delegate
+                {
+                    SelectPawn(selPawn);
+                }), selPawn, this);
+            }
+            else if (base.SelectedPawn == selPawn && !selPawn.IsPrisonerOfColony)
+            {
+                yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption("EnterBuilding".Translate(this), delegate
+                {
+                    selPawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.EnterBuilding, this), JobTag.Misc);
+                }), selPawn, this);
+            }
+            else if (!acceptanceReport.Reason.NullOrEmpty())
+            {
+                yield return new FloatMenuOption("CannotEnterBuilding".Translate(this) + ": " + acceptanceReport.Reason.CapitalizeFirst(), null);
+            }
+        }
 
         public override IEnumerable<Gizmo> GetGizmos()
         {
@@ -42,11 +143,7 @@ namespace Aeldari40k
             }
             if (cooldownTimeCharged >= cooldownTimeTotal)
             {
-                CompPowerBatteryTrader cpb = this.TryGetComp<CompPowerBatteryTrader>();
-                CompPowerTrader cpt = this.TryGetComp<CompPowerTrader>();
-                DefModExtension_WebwayGate dfwg = def.GetModExtension<DefModExtension_WebwayGate>();
-
-                if (cpb != null && dfwg != null && cpb.StoredEnergy >= dfwg.powerToActivate && cpt.PowerOn)
+                if (PowerBatteryComp != null && WebwayGateDefMod != null && PowerBatteryComp.StoredEnergy >= WebwayGateDefMod.powerToActivate && PowerTraderComp.PowerOn)
                 {
                     Command_Action command_Action1 = new Command_Action();
                     command_Action1.defaultLabel = "CommandUsePortal".Translate();
@@ -55,11 +152,40 @@ namespace Aeldari40k
                     command_Action1.activateSound = SoundDefOf.Designate_Cancel;
                     command_Action1.action = delegate
                     {
-                        //Do job for pawn to go to portal and then disappear for some time
-                        GiveRewardOptions();
-                        cpb.DrawPower(dfwg.powerToActivate);
-                        cooldownTimeCharged = 0;
+                        List<FloatMenuOption> list = new List<FloatMenuOption>();
+                        foreach (Pawn item in Map.mapPawns.AllPawnsSpawned)
+                        {
+                            Pawn pawn = item;
+                            if (pawn.genes != null)
+                            {
+                                AcceptanceReport acceptanceReport = CanAcceptPawn(pawn);
+                                string text = pawn.LabelShortCap;
+                                if (!acceptanceReport.Accepted)
+                                {
+                                    if (!acceptanceReport.Reason.NullOrEmpty())
+                                    {
+                                        list.Add(new FloatMenuOption(text + ": " + acceptanceReport.Reason, null, pawn, Color.white));
+                                    }
+                                }
+                                else
+                                {
+                                    list.Add(new FloatMenuOption(text, delegate
+                                    {
+                                        SelectPawn(pawn);
+                                    }, pawn, Color.white));
+                                }
+                            }
+                        }
+                        if (!list.Any())
+                        {
+                            list.Add(new FloatMenuOption("NoValidPawns".Translate(), null));
+                        }
+                        Find.WindowStack.Add(new FloatMenu(list));
                     };
+                    if (!PowerTraderComp.PowerOn)
+                    {
+                        command_Action1.Disable("NoPower".Translate().CapitalizeFirst());
+                    }
                     yield return command_Action1;
                     yield break;
                 }                
@@ -69,11 +195,147 @@ namespace Aeldari40k
         public override void Tick()
         {
             base.Tick();
+            if (base.Working)
+            {
+                if (ContainedPawn == null)
+                {
+                    Cancel();
+                    return;
+                }
+                if (PowerTraderComp.PowerOn)
+                {
+                    TickEffects();
+                    ticksRemaining--;
+                    if (ticksRemaining <= 0)
+                    {
+                        Finish();
+                    }
+                    
+                }
+                return;
+            }
+            else
+            {
+                if (selectedPawn != null && selectedPawn.Dead)
+                {
+                    Cancel();
+                }
+                if (progressBar != null)
+                {
+                    progressBar.Cleanup();
+                    progressBar = null;
+                }
+            }
+
             if (this.TryGetComp<CompPowerTrader>().PowerOn && cooldownTimeCharged < cooldownTimeTotal)
             {
                 cooldownTimeCharged++;
             }
         }
+
+        private void Finish()
+        {
+            startTick = -1;
+            selectedPawn = null;
+            IntVec3 intVec = (def.hasInteractionCell ? InteractionCell : base.Position);
+            innerContainer.TryDropAll(intVec, base.Map, ThingPlaceMode.Near);
+            GiveRewardOptions();
+        }
+
+        private void Cancel()
+        {
+            startTick = -1;
+            selectedPawn = null;
+            innerContainer.TryDropAll(def.hasInteractionCell ? InteractionCell : base.Position, base.Map, ThingPlaceMode.Near);
+        }
+
+        private void TickEffects()
+        {
+            if (progressBar == null)
+            {
+                progressBar = EffecterDefOf.ProgressBarAlwaysVisible.Spawn();
+            }
+            progressBar.EffectTick(new TargetInfo(InteractionCell, base.Map), TargetInfo.Invalid);
+            MoteProgressBar mote = ((SubEffecter_ProgressBar)progressBar.children[0]).mote;
+            if (mote != null)
+            {
+                mote.progress = 1f - Mathf.Clamp01((float)ticksRemaining / 30000f);
+                mote.offsetZ = ((base.Rotation == Rot4.North) ? 0.5f : (-0.5f));
+            }
+        }
+
+
+        public override Vector3 PawnDrawOffset { get { return Vector2.zero; } }
+
+        public override AcceptanceReport CanAcceptPawn(Pawn p)
+        {
+            if (!p.IsColonist && !p.IsSlaveOfColony && !p.IsPrisonerOfColony && (!p.IsColonyMutant || !p.IsGhoul))
+            {
+                return false;
+            }
+            if (selectedPawn != null && selectedPawn != p)
+            {
+                return false;
+            }
+            if (!p.RaceProps.Humanlike || p.IsQuestLodger())
+            {
+                return false;
+            }
+            if (!PowerTraderComp.PowerOn)   
+            {
+                return "NoPower".Translate().CapitalizeFirst();
+            }
+            if (innerContainer.Count > 0)
+            {
+                return "Occupied".Translate();
+            }
+            if (p.genes == null || !p.genes.GenesListForReading.Any((Gene x) => x.def.passOnDirectly))
+            {
+                return "PawnHasNoGenes".Translate(p.Named("PAWN"));
+            }
+            if (!p.genes.HasActiveGene(Aeldari40kDefOf.BEWH_AeldariPsyker))
+            {
+                return "PawnNotAeldariPsyker".Translate();
+            }
+            return true;
+
+        }
+
+        protected override void SelectPawn(Pawn pawn)
+        {
+            selectedPawn = pawn;
+            if (!pawn.IsPrisonerOfColony && !pawn.Downed)
+            {
+                pawn.jobs.TryTakeOrderedJob(JobMaker.MakeJob(JobDefOf.EnterBuilding, this), JobTag.Misc);
+            }
+        }
+
+        public override void TryAcceptPawn(Pawn p)
+        {
+            if ((bool)CanAcceptPawn(p))
+            {
+                selectedPawn = p;
+                bool num = p.DeSpawnOrDeselect();
+                if (innerContainer.TryAddOrTransfer(p))
+                {
+                    startTick = Find.TickManager.TicksGame;
+                    ticksRemaining = ticksTimeTotal;
+                    cooldownTimeCharged = 0;
+                    PowerBatteryComp.DrawPower(WebwayGateDefMod.powerToActivate);
+                }
+                if (num)
+                {
+                    Find.Selector.Select(p, playSound: false, forceDesignatorDeselect: false);
+                }
+            }
+        }
+
+        public override void DrawExtraSelectionOverlays()
+        {
+            return;
+        }
+
+
 
         private void GiveRewardOptions()
         {
@@ -128,9 +390,7 @@ namespace Aeldari40k
             stringBuilder.Append(base.GetInspectString());
             stringBuilder.Append("\n");
 
-            CompPowerTrader cpt = this.TryGetComp<CompPowerTrader>();
-
-            if (!cpt.PowerOn)
+            if (!PowerTraderComp.PowerOn)
             {
                 stringBuilder.Append("NoPowerToRecharge".Translate());
             }
@@ -151,6 +411,12 @@ namespace Aeldari40k
                 stringBuilder.Append("ReadyIn".Translate(Math.Round(CooldownTimeRemaining / divider, 2), timeDenoter));
             }
 
+            if (Working)
+            {
+                stringBuilder.Append("\n");
+                stringBuilder.Append("TravelTimeRemaining".Translate(ContainedPawn, Math.Round(ticksRemaining / 2500f, 2) + "LetterHour".Translate()));
+            }
+
             return stringBuilder.ToString();
         }
 
@@ -158,6 +424,7 @@ namespace Aeldari40k
         {
             base.ExposeData();
             Scribe_Values.Look(ref cooldownTimeCharged, "cooldownTimeCharged", 0);
+            Scribe_Values.Look(ref ticksRemaining, "ticksRemaining", 0);
         }
     }
 }

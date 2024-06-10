@@ -11,7 +11,7 @@
       <texPath>Structures/InfinityCircuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,6)</drawSize>
-      <drawOffset>(0,-2,0)</drawOffset>
+      <drawOffset>(0, 0, 1)</drawOffset>
       <shadowData>
         <volume>(6.03,1.0,5.25)</volume>
         <offset>(0,0,-0.25)</offset>

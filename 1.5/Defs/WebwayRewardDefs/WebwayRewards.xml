@@ -25,7 +25,7 @@
         <showAmountInTooltip>false</showAmountInTooltip>
     </Aeldari40k.WebwayRewardDef>
 
-    <!-- Diresword, minimum quality normal-->
+    <!-- Diresword, minimum quality good-->
     <Aeldari40k.WebwayRewardDef>
         <defName>BEWH_WebwayRewardDiresword</defName>
         <label>diresword reward</label>
