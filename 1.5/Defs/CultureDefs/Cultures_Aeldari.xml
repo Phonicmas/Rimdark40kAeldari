@@ -15,7 +15,7 @@
     <allowedPlaceTags>
       <li>OriginSpacer</li>
     </allowedPlaceTags>
-    <iconPath>World/WorldObjects/Expanding/Town</iconPath>    <!-- change this -->
+    <iconPath>UI/Xenotypes/Eldar_Xenotype</iconPath>    <!-- change this -->
     <iconColor>(0.8, 0.8, 0.8)</iconColor>
     <preferredWeaponClasses>
       <noble>Ultratech</noble>

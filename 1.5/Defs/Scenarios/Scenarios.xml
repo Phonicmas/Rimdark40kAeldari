@@ -35,17 +35,6 @@
           <visible>false</visible>
         </li>
 
-        <!-- Player pawns modifiers -->
-        <!--<li Class="ScenPart_ForcedHediff">
-          <def>ForcedHediff</def>
-          <visible>false</visible>
-          <context>PlayerStarter</context>
-          <chance>0.5</chance>
-          <hediff>CryptosleepSickness</hediff>
-          <hideOffMap>true</hideOffMap>
-          <severityRange>1~1</severityRange>
-        </li>-->
-
         <!-- Player starting things -->
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>

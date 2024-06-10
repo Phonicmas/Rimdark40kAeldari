@@ -1,19 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--<FactionDef>
-    <defName>BEWH_AeldariCraftworldHidden</defName>
+  <FactionDef>
+    <defName>BEWH_AeldariCraftworldRefugees</defName>
     <label>aeldari craftworld</label>
-    <description>Aeldari from a faraway craftworld.</description>
+    <description>Aeldari refugees from a faraway craftworld, stranded on this rimworld.</description>
+    <factionIconPath>UI/Xenotypes/Eldar_Xenotype</factionIconPath>
     <pawnSingular>aeldari</pawnSingular>
     <pawnsPlural>aeldari</pawnsPlural>
-    <techLevel>Ultra</techLevel>
-    <hidden>true</hidden>
+
     <factionNameMaker>BEWH_NamerAeldariFull</factionNameMaker>
     <allowedCultures>
       <li>BEWH_CultureAeldari</li>
     </allowedCultures>
-    <factionIconPath>UI/Xenotypes/Eldar_Xenotype</factionIconPath>
-  </FactionDef>-->
+    <xenotypeSet>
+      <xenotypeChances>
+        <BEWH_Aeldari>1</BEWH_Aeldari>
+      </xenotypeChances>
+    </xenotypeSet>
+    <techLevel>Ultra</techLevel>
+
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+
+    <leaderTitle>phoenix lord</leaderTitle>
+  </FactionDef>
 
 </Defs>
