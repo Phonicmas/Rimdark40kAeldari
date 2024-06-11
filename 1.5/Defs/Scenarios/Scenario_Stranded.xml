@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ScenarioDef Name="Crashlanded">
-    <defName>BEWH_ArldariScenario</defName>
-    <label>Aeldari on the Rim</label>
-    <description>....</description>
+  <ScenarioDef>
+    <defName>BEWH_ArldariScenarioStranded</defName>
+    <label>Craftworld refugees</label>
+    <description>Something went wrong. Horribly wrong. Our Farseers did, in fact, predict it happening. They could see the signs. But alas, there was very little we could do and it was way too late. The Great Rift, a colossal bleeding, gaping wound in the reality has opened, tearing the galaxy in half, consuming hundreds of worlds and annihilating innumerable lives.  Your craftworld was on it's route to what was considered a safer region, but due to a catastrophic chain of events, or maybe some malevoulent entitiy's cruel whim, your home was briefly consumed by the Warp, shortly before fading back into the completely unknown region of real space. Even though the exposure to the horrors of the Realm of Souls was brief, this was enough to cause irreversible damage to the structure of your Craftworld. It has re-emerged from the Warp close enough to one of the habitable worlds so that your group of survivors has managed to leave the rapidly dissolving construct of wraithbone. You do not know if anyone else has managed to escape.</description>
     <scenario>
-      <summary>Three Aeldari start</summary>
+      <summary>Three aeldari escaped from their dying craftworld, can they reconnect with other craftworlds out there?</summary>
       <playerFaction>
         <def>PlayerFaction</def>
         <factionDef>PlayerColony</factionDef>
@@ -16,11 +16,11 @@
         <!-- Config pages -->
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
           <def>ConfigPage_ConfigureStartingPawns</def>
-          <pawnChoiceCount>8</pawnChoiceCount>
+          <pawnChoiceCount>3</pawnChoiceCount>
           <xenotypeCounts>
             <li>
               <xenotype>BEWH_Aeldari</xenotype>
-              <count>3</count>
+              <count>6</count>
               <description>aeldari</description>
               <requiredAtStart>true</requiredAtStart>
               <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
@@ -38,45 +38,40 @@
         <!-- Player starting things -->
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Silver</thingDef>
-          <count>800</count>
-        </li>
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
           <thingDef>MealSurvivalPack</thingDef>
-          <count>50</count>
+          <count>20</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>MedicineIndustrial</thingDef>
-          <count>30</count>
+          <count>10</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>ComponentIndustrial</thingDef>
-          <count>30</count>
+          <count>10</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>BEWH_Waystone</thingDef>
+          <count>2</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>BEWH_SpiritStoneNecklace</thingDef>
           <count>2</count>
         </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>BEWH_SPistol</thingDef>
+          <count>2</count>
+        </li>
 
         <!-- Scatter some things near player start -->
         <li Class="ScenPart_ScatterThingsNearPlayerStart">
           <def>ScatterThingsNearPlayerStart</def>
-          <thingDef>WoodLog</thingDef>
-          <count>150</count>
-        </li>
-        <li Class="ScenPart_ScatterThingsNearPlayerStart">
-          <def>ScatterThingsNearPlayerStart</def>
           <thingDef>BEWH_Wraithbone</thingDef>
-          <count>200</count>
-        </li>
-        <li Class="ScenPart_ScatterThingsNearPlayerStart">
-          <def>ScatterThingsNearPlayerStart</def>
-          <thingDef>BEWH_Waystone</thingDef>
-          <count>1</count>
+          <count>400</count>
         </li>
 
         <!-- Scatter some things anywhere -->
@@ -84,18 +79,23 @@
           <def>ScatterThingsAnywhere</def>
           <thingDef>ShipChunk</thingDef>
           <allowRoofed>false</allowRoofed>
-          <count>3</count>
+          <count>6</count>
         </li>
         <li Class="ScenPart_ScatterThingsAnywhere">
           <def>ScatterThingsAnywhere</def>
           <thingDef>Steel</thingDef>
-          <count>800</count>
+          <count>350</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>WoodLog</thingDef>
+          <count>100</count>
         </li>
 
         <!-- Game start dialog -->
         <li Class="ScenPart_GameStartDialog">          <!-- Idk what this is, prob some text given at start -->
           <def>GameStartDialog</def>
-          <textKey>GameStartDialog</textKey>
+          <textKey>AeldariGameStartDialogStranded</textKey>
           <closeSound>GameStartSting</closeSound>
         </li>
 

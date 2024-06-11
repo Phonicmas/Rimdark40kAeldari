@@ -6,6 +6,9 @@
     <SettingWebwayTravelTime>Webway Gate travel time: {0}h</SettingWebwayTravelTime>
     <ResetToDefault>Reset to default</ResetToDefault>
 
+    <AeldariGameStartDialogStranded>Stranded game start</AeldariGameStartDialogStranded>
+    <AeldariGameStartDialogColony>Colony game start</AeldariGameStartDialogColony>
+
     <ContainsSoulOf>Contains the Spirit of {0}</ContainsSoulOf>
 
     <ContainsNoSoul>Contains no spirit</ContainsNoSoul>

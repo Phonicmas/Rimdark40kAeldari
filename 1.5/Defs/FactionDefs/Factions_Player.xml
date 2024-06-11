@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <FactionDef>
+  <FactionDef ParentName="FactionBase">
     <defName>BEWH_AeldariCraftworldRefugees</defName>
-    <label>aeldari craftworld</label>
+    <label>aeldari craftworld refugees</label>
     <description>Aeldari refugees from a faraway craftworld, stranded on this rimworld.</description>
     <factionIconPath>UI/Xenotypes/Eldar_Xenotype</factionIconPath>    <!-- Change this-->
     <settlementTexturePath>UI/Xenotypes/Eldar_Xenotype</settlementTexturePath>    <!-- Change this-->
@@ -48,11 +48,11 @@
     <canStageAttacks>true</canStageAttacks>
     <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
     <earliestRaidDays>45</earliestRaidDays>
-    <raidCommonalityFromPointsCurve>
+    <raidLootValueFromPointsCurve>
       <points>
         <li>(0, 1)</li>
       </points>
-    </raidCommonalityFromPointsCurve>
+    </raidLootValueFromPointsCurve>
     <maxPawnCostPerTotalPointsCurve>
       <points>
         <li>(0,100)</li>
