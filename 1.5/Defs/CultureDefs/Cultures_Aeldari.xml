@@ -7,11 +7,11 @@
     <description>...</description>
     <pawnNameMaker>BEWH_NamerAeldariMale</pawnNameMaker>
     <pawnNameMakerFemale>BEWH_NamerAeldariFemale</pawnNameMakerFemale>
-    <!--     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">...</ideoNameMaker>
-    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">...</deityNameMaker>
-    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">...</deityTypeMaker>
-    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">...</festivalNameMaker>
-    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">...</leaderTitleMaker> -->
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">BEWH_LeaderTitleMakerAeldari</leaderTitleMaker>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">BEWH_NamerIdeoAeldari</ideoNameMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">BEWH_NamerRitualFestivalAeldari</festivalNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">BEWH_NamerDeityAeldari</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">BEWH_NamerTypeDeityAeldari</deityTypeMaker>    
     <allowedPlaceTags>
       <li>OriginSpacer</li>
     </allowedPlaceTags>

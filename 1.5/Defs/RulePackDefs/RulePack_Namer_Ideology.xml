@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Rule Packs -->
+  <RulePackDef>
+    <defName>BEWH_NamerIdeoAeldari</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ideoName->Aeldari</li>
+        <li>r_ideoAdjective->Aeldari</li>
+        <li>r_memberName->Asuryan</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>BEWH_LeaderTitleMakerAeldari</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->Phoenix Lord</li>
+        <li>r_leaderTitle->Autarch</li>
+        <li>r_leaderTitle->Farseer</li>
+        <li>r_leaderTitle->Exarch</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>BEWH_NamerRitualFestivalAeldari</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ritualName->End of the War in Heaven</li>
+        <li>r_ritualName->Prophecy of Lileath</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

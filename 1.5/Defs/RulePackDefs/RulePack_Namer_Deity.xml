@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Rule Packs -->
+  <RulePackDef>
+    <defName>BEWH_NamerDeityAeldari</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityName->Khaine</li>
+        <li>r_deityName->Ynnead</li>
+        <li>r_deityName->Cegorach</li>
+        <li>r_deityName->Isha</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>BEWH_NamerTypeDeityAeldari</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->???</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
