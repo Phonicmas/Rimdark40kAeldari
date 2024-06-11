@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Aeldari Caravan -->
+    <TraderKindDef>
+        <defName>BEWH_AeldariTraderCaravan</defName>
+        <label>aeldari trader</label>
+        <commonality>1</commonality>
+        <requestable>False</requestable>
+        <faction>BEWH_AeldariCraftworldRefugees</faction>
+        <stockGenerators>
+
+            <!-- Resources -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>750~1200</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>ComponentIndustrial</thingDef>
+                <countRange>8~14</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>ComponentSpacer</thingDef>
+                <countRange>3~7</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>BEWH_Wraithbone</thingDef>
+                <countRange>120~250</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Steel</thingDef>
+                <countRange>30~100</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Plasteel</thingDef>
+                <countRange>20~50</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Uranium</thingDef>
+                <countRange>30~100</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Cloth</thingDef>
+                <countRange>110~260</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MedicineUltratech</thingDef>
+                <countRange>6~15</countRange>
+            </li>
+
+            <!-- Techprints -->
+            <li Class="StockGenerator_Techprints">
+                <countChances>
+                    <li>
+                        <count>1</count>
+                        <chance>1</chance>
+                    </li>
+                </countChances>
+            </li>
+
+            <!-- Weapons -->
+            <li Class="StockGenerator_MarketValue">
+                <tradeTag>BEWH_AeldariRanged</tradeTag>
+                <weaponTag>BEWH_AeldariWeaponRanged</weaponTag>
+                <countRange>1~3</countRange>
+            </li>
+            <li Class="StockGenerator_MarketValue">
+                <tradeTag>BEWH_AeldariMelee</tradeTag>
+                <weaponTag>BEWH_AeldariWeaponMelee</weaponTag>
+                <countRange>1~3</countRange>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>PsychicWeapon</tradeTag>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>1~2</countRange>
+            </li>
+
+            <!-- Apparel -->
+            <!-- Replace the one below with one for aeldari apparel -->
+            <!--<li Class="StockGenerator_Tag">
+                <tradeTag>HiTechArmor</tradeTag>
+                <thingDefCountRange>0~2</thingDefCountRange>
+                <countRange>1~2</countRange>
+            </li>-->
+
+            <!-- Implants -->
+            <li Class="StockGenerator_Tag">
+                <tradeTag>ImplantEmpireCommon</tradeTag>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>1~2</countRange>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>ImplantEmpireRoyal</tradeTag>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>1~2</countRange>
+            </li>
+
+            <!-- Buying -->
+            <li Class="StockGenerator_BuyExpensiveSimple" />
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>Art</tag>
+            </li>
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>MusicalInstrument</tag>
+            </li>
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>PsylinkNeuroformer</tag>
+            </li>
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>BEWH_AeldariResources</tag>
+            </li>
+
+        </stockGenerators>
+    </TraderKindDef>
+
+</Defs>

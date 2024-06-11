@@ -60,7 +60,7 @@
     <drawGUIOverlay>true</drawGUIOverlay>
     <techLevel>Spacer</techLevel>
     <tradeTags>
-      <li>ExoticMisc</li>
+      <li>BEWH_AeldariResources</li>
     </tradeTags>
   </ThingDef>
 
@@ -118,6 +118,9 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <allowedArchonexusCount>80</allowedArchonexusCount>
+    <tradeTags>
+      <li>BEWH_AeldariResources</li>
+    </tradeTags>
   </ThingDef>
 
 </Defs>

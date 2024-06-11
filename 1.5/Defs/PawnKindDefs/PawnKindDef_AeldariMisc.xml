@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Aeldari Webway Reward -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindPeacefulBase">
+        <defName>BEWH_WebwayAeldariPawn</defName>
+        <apparelRequired>
+            <li>Apparel_Duster</li>
+        </apparelRequired>
+
+    </PawnKindDef>
+
+    <!-- Aeldari Weapon Spirit -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindPeacefulBase">
+        <defName>BEWH_WeaponSpiritAeldariPawn</defName>
+    </PawnKindDef>
+
+</Defs>

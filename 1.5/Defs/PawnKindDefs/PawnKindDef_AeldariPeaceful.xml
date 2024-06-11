@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Aeldari Citizen -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindPeacefulBase">
+        <defName>BEWH_AeldariPawnCitizen</defName>
+        <apparelRequired>
+            <li>Apparel_Duster</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <!-- Aeldari Trader -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindPeacefulBase">
+        <defName>BEWH_AeldariPawnTrader</defName>
+        <trader>true</trader>
+        <isFighter>false</isFighter>
+        <apparelRequired>
+            <li>Apparel_Duster</li>
+        </apparelRequired>
+        <skills>
+            <li>
+                <skill>Social</skill>
+                <range>6~14</range>
+            </li>
+        </skills>
+        <requiredWorkTags>Social</requiredWorkTags>
+    </PawnKindDef>
+
+    <!-- Aeldari Laborer -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindPeacefulBase">
+        <defName>BEWH_AeldariPawnLaborer</defName>
+        <trader>false</trader>
+        <isFighter>false</isFighter>
+        <apparelRequired>
+            <li>Apparel_Duster</li>
+        </apparelRequired>
+        <skills>
+            <li>
+                <skill>Mining</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Plants</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Cooking</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Crafting</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Construction</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Animals</skill>
+                <range>5~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+</Defs>

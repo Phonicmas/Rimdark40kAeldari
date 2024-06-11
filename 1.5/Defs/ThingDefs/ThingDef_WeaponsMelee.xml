@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  
   <!-- ==========MELEE WEAPONS========== -->
   <!-- Diresword -->
   <ThingDef ParentName="BaseWeapon">
@@ -29,22 +30,17 @@
     <notifyMapRemoved>true</notifyMapRemoved>
     <!-- Tags and classes -->
     <weaponTags>
-      <li>Bladelink</li>
+      <li>BEWH_AeldariWeaponMelee</li>
+      <li>BEWH_AeldariDiresword</li>
     </weaponTags>
     <tradeTags>
-      <li>WeaponMelee</li>
+      <li>BEWH_AeldariMelee</li>
     </tradeTags>
     <weaponClasses>
       <li>Melee</li>
       <li>MeleePiercer</li>
       <li>Ultratech</li>
     </weaponClasses>
-    <thingCategories>
-      <li>WeaponsMeleeBladelink</li>
-    </thingCategories>
-    <thingSetMakerTags>
-      <li>WeaponBladelink</li>
-    </thingSetMakerTags>
     <!-- Damage Stuff -->
     <tools>
       <li>
@@ -82,9 +78,6 @@
       <li Class="Aeldari40k.CompProperties_BladelinkWeapon_AeldariSpirit">
         <biocodeOnEquip>true</biocodeOnEquip>
       </li>
-      <!--<li Class="CompProperties_GeneratedName">
-                <nameMaker>NamerWeaponBladelink</nameMaker>
-            </li>-->
     </comps>
   </ThingDef>
 
@@ -116,22 +109,16 @@
     <notifyMapRemoved>true</notifyMapRemoved>
     <!-- Tags and classes -->
     <weaponTags>
-      <li>Bladelink</li>
+      <li>BEWH_AeldariWeaponMelee</li>
     </weaponTags>
     <tradeTags>
-      <li>WeaponMelee</li>
+      <li>BEWH_AeldariMelee</li>
     </tradeTags>
     <weaponClasses>
       <li>Melee</li>
       <li>MeleePiercer</li>
       <li>Ultratech</li>
     </weaponClasses>
-    <thingCategories>
-      <li>WeaponsMeleeBladelink</li>
-    </thingCategories>
-    <thingSetMakerTags>
-      <li>WeaponBladelink</li>
-    </thingSetMakerTags>
     <!-- Damage Stuff -->
     <tools>
       <li>

@@ -1,15 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--<FactionDef>
+  <FactionDef>
     <defName>BEWH_AeldariCraftworldRefugees</defName>
     <label>aeldari craftworld</label>
     <description>Aeldari refugees from a faraway craftworld, stranded on this rimworld.</description>
-    <factionIconPath>UI/Xenotypes/Eldar_Xenotype</factionIconPath>
+    <factionIconPath>UI/Xenotypes/Eldar_Xenotype</factionIconPath>    <!-- Change this-->
+    <settlementTexturePath>UI/Xenotypes/Eldar_Xenotype</settlementTexturePath>    <!-- Change this-->
+    <techLevel>Ultra</techLevel>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>100</configurationListOrderPriority>
+    <!-- Names fo various things -->
     <pawnSingular>aeldari</pawnSingular>
     <pawnsPlural>aeldari</pawnsPlural>
-
-    <factionNameMaker>BEWH_NamerAeldariFull</factionNameMaker>
+    <leaderTitle>phoenix lord</leaderTitle>
+    <fixedLeaderKinds>
+      <li>BEWH_AeldariPawnPhoenixLord</li>
+    </fixedLeaderKinds>
+    <!--<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>-->
+    <!-- Cultures, xenotypes and backstories -->
     <allowedCultures>
       <li>BEWH_CultureAeldari</li>
     </allowedCultures>
@@ -18,13 +28,99 @@
         <BEWH_Aeldari>1</BEWH_Aeldari>
       </xenotypeChances>
     </xenotypeSet>
-    <techLevel>Ultra</techLevel>
-
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Aeldari</li>
+        </categories>
+        <commonality>0.9</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>0.1</commonality>
+      </li>
+    </backstoryFilters>
+    <!-- Raid/Visitor Stuff-->
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
-
-    <leaderTitle>phoenix lord</leaderTitle>
-  </FactionDef>-->
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+    <earliestRaidDays>45</earliestRaidDays>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,100)</li>
+        <li>(400, 200)</li>
+        <li>(1000, 500)</li>
+        <li>(2000, 1000)</li>
+        <li>(5000, 1500)</li>
+        <li>(10000, 5000)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <BEWH_AeldariPawnGuardian>5</BEWH_AeldariPawnGuardian>
+          <BEWH_AeldariPawnAvenger>1</BEWH_AeldariPawnAvenger>
+          <BEWH_AeldariPawnBanshee>1</BEWH_AeldariPawnBanshee>
+        </options>
+      </li>
+      <li>
+        <!-- Base defense -->
+        <kindDef>Settlement</kindDef>
+        <options>
+          <BEWH_AeldariPawnGuardian>2</BEWH_AeldariPawnGuardian>
+          <BEWH_AeldariPawnAvenger>5</BEWH_AeldariPawnAvenger>
+          <BEWH_AeldariPawnBanshee>5</BEWH_AeldariPawnBanshee>
+          <BEWH_AeldariPawnWarlock>1</BEWH_AeldariPawnWarlock>
+        </options>
+      </li>
+      <li>
+        <!-- Trader -->
+        <kindDef>Trader</kindDef>
+        <traders>
+          <BEWH_AeldariPawnTrader>1</BEWH_AeldariPawnTrader>
+        </traders>
+        <carriers>
+          <Muffalo>10</Muffalo>
+        </carriers>
+        <guards>
+          <BEWH_AeldariPawnGuardian>10</BEWH_AeldariPawnGuardian>
+        </guards>
+      </li>
+      <li>
+        <!-- Peaceful Visit -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <BEWH_AeldariPawnCitizen>3</BEWH_AeldariPawnCitizen>
+          <BEWH_AeldariPawnLaborer>3</BEWH_AeldariPawnLaborer>
+          <BEWH_AeldariPawnGuardian>6</BEWH_AeldariPawnGuardian>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <!-- Traders -->
+    <caravanTraderKinds>
+      <li>BEWH_AeldariTraderCaravan</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>BEWH_AeldariTraderCaravan</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>BEWH_AeldariTraderSettlement</li>
+    </baseTraderKinds>
+    <disallowedRaidAgeRestrictions>
+      <li>Children</li>
+    </disallowedRaidAgeRestrictions>
+  </FactionDef>
 
 </Defs>

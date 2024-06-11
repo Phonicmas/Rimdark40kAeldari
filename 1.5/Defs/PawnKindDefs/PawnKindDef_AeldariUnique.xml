@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Aeldari Phoenix Lord -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindCombatBase">
+        <defName>BEWH_AeldariPawnPhoenixLord</defName>
+        <!--<apparelTags>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>BEWH_ImperiumPowerArmor</li>
+            <li>BEWH_ImperiumPowerArmorHelmet</li>
+        </apparelRequired>-->
+        <weaponTags>
+            <li>BEWH_AeldariDiresword</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>13~18</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>13~16</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>9~14</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>9~14</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+</Defs>

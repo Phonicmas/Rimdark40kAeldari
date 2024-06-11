@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BackstoryDef>
+    <defName>BEWH_AeldariAdult1</defName>
+    <title>medieval lord</title>
+    <titleShort>noble</titleShort>
+    <description>...</description>
+    <slot>Adulthood</slot>
+    <!--<skillGains>
+      <Social>7</Social>
+      <Melee>5</Melee>
+      <Shooting>5</Shooting>
+    </skillGains>-->
+    <!--<workDisables>
+      <li>ManualDumb</li>
+      <li>ManualSkilled</li>
+    </workDisables>-->
+    <!--<requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>-->
+    <!--<possessions>
+      <Apparel_Cape MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">1</Apparel_Cape>
+    </possessions>-->
+    <spawnCategories>
+      <li>Aeldari</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+</Defs>

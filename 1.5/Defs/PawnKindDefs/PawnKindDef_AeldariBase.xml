@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Aeldari Base -->
+    <PawnKindDef Name="BEWH_AeldariPawnKindBase" Abstract="True">
+        <race>Human</race>
+        <initialWillRange>10~15</initialWillRange>
+        <initialResistanceRange>15~24</initialResistanceRange>
+        <defaultFactionType>BEWH_AeldariCraftworldRefugees</defaultFactionType>
+        <invNutrition>2.55</invNutrition>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <minGenerationAge>19</minGenerationAge>
+        <maxGenerationAge>48</maxGenerationAge>
+        <nameMaker>BEWH_NamerAeldariMale</nameMaker>
+        <nameMakerFemale>BEWH_NamerAeldariFemale</nameMakerFemale>
+        <!--<backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Aeldari</li>
+                    <li>Offworld</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>-->
+        <gearHealthRange>
+            <min>1</min>
+            <max>1</max>
+        </gearHealthRange>
+        <apparelRequired>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Pants</li>
+        </apparelRequired>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_Aeldari>1</BEWH_Aeldari>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Peaceful -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindBase" Name="BEWH_AeldariPawnKindPeacefulBase" Abstract="True">
+        <combatPower>50</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <countRange>
+                        <min>1</min>
+                        <max>2</max>
+                    </countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineUltratech</thingDef>
+                    <countRange>
+                        <min>1</min>
+                        <max>2</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <!-- Combat -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindBase" Name="BEWH_AeldariPawnKindCombatBase" Abstract="True">
+        <combatPower>100</combatPower>
+        <itemQuality>Good</itemQuality>
+        <acceptArrestChanceFactor>0.2</acceptArrestChanceFactor>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <weaponMoney>10000~10000</weaponMoney>
+        <apparelMoney>
+            <min>2000</min>
+            <max>9000</max>
+        </apparelMoney>
+        <apparelDisallowTags>
+            <li>Western</li>
+        </apparelDisallowTags>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <countRange>
+                        <min>4</min>
+                        <max>5</max>
+                    </countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineUltratech</thingDef>
+                    <countRange>
+                        <min>2</min>
+                        <max>5</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+</Defs>

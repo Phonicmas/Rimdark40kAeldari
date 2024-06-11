@@ -25,10 +25,10 @@
       <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
-      <li>SpacerGun</li>
+      <li>BEWH_AeldariWeaponRanged</li>
     </weaponTags>
     <tradeTags>
-      <li>WeaponRanged</li>
+      <li>BEWH_AeldariRanged</li>
     </tradeTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -104,10 +104,10 @@
       <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
-      <li>SpacerGun</li>
+      <li>BEWH_AeldariWeaponRanged</li>
     </weaponTags>
     <tradeTags>
-      <li>WeaponRanged</li>
+      <li>BEWH_AeldariRanged</li>
     </tradeTags>
     <weaponClasses>
       <li>RangedLight</li>

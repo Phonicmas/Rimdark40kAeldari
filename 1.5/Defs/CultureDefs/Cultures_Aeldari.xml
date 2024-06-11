@@ -11,7 +11,7 @@
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">BEWH_NamerIdeoAeldari</ideoNameMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">BEWH_NamerRitualFestivalAeldari</festivalNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">BEWH_NamerDeityAeldari</deityNameMaker>
-    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">BEWH_NamerTypeDeityAeldari</deityTypeMaker>    
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">BEWH_NamerTypeDeityAeldari</deityTypeMaker>
     <allowedPlaceTags>
       <li>OriginSpacer</li>
     </allowedPlaceTags>

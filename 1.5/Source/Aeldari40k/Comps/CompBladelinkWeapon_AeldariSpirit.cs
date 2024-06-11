@@ -24,7 +24,7 @@ namespace Aeldari40k
 
         public Pawn spirit = null;
 
-        public override void Notify_Equipped(Pawn pawn)
+        public override void PostPostMake()
         {
             if (spirit == null)
             {
@@ -39,10 +39,7 @@ namespace Aeldari40k
             {
                 return;
             }
-            if (traits == null)
-            {
-                traits = new List<WeaponTraitDef_AeldariSpirit>();
-            }
+            traits = new List<WeaponTraitDef_AeldariSpirit>();
             Rand.PushState(parent.HashOffset());
             int randomInRange = TraitsRange.RandomInRange;
             for (int i = 0; i < randomInRange; i++)

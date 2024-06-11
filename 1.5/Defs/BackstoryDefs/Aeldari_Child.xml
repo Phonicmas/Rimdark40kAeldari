@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BackstoryDef>
+    <defName>BEWH_AeldariChild1</defName>
+    <title>aeldari child</title>
+    <titleShort>aeldari child</titleShort>
+    <description>...</description>
+    <slot>Childhood</slot>
+    <!--<workDisables>
+      <li>Intellectual</li>
+      <li>Violent</li>
+    </workDisables>-->
+    <!--<skillGains>
+      <Construction>3</Construction>
+      <Plants>3</Plants>
+    </skillGains>-->
+    <spawnCategories>
+      <li>Aeldari</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+</Defs>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Aeldari Guardian -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindCombatBase">
+        <defName>BEWH_AeldariPawnGuardian</defName>
+        <!--<apparelTags>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>BEWH_ImperiumPowerArmor</li>
+            <li>BEWH_ImperiumPowerArmorHelmet</li>
+        </apparelRequired>-->
+        <weaponTags>
+            <li>BEWH_AeldariWeaponRanged</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>5~8</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>5~10</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <!-- Aeldari Avenger -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindCombatBase">
+        <defName>BEWH_AeldariPawnAvenger</defName>
+        <!--<apparelTags>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>BEWH_ImperiumPowerArmor</li>
+            <li>BEWH_ImperiumPowerArmorHelmet</li>
+        </apparelRequired>-->
+        <weaponTags>
+            <li>BEWH_AeldariWeaponRanged</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~13</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~11</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <!-- Aeldari Banshee -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindCombatBase">
+        <defName>BEWH_AeldariPawnBanshee</defName>
+        <!--<apparelTags>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>BEWH_ImperiumPowerArmor</li>
+            <li>BEWH_ImperiumPowerArmorHelmet</li>
+        </apparelRequired>-->
+        <weaponTags>
+            <li>BEWH_AeldariWeaponMelee</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>12~15</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>9~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <!-- Aeldari Warlock -->
+    <PawnKindDef ParentName="BEWH_AeldariPawnKindCombatBase">
+        <defName>BEWH_AeldariPawnWarlock</defName>
+        <!--<apparelTags>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>BEWH_ImperiumPowerArmor</li>
+            <li>BEWH_ImperiumPowerArmorHelmet</li>
+        </apparelRequired>-->
+        <weaponTags>
+            <li>BEWH_AeldariDiresword</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>6~11</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>6~11</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>7~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+</Defs>
