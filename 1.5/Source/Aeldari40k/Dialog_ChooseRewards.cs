@@ -15,17 +15,20 @@ namespace Aeldari40k
 
         private readonly Map map;
 
+        private readonly int rewardCount;
+
         public Dialog_ChooseRewards()
         {}
 
-        public Dialog_ChooseRewards(List<Thing> choices, Building_CraftworldWebwayGate webway, Map map)
+        public Dialog_ChooseRewards(List<Thing> choices, Building_CraftworldWebwayGate webway, Map map, int rewardCount)
         {
             this.choices = choices;
             this.webway = webway;
             this.map = map;
+            this.rewardCount = rewardCount;
         }
 
-        public override Vector2 InitialSize => new Vector2(500f, 300f);
+        public override Vector2 InitialSize => new Vector2(160f*rewardCount, 300f);
 
         public override void DoWindowContents(Rect inRect)
         {

@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using Genes40k;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,9 @@ namespace Aeldari40k
     [StaticConstructorOnStartup]
     public class Building_CraftworldWebwayGate : Building_Enterable
     {
-
         private readonly int cooldownTimeTotal = 900000;
 
         private int cooldownTimeCharged = 0;
-
-        private readonly int ticksTimeTotal = 30000;
 
         private int ticksRemaining = 0;
 
@@ -27,6 +25,23 @@ namespace Aeldari40k
         }
 
         private static readonly Texture2D UsePortalIcon = ContentFinder<Texture2D>.Get("UI/Genes/AeldariPsyker_icon");
+
+
+        [Unsaved(false)]
+        private Aeldari40kModSettings cachedAeldariModSettings;
+
+        private Aeldari40kModSettings AeldariModSettings
+        {
+            get
+            {
+                if (cachedAeldariModSettings == null)
+                {
+                    cachedAeldariModSettings = LoadedModManager.GetMod<Aeldari40kMod>().GetSettings<Aeldari40kModSettings>();
+                }
+                return cachedAeldariModSettings;
+            }
+        }
+
 
         [Unsaved(false)]
         private CompPowerTrader cachedPowerComp;
@@ -91,7 +106,6 @@ namespace Aeldari40k
             }
             base.DeSpawn(mode);
         }
-
 
         public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
         {
@@ -319,7 +333,7 @@ namespace Aeldari40k
                 if (innerContainer.TryAddOrTransfer(p))
                 {
                     startTick = Find.TickManager.TicksGame;
-                    ticksRemaining = ticksTimeTotal;
+                    ticksRemaining = (int)AeldariModSettings.aeldariWebwayGateTravelTimeTicks;
                     cooldownTimeCharged = 0;
                     PowerBatteryComp.DrawPower(WebwayGateDefMod.powerToActivate);
                 }
@@ -339,15 +353,23 @@ namespace Aeldari40k
 
         private void GiveRewardOptions()
         {
-            int rewardCount = 3;
-
             System.Random rand = new System.Random();
 
             List<WebwayRewardDef> possibleChoices = new List<WebwayRewardDef>();
             possibleChoices.AddRange((List<WebwayRewardDef>)DefDatabase<WebwayRewardDef>.AllDefs);
             List<Thing> choices = new List<Thing>();
 
-            for (int i = 0; i < rewardCount; i++)
+            WebwayRewardDef wraithstone = Aeldari40kDefOf.BEWH_WebwayRewardWraithstone;
+
+            possibleChoices.Remove(wraithstone);
+
+            Thing wraithstoneThing = ThingMaker.MakeThing(wraithstone.rewardThing);
+            wraithstoneThing.stackCount = wraithstone.rewardThingCount;
+            choices.Add(wraithstoneThing);
+
+            int rewardCount = AeldariModSettings.aeldariWebwayGateRewardCount;
+
+            while (choices.Count < rewardCount)
             {
                 int chosen = rand.Next(0, possibleChoices.Count);
                 WebwayRewardDef reward = possibleChoices[chosen];
@@ -380,7 +402,8 @@ namespace Aeldari40k
                 possibleChoices.RemoveAt(chosen);
             }
 
-            Find.WindowStack.Add(new Dialog_ChooseRewards(choices, this, Map));
+            Log.Message(choices.Count);
+            Find.WindowStack.Add(new Dialog_ChooseRewards(choices, this, Map, rewardCount));
             return;
         }
 

@@ -73,6 +73,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aeldari40kMod.cs" />
     <Compile Include="Comps\CompPowerBatteryTrader.cs" />
     <Compile Include="Comps\CompProperties_BladelinkWeapon_AeldariSpirit.cs" />
     <Compile Include="Comps\CompPowerPlantInfinityCircuit.cs" />
@@ -115,7 +116,7 @@
     <Compile Include="Comps\CompSpiritStone.cs" />
     <Compile Include="Comps\CompProperties_SpiritStoneApparel.cs" />
     <Compile Include="Comps\CompSpiritStoneApparel.cs" />
-    <Compile Include="Aeldari40kMod.cs" />
+    <Compile Include="Aeldari40kModSettings.cs" />
     <Compile Include="Aeldari40kDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

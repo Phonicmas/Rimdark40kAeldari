@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ==========MELEE WEAPONS========== -->
+  <!-- Diresword -->
+  <ThingDef ParentName="BaseWeapon">
+    <defName>BEWH_Diresword</defName>
+    <label>diresword</label>
+    <description>...</description>
+    <techLevel>Ultra</techLevel>
+    <tradeNeverStack>true</tradeNeverStack>
+    <relicChance>0</relicChance>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+      <Mass>2</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Weapons/Diresword</texPath>
+      <!-- <color>(255,200,200)</color> -->
+    </graphicData>
+    <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+    <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <notifyMapRemoved>true</notifyMapRemoved>
+    <!-- Tags and classes -->
+    <weaponTags>
+      <li>Bladelink</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponMelee</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+      <li>Ultratech</li>
+    </weaponClasses>
+    <thingCategories>
+      <li>WeaponsMeleeBladelink</li>
+    </thingCategories>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+    <!-- Damage Stuff -->
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>27</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>27</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+    <!-- Comp and modDefs -->
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="Aeldari40k.CompProperties_BladelinkWeapon_AeldariSpirit">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <!--<li Class="CompProperties_GeneratedName">
+                <nameMaker>NamerWeaponBladelink</nameMaker>
+            </li>-->
+    </comps>
+  </ThingDef>
+
+  <!-- Biting Blade -->
+  <ThingDef ParentName="BaseWeapon">
+    <defName>BEWH_BitingBlade</defName>
+    <label>biting blade</label>
+    <description>...</description>
+    <techLevel>Ultra</techLevel>
+    <tradeNeverStack>true</tradeNeverStack>
+    <relicChance>0</relicChance>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+      <Mass>2</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Weapons/BitingBlade</texPath>
+      <!-- <color>(255,200,200)</color> -->
+    </graphicData>
+    <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+    <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <notifyMapRemoved>true</notifyMapRemoved>
+    <!-- Tags and classes -->
+    <weaponTags>
+      <li>Bladelink</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponMelee</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+      <li>Ultratech</li>
+    </weaponClasses>
+    <thingCategories>
+      <li>WeaponsMeleeBladelink</li>
+    </thingCategories>
+    <thingSetMakerTags>
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+    <!-- Damage Stuff -->
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>27</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>chain</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>27</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

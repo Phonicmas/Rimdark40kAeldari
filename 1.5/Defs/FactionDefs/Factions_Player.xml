@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <FactionDef>
+  <!--<FactionDef>
     <defName>BEWH_AeldariCraftworldRefugees</defName>
     <label>aeldari craftworld</label>
     <description>Aeldari refugees from a faraway craftworld, stranded on this rimworld.</description>
@@ -25,6 +25,6 @@
     <canStageAttacks>true</canStageAttacks>
 
     <leaderTitle>phoenix lord</leaderTitle>
-  </FactionDef>
+  </FactionDef>-->
 
 </Defs>

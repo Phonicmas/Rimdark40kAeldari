@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+    <ModSettingsNameAeldari>Warhammer 40k - Aeldari</ModSettingsNameAeldari>
+    <SettingWebwayRewardCount>Webway Gate reward amount: {0}</SettingWebwayRewardCount>
+    <SettingWebwayTravelTime>Webway Gate travel time: {0}h</SettingWebwayTravelTime>
+    <ResetToDefault>Reset to default</ResetToDefault>
+
     <ContainsSoulOf>Contains the Spirit of {0}</ContainsSoulOf>
 
     <ContainsNoSoul>Contains no spirit</ContainsNoSoul>
