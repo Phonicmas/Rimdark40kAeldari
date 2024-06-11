@@ -99,6 +99,16 @@
           <count>200</count>
         </li>
 
+        <!-- Starting buildings -->
+        <li Class="KCSG.ScenPart_AddStartingStructure">
+          <def>VFEC_AddStartingStructure</def>
+          <structureLabel>Inactive Webway Gate</structureLabel>
+          <nearMapCenter>True</nearMapCenter>
+          <chooseFrom>
+            <li>BEWH_CraftworldWebwayGate</li>
+          </chooseFrom>
+        </li>
+
         <!-- Game start dialog -->
         <li Class="ScenPart_GameStartDialog">          <!-- Idk what this is, prob some text given at start -->
           <def>GameStartDialog</def>
