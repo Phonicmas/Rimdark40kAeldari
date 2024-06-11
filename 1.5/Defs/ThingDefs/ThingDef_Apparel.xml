@@ -8,6 +8,7 @@
         <graphicData>
             <texPath>Apparel/SpiritStones/SpiritStoneNecklace</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.75</drawSize>
             <!-- <shaderType>CutoutComplex</shaderType> -->
         </graphicData>
         <!--<thingClass>ThingWithComps</thingClass>-->
