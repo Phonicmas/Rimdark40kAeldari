@@ -15,8 +15,8 @@
     <allowedPlaceTags>
       <li>OriginSpacer</li>
     </allowedPlaceTags>
-    <iconPath>UI/Xenotypes/Eldar_Xenotype</iconPath>    <!-- change this -->
-    <iconColor>(0.8, 0.8, 0.8)</iconColor>
+    <iconPath>UI/WorldObjects/EldarCulture</iconPath>
+    <!-- <iconColor>(0.8, 0.8, 0.8)</iconColor> -->
     <preferredWeaponClasses>
       <noble>Ultratech</noble>
       <despised>Neolithic</despised>

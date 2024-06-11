@@ -13,7 +13,7 @@
       <drawSize>(4,6)</drawSize>
       <drawOffset>(0, 0, 1)</drawOffset>
       <shadowData>
-        <volume>(6.03,1.0,5.25)</volume>
+        <volume>(2.4,1.7, 2.4)</volume>
         <offset>(0,0,-0.25)</offset>
       </shadowData>
       <damageData>

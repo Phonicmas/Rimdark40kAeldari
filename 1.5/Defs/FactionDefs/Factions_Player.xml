@@ -5,12 +5,15 @@
     <defName>BEWH_AeldariCraftworldRefugees</defName>
     <label>aeldari craftworld refugees</label>
     <description>Aeldari refugees from a faraway craftworld, stranded on this rimworld.</description>
-    <factionIconPath>UI/Xenotypes/Eldar_Xenotype</factionIconPath>    <!-- Change this-->
-    <settlementTexturePath>UI/Xenotypes/Eldar_Xenotype</settlementTexturePath>    <!-- Change this-->
+    <factionIconPath>UI/WorldObjects/EldarFaction</factionIconPath>
+	<colorSpectrum>
+      <li>(0.61, 0.58, 0.49)</li>
+    </colorSpectrum>
+    <settlementTexturePath>UI/WorldObjects/EldarFaction</settlementTexturePath>
     <techLevel>Ultra</techLevel>
     <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>100</configurationListOrderPriority>
-    <!-- Names fo various things -->
+    <!-- Names for various things -->
     <pawnSingular>aeldari</pawnSingular>
     <pawnsPlural>aeldari</pawnsPlural>
     <leaderTitle>phoenix lord</leaderTitle>

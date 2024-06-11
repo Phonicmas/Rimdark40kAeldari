@@ -13,6 +13,7 @@
     <graphicData>
       <texPath>Apparel/SpiritStones/SpiritStone</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.9</drawSize>
     </graphicData>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <soundInteract>Metal_Drop</soundInteract>
@@ -42,6 +43,7 @@
     <graphicData>
       <texPath>Apparel/SpiritStones/Waystone</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.9</drawSize>
     </graphicData>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <soundInteract>Metal_Drop</soundInteract>
