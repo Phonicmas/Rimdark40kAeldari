@@ -27,9 +27,9 @@
         </skills>
     </PawnKindDef>
 
-    <!-- Aeldari Avenger -->
+    <!-- Aeldari Hawk -->
     <PawnKindDef ParentName="BEWH_AeldariPawnKindCombatBase">
-        <defName>BEWH_AeldariPawnAvenger</defName>
+        <defName>BEWH_AeldariPawnHawk</defName>
         <!--<apparelTags>
             <li>IndustrialMilitaryBasic</li>
             <li>IndustrialMilitaryAdvanced</li>
@@ -44,11 +44,11 @@
         <skills>
             <li>
                 <skill>Melee</skill>
-                <range>8~13</range>
+                <range>8~11</range>
             </li>
             <li>
                 <skill>Shooting</skill>
-                <range>8~11</range>
+                <range>8~13</range>
             </li>
         </skills>
     </PawnKindDef>
