@@ -23,7 +23,7 @@
       <Apparel_Cape MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">1</Apparel_Cape>
     </possessions>-->
     <spawnCategories>
-      <li>Aeldari</li>
+      <li>BEWH_Aeldari</li>
     </spawnCategories>
   </BackstoryDef>
 

@@ -16,7 +16,7 @@
       <Plants>3</Plants>
     </skillGains>-->
     <spawnCategories>
-      <li>Aeldari</li>
+      <li>BEWH_Aeldari</li>
     </spawnCategories>
   </BackstoryDef>
 
