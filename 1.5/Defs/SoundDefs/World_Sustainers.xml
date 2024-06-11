@@ -12,11 +12,55 @@
 				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>BonesingingCycle1</clipPath>
+						<clipPath>World/BonesingingCycle1</clipPath>
 					</li>
 				</grains>
 				<volumeRange>15~16</volumeRange>
 				<pitchRange>0.97~1.1</pitchRange>
+       			<sustainAttack>2.5</sustainAttack>      
+        		<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>BEWH_AmbienceInfinityCirquit</defName>
+		<context>MapOnly</context>
+		<sustain>true</sustain>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode> 
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>World/InfinityMatrixSustainer-001</clipPath>
+					</li>
+				</grains>
+				<volumeRange>23~25</volumeRange> <!-- adjust -->
+				<pitchRange>1~1.1</pitchRange>
+       			<sustainAttack>2.5</sustainAttack>      
+        		<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>BEWH_AmbienceWebwayGateReady</defName>
+		<context>MapOnly</context>
+		<sustain>true</sustain>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode> 
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>World/WebwayGateReady-001</clipPath>
+					</li>
+				</grains>
+				<volumeRange>15~16</volumeRange> 	
+				<pitchRange>0.97~1.1</pitchRange>	
        			<sustainAttack>2.5</sustainAttack>      
         		<sustainRelease>2.5</sustainRelease>
 			</li>

@@ -34,7 +34,7 @@
     </costList>
     <building>
       <ai_neverTrashThis>true</ai_neverTrashThis>
-      <!--<soundAmbient>GeothermalPlant_Ambience</soundAmbient> Some sound maybe?-->
+      <soundAmbient>BEWH_AmbienceInfinityCirquit</soundAmbient>
       <destroySound>BuildingDestroyed_Metal_Big</destroySound>
       <!-- Storage Stuff -->
       <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
