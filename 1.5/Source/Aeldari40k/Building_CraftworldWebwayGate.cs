@@ -402,7 +402,6 @@ namespace Aeldari40k
                 possibleChoices.RemoveAt(chosen);
             }
 
-            Log.Message(choices.Count);
             Find.WindowStack.Add(new Dialog_ChooseRewards(choices, this, Map, rewardCount));
             return;
         }

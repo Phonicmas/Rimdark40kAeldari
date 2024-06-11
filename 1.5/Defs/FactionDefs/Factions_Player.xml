@@ -21,8 +21,8 @@
       <li>BEWH_AeldariPawnPhoenixLord</li>
     </fixedLeaderKinds>
 
-    <factionNameMaker>NamerFactionOutlander</factionNameMaker>    <!-- Change this-->
-    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>    <!-- Change this-->
+    <factionNameMaker>BEWH_NamerFactionAeldari</factionNameMaker>
+    <settlementNameMaker>BEWH_NamerSettlementAeldari</settlementNameMaker>
 
     <!-- Cultures, xenotypes and backstories -->
     <allowedCultures>

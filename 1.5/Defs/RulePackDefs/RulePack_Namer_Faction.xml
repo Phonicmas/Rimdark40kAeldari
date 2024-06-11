@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Add more -->
+  <RulePackDef>
+    <defName>BEWH_NamerFactionAeldari</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Aeldari Faction</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- Add more -->
+  <RulePackDef>
+    <defName>BEWH_NamerSettlementAeldari</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->Aeldar colony</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
