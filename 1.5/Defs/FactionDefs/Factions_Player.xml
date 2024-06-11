@@ -71,7 +71,6 @@
         <commonality>100</commonality>
         <options>
           <BEWH_AeldariPawnGuardian>5</BEWH_AeldariPawnGuardian>
-          <BEWH_AeldariPawnAvenger>1</BEWH_AeldariPawnAvenger>
           <BEWH_AeldariPawnBanshee>1</BEWH_AeldariPawnBanshee>
         </options>
       </li>
@@ -80,7 +79,6 @@
         <kindDef>Settlement</kindDef>
         <options>
           <BEWH_AeldariPawnGuardian>2</BEWH_AeldariPawnGuardian>
-          <BEWH_AeldariPawnAvenger>5</BEWH_AeldariPawnAvenger>
           <BEWH_AeldariPawnBanshee>5</BEWH_AeldariPawnBanshee>
           <BEWH_AeldariPawnWarlock>1</BEWH_AeldariPawnWarlock>
         </options>
