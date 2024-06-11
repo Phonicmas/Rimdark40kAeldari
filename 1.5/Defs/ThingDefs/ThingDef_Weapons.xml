@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+                                             <!-- ==========MELEE WEAPONS========== -->
+<!-- Diresword -->
     <ThingDef ParentName="BaseWeapon">
         <defName>BEWH_Diresword</defName>
         <label>diresword</label>
@@ -19,7 +20,7 @@
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <texPath>Weapons/Diresword</texPath>
-            <color>(255,200,200)</color>
+            <!-- <color>(255,200,200)</color> -->
         </graphicData>
         <soundInteract>Interact_BladelinkMonoSword</soundInteract>
         <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
@@ -87,4 +88,237 @@
         </comps>
     </ThingDef>
 
+<!-- Biting Blade -->
+    <ThingDef ParentName="BaseWeapon">
+        <defName>BEWH_BitingBlade</defName>
+        <label>biting blade</label>
+        <description>...</description>
+        <techLevel>Ultra</techLevel>
+        <tradeNeverStack>true</tradeNeverStack>
+        <relicChance>0</relicChance>
+        <statBases>
+            <MarketValue>3500</MarketValue>
+            <Mass>2</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+            <Beauty>1</Beauty>
+        </statBases>
+        <equippedAngleOffset>-45</equippedAngleOffset>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Weapons/BitingBlade</texPath>
+            <!-- <color>(255,200,200)</color> -->
+        </graphicData>
+        <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+        <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+        <smeltable>false</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <notifyMapRemoved>true</notifyMapRemoved>
+        <!-- Tags and classes -->
+        <weaponTags>
+            <li>Bladelink</li>
+        </weaponTags>
+        <tradeTags>
+            <li>WeaponMelee</li>
+        </tradeTags>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleePiercer</li>
+            <li>Ultratech</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>WeaponsMeleeBladelink</li>
+        </thingCategories>
+        <thingSetMakerTags>
+            <li>WeaponBladelink</li>
+        </thingSetMakerTags>
+        <!-- Damage Stuff -->
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>1.6</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>27</power>
+                <cooldownTime>1.6</cooldownTime>
+                <armorPenetration>0.9</armorPenetration>
+            </li>
+            <li>
+                <label>chain</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>27</power>
+                <cooldownTime>1.6</cooldownTime>
+                <armorPenetration>0.9</armorPenetration>
+            </li>
+        </tools>
+    </ThingDef>
+                                                 <!-- ==========RANGED WEAPONS========== -->
+<!-- Shuriken catapult -->
+ <ThingDef ParentName="BaseGun">
+    <defName>BEWH_SCatapult</defName>
+    <label>shuriken catapult</label>
+    <description>...</description>
+    <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Weapons/ShurikenCatapult</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <smeltable>false</smeltable>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <Mass>4.6</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_Bullet_SCatapult</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>25.9</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>5</burstShotCount>
+        <soundCast>BEWH_ShotShurikenCatapult</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>BEWH_Bullet_SCatapult</defName>
+    <label>monomolecular disc</label>
+    <graphicData>
+      <texPath>Weapons/ShurikenProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Cut</damageDef> 
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationBase>0.55</armorPenetrationBase>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
+
+<!-- Shuriken pistol -->
+ <ThingDef ParentName="BaseGun">
+    <defName>BEWH_SPistol</defName>
+    <label>shuriken pistol</label>
+    <description>...</description>
+    <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Weapons/ShurikenPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+    <smeltable>false</smeltable>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <Mass>4.6</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_Bullet_SPistol</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>25.9</range>
+        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>BEWH_ShotShurikenCatapult</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>BEWH_Bullet_SPistol</defName>
+    <label>monomolecular disc</label>
+    <graphicData>
+      <texPath>Weapons/ShurikenProjectile_Pistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Cut</damageDef> 
+      <damageAmountBase>25</damageAmountBase>
+      <armorPenetrationBase>0.55</armorPenetrationBase>
+      <speed>120</speed>
+    </projectile>
+  </ThingDef>
 </Defs>

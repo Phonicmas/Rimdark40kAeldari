@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!-- Ranged Weapons -->
+	<SoundDef>
+		<defName>BEWH_ShotShurikenCatapult</defName>
+		<context>MapOnly</context>
+		<sustain>false</sustain>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode> 
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons/ShurikenShot-002</clipPath>
+					</li>
+				</grains>
+				<volumeRange>15~16</volumeRange> 
+				<pitchRange>0.97~1.1</pitchRange>	
+       			<sustainAttack>2.5</sustainAttack>      
+        		<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>BEWH_ShotSniperLongRifle</defName>
+		<context>MapOnly</context>
+		<sustain>false</sustain>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode> 
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons/RangerLongRifleShot-001</clipPath>
+					</li>
+				</grains>
+				<volumeRange>15~16</volumeRange> 	
+				<pitchRange>0.97~1.1</pitchRange> 	
+       			<sustainAttack>2.5</sustainAttack>      
+        		<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>
