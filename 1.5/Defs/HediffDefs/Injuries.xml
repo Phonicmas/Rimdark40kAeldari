@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- Force Cut -->
+    <HediffDef ParentName="InjuryBase">
+        <defName>BEWH_ForceCut</defName>
+        <label>force cut</label>
+        <labelNoun>a force cut</labelNoun>
+        <description>Cut by the psychic power of a force weapon.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>bandaged</labelTendedWell>
+                <labelTendedWellInner>tended</labelTendedWellInner>
+                <labelSolidTendedWell>tended</labelSolidTendedWell>
+            </li>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>0.15</infectionChance>
+              </li>
+            <li Class="HediffCompProperties_GetsPermanent">
+                <permanentLabel>cut scar</permanentLabel>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.02</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.012</averagePainPerSeverityPermanent>
+            <bleedRate>0.18</bleedRate>
+            <canMerge>false</canMerge>
+            <destroyedLabel>Cut off</destroyedLabel>
+            <destroyedOutLabel>Cut out</destroyedOutLabel>
+        </injuryProps>
+    </HediffDef>
+
+</Defs>

@@ -9,6 +9,8 @@
         <li>r_ideoName->Aeldari</li>
         <li>r_ideoAdjective->Aeldari</li>
         <li>r_memberName->Asuryan</li>
+        <li>hyphenPrefix->Asur</li>
+        <li>creed->path</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

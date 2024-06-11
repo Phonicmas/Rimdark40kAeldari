@@ -78,6 +78,9 @@
     <Compile Include="Comps\CompProperties_BladelinkWeapon_AeldariSpirit.cs" />
     <Compile Include="Comps\CompPowerPlantInfinityCircuit.cs" />
     <Compile Include="Comps\CompMeditationSpawn.cs" />
+    <Compile Include="Comps\CompForceWeapon.cs" />
+    <Compile Include="Comps\CompProperties_ForceWeapon.cs" />
+    <Compile Include="DefModExtensions\DefModExtension_ScalingDamage.cs" />
     <Compile Include="DefModExtensions\DefModExtension_WebwayGate.cs" />
     <Compile Include="DefModExtensions\DefModExtension_WeaponTraitExtra.cs" />
     <Compile Include="DefModExtensions\DefModExtension_WraithbonePlant.cs" />

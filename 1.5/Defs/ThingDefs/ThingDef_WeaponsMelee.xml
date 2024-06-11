@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
+
   <!-- ==========MELEE WEAPONS========== -->
   <!-- Diresword -->
   <ThingDef ParentName="BaseWeapon">
@@ -148,6 +148,90 @@
         <armorPenetration>0.9</armorPenetration>
       </li>
     </tools>
+  </ThingDef>
+
+  <!-- Witch Blade -->
+  <ThingDef ParentName="BaseWeapon">
+    <defName>BEWH_WitchBlade</defName>
+    <label>witch blade</label>
+    <description>...</description>
+    <techLevel>Ultra</techLevel>
+    <tradeNeverStack>true</tradeNeverStack>
+    <relicChance>0</relicChance>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+      <Mass>2</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <equippedAngleOffset>-45</equippedAngleOffset>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Weapons/BitingBlade</texPath>
+      <!-- <color>(255,200,200)</color> -->
+    </graphicData>
+    <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+    <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <notifyMapRemoved>true</notifyMapRemoved>
+    <!-- Tags and classes -->
+    <weaponTags>
+      <li>BEWH_AeldariWeaponMelee</li>
+    </weaponTags>
+    <tradeTags>
+      <li>BEWH_AeldariMelee</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+      <li>Ultratech</li>
+    </weaponClasses>
+    <!-- Damage Stuff -->
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>27</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>27</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
+        <extraMeleeDamages>
+          <li>
+            <def>BEWH_ForceCutScaling</def>
+            <amount>0</amount>
+            <armorPenetration>0</armorPenetration>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="Aeldari40k.CompProperties_BladelinkWeapon_AeldariSpirit">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+    </comps>
   </ThingDef>
 
 </Defs>
