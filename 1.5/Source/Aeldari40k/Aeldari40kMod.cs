@@ -31,7 +31,17 @@ namespace Aeldari40k
             settings.aeldariWebwayGateTravelTimeTicks = listingStandard.Slider(settings.aeldariWebwayGateTravelTimeTicks, 1250f, 120000);
             listingStandard.End();
 
-            Widgets.ButtonText("ResetToDefault".Translate()); ;
+            Rect resetRect = new Rect(inRect.BottomPartPixels(30f));
+            float offset = resetRect.width / 3;
+            resetRect.xMin += offset;
+            resetRect.xMax -= offset;
+
+            if (Widgets.ButtonText(resetRect, "ResetToDefault".Translate()))
+            {
+                settings.aeldariWebwayGateTravelTimeTicks = 30000;
+                settings.aeldariWebwayGateRewardCount = 3;
+            }
+            
 
             base.DoSettingsWindowContents(inRect);
         }
