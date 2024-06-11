@@ -190,7 +190,7 @@
     </weaponClasses>
     <!-- Damage Stuff -->
     <tools>
-      <li>
+      <!--<li>
         <label>handle</label>
         <capacities>
           <li>Blunt</li>
@@ -206,15 +206,15 @@
         <power>27</power>
         <cooldownTime>1.6</cooldownTime>
         <armorPenetration>0.9</armorPenetration>
-      </li>
+      </li>-->
       <li>
         <label>edge</label>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>27</power>
-        <cooldownTime>1.6</cooldownTime>
-        <armorPenetration>0.9</armorPenetration>
+        <power>15</power>
+        <cooldownTime>1</cooldownTime>
+        <armorPenetration>0</armorPenetration>
         <extraMeleeDamages>
           <li>
             <def>BEWH_ForceCutScaling</def>
@@ -225,11 +225,14 @@
       </li>
     </tools>
     <comps>
-      <li>
+      <!--<li>
         <compClass>CompQuality</compClass>
-      </li>
-      <li Class="Aeldari40k.CompProperties_BladelinkWeapon_AeldariSpirit">
-        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>-->
+      <li Class="Aeldari40k.CompProperties_ForceWeapon">
+        <scalingStat>PsychicSensitivity</scalingStat>
+        <damageScalingFactor>7</damageScalingFactor>
+        <scalesPen>true</scalesPen>
+        <penScaleFactor>0.25</penScaleFactor>
       </li>
     </comps>
   </ThingDef>

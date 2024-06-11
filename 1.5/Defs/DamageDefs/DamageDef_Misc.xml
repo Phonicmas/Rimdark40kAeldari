@@ -16,8 +16,7 @@
         <armorCategory>Sharp</armorCategory>
         <overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
         <modExtensions>
-            <li Class="Aeldari40k.DefModExtension_ScalingDamage">
-            </li>
+            <li Class="Aeldari40k.DefModExtension_ScalingDamage" />
         </modExtensions>
     </DamageDef>
 

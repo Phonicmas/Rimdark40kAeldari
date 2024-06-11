@@ -1,4 +1,6 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 
@@ -8,25 +10,69 @@ namespace Aeldari40k
     {
         public CompProperties_ForceWeapon Props => (CompProperties_ForceWeapon)props;
 
-        private float cachedDamageValue = -1;
-        private float cachedPenValue = -1;
+        private float statValue = 1;
+
+        private float cachedDamageValue = 0;
+
+        private float cachedPenValue = 0;
+
+
+        public override void Notify_Equipped(Pawn pawn)
+        {
+            base.Notify_Equipped(pawn);
+            CalculateExtraDamage(pawn);
+        }
 
         public override void Notify_UsedWeapon(Pawn pawn)
         {
-            cachedDamageValue = pawn.GetStatValue(Props.damageScalingStat) * Props.damageScalingFactor;
+            if (pawn.GetStatValue(Props.scalingStat) != statValue)
+            {
+                CalculateExtraDamage(pawn);
+            }
+        }
+
+        private void CalculateExtraDamage(Pawn pawn)
+        {
+            if (pawn == null && pawn.GetStatValue(Props.scalingStat) <= 0)
+            {
+                return;
+            }
+
+            statValue = pawn.GetStatValue(Props.scalingStat);
+
+            cachedDamageValue = statValue * Props.damageScalingFactor;
 
             if (Props.scalesPen)
             {
-                cachedPenValue = pawn.GetStatValue(Props.penScalingStat) * Props.penScaleFactor;
+                cachedPenValue = pawn.GetStatValue(Props.scalingStat) * Props.penScaleFactor;
             }
-            //Have a cached variable of the stats the extra weapon damage scales of on, check if they match if not put new value in and then change damage
-            //of extra damage on weapon according to said stat and whatever multiplier
+
+            if (parent.TryGetComp<CompEquippable>().Tools != null)
+            {
+                foreach (Tool tool in parent.TryGetComp<CompEquippable>().Tools)
+                {
+                    if (!tool.extraMeleeDamages.NullOrEmpty())
+                    {
+                        IEnumerable<ExtraDamage> tools = tool.extraMeleeDamages.Where(x => x.def.HasModExtension<DefModExtension_ScalingDamage>());
+                        if (!tools.EnumerableNullOrEmpty())
+                        {
+                            foreach (ExtraDamage extraDamage in tools)
+                            {
+                                extraDamage.amount = cachedDamageValue;
+                                tool.armorPenetration = cachedPenValue;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         public override void PostExposeData()
         {
-            Scribe_Values.Look(ref cachedDamageValue, "cachedDamageValue", -1);
-            Scribe_Values.Look(ref cachedPenValue, "cachedPenValue", -1);
+            base.PostExposeData();
+            Scribe_Values.Look(ref statValue, "statValue", 1);
+            Scribe_Values.Look(ref cachedDamageValue, "cachedDamageValue", 0);
+            Scribe_Values.Look(ref cachedPenValue, "cachedPenValue", 0);
         }
 
     }

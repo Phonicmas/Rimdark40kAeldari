@@ -20,7 +20,7 @@
           <xenotypeCounts>
             <li>
               <xenotype>BEWH_Aeldari</xenotype>
-              <count>6</count>
+              <count>3</count>
               <description>aeldari</description>
               <requiredAtStart>true</requiredAtStart>
               <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
