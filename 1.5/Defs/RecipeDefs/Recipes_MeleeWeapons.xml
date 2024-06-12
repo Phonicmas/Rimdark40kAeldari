@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- BITING BLADE -->
+    <RecipeDef ParentName="BEWH_RecipeBaseWeapon">
+        <defName>BEWH_Make_BitingBlade</defName>
+        <label>make biting blade</label>
+        <description>...</description>
+        <jobString>Making biting blade.</jobString>
+        <workAmount>1800</workAmount>
+        <skillRequirements>
+            <Crafting>7</Crafting>
+        </skillRequirements>
+        <displayPriority>1</displayPriority>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BEWH_Wraithbone</li>
+                    </thingDefs>
+                </filter>
+                <count>110</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BEWH_Wraithbone</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <BEWH_BitingBlade>1</BEWH_BitingBlade>
+        </products>
+    </RecipeDef>
+
+    <!-- WITCH BLADE -->
+    <RecipeDef ParentName="BEWH_RecipeBaseWeapon">
+        <defName>BEWH_Make_WitchBlade</defName>
+        <label>make witch blade</label>
+        <description>...</description>
+        <jobString>Making witch blade.</jobString>
+        <workAmount>2500</workAmount>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <displayPriority>1</displayPriority>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BEWH_Wraithbone</li>
+                    </thingDefs>
+                </filter>
+                <count>110</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentSpacer</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BEWH_Wraithbone</li>
+                <li>Gold</li>
+                <li>ComponentSpacer</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <BEWH_WitchBlade>1</BEWH_WitchBlade>
+        </products>
+    </RecipeDef>
+
+</Defs>

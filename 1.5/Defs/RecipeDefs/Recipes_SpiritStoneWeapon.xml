@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <RecipeDef>
+    <!-- DIRESWORD -->
+    <RecipeDef ParentName="BEWH_RecipeBaseWeapon">
         <defName>BEWH_Make_Diresword</defName>
         <label>make diresword</label>
         <description>...</description>
         <jobString>Making diresword.</jobString>
-        <researchPrerequisite>BEWH_AeldarWraithbone</researchPrerequisite>
         <workerClass>Aeldari40k.RecipeWorker_MakeSpiritWeapon</workerClass>
-        <workSpeedStat>PsychicSensitivity</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>BEWH_WorkBonesinging</soundWorking>
         <workAmount>3000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>        <!-- Change this -->
         <skillRequirements>
-            <Crafting>8</Crafting>
+            <Crafting>10</Crafting>
         </skillRequirements>
-        <workSkill>Crafting</workSkill>
         <displayPriority>0</displayPriority>
         <ingredients>
             <li>
@@ -25,7 +20,7 @@
                         <li>BEWH_Wraithbone</li>
                     </thingDefs>
                 </filter>
-                <count>100</count>
+                <count>110</count>
             </li>
             <li>
                 <filter>
@@ -35,11 +30,29 @@
                 </filter>
                 <count>1</count>
             </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentSpacer</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
                 <li>BEWH_Wraithbone</li>
-                <li>BEWH_Waystone</li>
+                <li>BEWH_SpiritStone</li>
+                <li>Gold</li>
+                <li>ComponentSpacer</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- SHURIKEN CATAPULT -->
+    <RecipeDef ParentName="BEWH_RecipeBaseWeapon">
+        <defName>BEWH_Make_SCatapult</defName>
+        <label>make shuriken catapult</label>
+        <description>...</description>
+        <jobString>Making shuriken catapult.</jobString>
+        <workAmount>1800</workAmount>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <displayPriority>1</displayPriority>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BEWH_Wraithbone</li>
+                    </thingDefs>
+                </filter>
+                <count>130</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BEWH_Wraithbone</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <BEWH_SCatapult>1</BEWH_SCatapult>
+        </products>
+    </RecipeDef>
+
+    <!-- SHURIKEN PISTOL -->
+    <RecipeDef ParentName="BEWH_RecipeBaseWeapon">
+        <defName>BEWH_Make_SPistol</defName>
+        <label>make shuriken pistol</label>
+        <description>...</description>
+        <jobString>Making shuriken pistol.</jobString>
+        <workAmount>1200</workAmount>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <displayPriority>1</displayPriority>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BEWH_Wraithbone</li>
+                    </thingDefs>
+                </filter>
+                <count>80</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BEWH_Wraithbone</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <BEWH_SPistol>1</BEWH_SPistol>
+        </products>
+    </RecipeDef>
+
+</Defs>
