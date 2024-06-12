@@ -59,7 +59,7 @@ namespace Aeldari40k
                             foreach (ExtraDamage extraDamage in tools)
                             {
                                 extraDamage.amount = cachedDamageValue;
-                                tool.armorPenetration = cachedPenValue;
+                                extraDamage.armorPenetration = cachedPenValue;
                             }
                         }
                     }

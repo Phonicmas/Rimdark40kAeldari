@@ -59,6 +59,13 @@
         <power>27</power>
         <cooldownTime>1.6</cooldownTime>
         <armorPenetration>0.9</armorPenetration>
+        <!--<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>0</amount>
+            <armorPenetration>0</armorPenetration>
+          </li>
+        </extraMeleeDamages>-->
       </li>
       <li>
         <label>edge</label>
@@ -68,6 +75,13 @@
         <power>27</power>
         <cooldownTime>1.6</cooldownTime>
         <armorPenetration>0.9</armorPenetration>
+        <!--<extraMeleeDamages>
+          <li>
+            <def>Flame</def>
+            <amount>0</amount>
+            <armorPenetration>0</armorPenetration>
+          </li>
+        </extraMeleeDamages>-->
       </li>
     </tools>
     <!-- Comp and modDefs -->

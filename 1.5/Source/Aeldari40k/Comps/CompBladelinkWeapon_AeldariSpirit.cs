@@ -109,6 +109,72 @@ namespace Aeldari40k
             yield return new StatDrawEntry(parent.def.IsMeleeWeapon ? StatCategoryDefOf.Weapon_Melee : StatCategoryDefOf.Weapon_Ranged, "Stat_Thing_PersonaWeaponTrait_Label".Translate(), traits.Select((WeaponTraitDef_AeldariSpirit x) => x.label).ToCommaList().CapitalizeFirst(), stringBuilder.ToString(), 1104);
         }
 
+        public override void Notify_Equipped(Pawn pawn)
+        {
+            base.Notify_Equipped(pawn);
+            if (traits.Contains(Aeldari40kDefOf.BEWH_SpiritTraitPyromaniac))
+            {
+                SetFlameDamage();
+            }
+        }
+
+        public override void PostExposeData()
+        {
+            Scribe_Values.Look(ref biocoded, "biocoded", defaultValue: false);
+            Scribe_Values.Look(ref codedPawnLabel, "biocodedPawnLabel");
+            if (Scribe.mode == LoadSaveMode.Saving && codedPawn != null && codedPawn.Discarded)
+            {
+                codedPawn = null;
+            }
+            Scribe_References.Look(ref codedPawn, "codedPawn", saveDestroyedThings: true);
+            Scribe_Values.Look(ref lastKillTick, "lastKillTick", -1);
+            Scribe_Collections.Look(ref traits, "traits", LookMode.Def);
+            Scribe_References.Look(ref spirit, "spirit", saveDestroyedThings: true);
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                if (traits.Contains(Aeldari40kDefOf.BEWH_SpiritTraitPyromaniac))
+                {
+                    SetFlameDamage();
+                }
+            }
+            if (Scribe.mode != LoadSaveMode.Saving)
+            {
+                Scribe_Values.Look(ref oldBonded, "bonded", defaultValue: false);
+                Scribe_Values.Look(ref oldBondedPawnLabel, "bondedPawnLabel");
+                Scribe_References.Look(ref oldBondedPawn, "bondedPawn", saveDestroyedThings: true);
+            }
+            if (Scribe.mode != LoadSaveMode.PostLoadInit)
+            {
+                return;
+            }
+            if (oldBonded)
+            {
+                CodeFor(oldBondedPawn);
+            }
+            if (traits == null)
+            {
+                traits = new List<WeaponTraitDef_AeldariSpirit>();
+            }
+            if (oldBondedPawn != null)
+            {
+                if (string.IsNullOrEmpty(oldBondedPawnLabel) || !oldBonded)
+                {
+                    codedPawnLabel = oldBondedPawn.Name.ToStringFull;
+                    biocoded = true;
+                }
+                if (oldBondedPawn.equipment.bondedWeapon == null)
+                {
+                    oldBondedPawn.equipment.bondedWeapon = parent;
+                }
+                else if (oldBondedPawn.equipment.bondedWeapon != parent)
+                {
+                    UnCode();
+                }
+            }
+        }
+
+
+
         private List<WeaponTraitDef_AeldariSpirit> ValidTraitsByStone()
         {
             IEnumerable<WeaponTraitDef_AeldariSpirit> allDefs = DefDatabase<WeaponTraitDef_AeldariSpirit>.AllDefs;
@@ -194,52 +260,32 @@ namespace Aeldari40k
             return true;
         }
 
-        public override void PostExposeData()
+        private void SetFlameDamage()
         {
-            Scribe_Values.Look(ref biocoded, "biocoded", defaultValue: false);
-            Scribe_Values.Look(ref codedPawnLabel, "biocodedPawnLabel");
-            if (Scribe.mode == LoadSaveMode.Saving && codedPawn != null && codedPawn.Discarded)
+            if (parent.TryGetComp<CompEquippable>().Tools != null)
             {
-                codedPawn = null;
-            }
-            Scribe_References.Look(ref codedPawn, "codedPawn", saveDestroyedThings: true);
-            Scribe_Values.Look(ref lastKillTick, "lastKillTick", -1);
-            Scribe_Collections.Look(ref traits, "traits", LookMode.Def); //Not working properly
-            Scribe_References.Look(ref spirit, "spirit", saveDestroyedThings: true);
-            if (Scribe.mode != LoadSaveMode.Saving)
-            {
-                Scribe_Values.Look(ref oldBonded, "bonded", defaultValue: false);
-                Scribe_Values.Look(ref oldBondedPawnLabel, "bondedPawnLabel");
-                Scribe_References.Look(ref oldBondedPawn, "bondedPawn", saveDestroyedThings: true);
-            }
-            if (Scribe.mode != LoadSaveMode.PostLoadInit)
-            {
-                return;
-            }
-            if (oldBonded)
-            {
-                CodeFor(oldBondedPawn);
-            }
-            if (traits == null)
-            {
-                traits = new List<WeaponTraitDef_AeldariSpirit>();
-            }
-            if (oldBondedPawn != null)
-            {
-                if (string.IsNullOrEmpty(oldBondedPawnLabel) || !oldBonded)
+                foreach (Tool tool in parent.TryGetComp<CompEquippable>().Tools)
                 {
-                    codedPawnLabel = oldBondedPawn.Name.ToStringFull;
-                    biocoded = true;
-                }
-                if (oldBondedPawn.equipment.bondedWeapon == null)
-                {
-                    oldBondedPawn.equipment.bondedWeapon = parent;
-                }
-                else if (oldBondedPawn.equipment.bondedWeapon != parent)
-                {
-                    UnCode();
+                    if (tool.capacities.Contains(Aeldari40kDefOf.Cut) || tool.capacities.Contains(Aeldari40kDefOf.Stab))
+                    {
+                        if (tool.extraMeleeDamages.NullOrEmpty())
+                        {
+                            tool.extraMeleeDamages = new List<ExtraDamage>();
+                        }
+                        if (tool.extraMeleeDamages.Where(x => x.def == DamageDefOf.Flame).EnumerableNullOrEmpty())
+                        {
+                            ExtraDamage extraDamage = new ExtraDamage
+                            {
+                                def = DamageDefOf.Flame,
+                                amount = traits.Find(x => x == Aeldari40kDefOf.BEWH_SpiritTraitPyromaniac).GetModExtension<DefModExtension_WeaponTraitExtra>().extraDamageAmount,
+                                armorPenetration = traits.Find(x => x == Aeldari40kDefOf.BEWH_SpiritTraitPyromaniac).GetModExtension<DefModExtension_WeaponTraitExtra>().extraDamagePen
+                            };
+                            tool.extraMeleeDamages.Add(extraDamage);
+                        }
+                    }
                 }
             }
         }
+
     }
 }

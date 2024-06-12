@@ -42,6 +42,10 @@ namespace Aeldari40k
         public static WeaponTraitDef_AeldariSpirit BEWH_SpiritTraitSanguine;
         public static WeaponTraitDef_AeldariSpirit BEWH_SpiritTraitOptimist;
         public static WeaponTraitDef_AeldariSpirit BEWH_SpiritTraitGreatMemory;
+        public static WeaponTraitDef_AeldariSpirit BEWH_SpiritTraitPyromaniac;
+
+        public static ToolCapacityDef Stab;
+        public static ToolCapacityDef Cut;
 
         static Aeldari40kDefOf()
         {

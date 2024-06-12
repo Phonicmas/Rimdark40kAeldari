@@ -15,5 +15,9 @@ namespace Aeldari40k
         public bool isStatRelated = false;
         public StatDef statDef = null;
         public float statThreshold = 0;
+
+
+        public int extraDamageAmount = 0;
+        public float extraDamagePen = 0;
     }
 }

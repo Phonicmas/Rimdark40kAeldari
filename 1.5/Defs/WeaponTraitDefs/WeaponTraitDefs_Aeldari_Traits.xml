@@ -153,7 +153,7 @@
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
 
-  <!-- BRAWLER - increase melee -->
+  <!-- BRAWLER -->
   <Aeldari40k.WeaponTraitDef_AeldariSpirit ParentName="BEWH_WeaponTraitBase">
     <defName>BEWH_SpiritTraitBrawler</defName>
     <label>Spirit of the Swordman</label>
@@ -236,6 +236,8 @@
       <li Class="Aeldari40k.DefModExtension_WeaponTraitExtra">
         <isTraitRelated>true</isTraitRelated>
         <traitDef>Pyromaniac</traitDef>
+        <extraDamageAmount>15</extraDamageAmount>
+        <extraDamagePen>1.5</extraDamagePen>
       </li>
     </modExtensions>
   </Aeldari40k.WeaponTraitDef_AeldariSpirit>
