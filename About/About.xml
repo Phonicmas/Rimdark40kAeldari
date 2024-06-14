@@ -20,8 +20,8 @@
 		</li>
 		<li>
 			<packageId>Phonicmas.40kCore</packageId>
-			<displayName>Warhammer 40k - Core</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3025477432</steamWorkshopUrl>
+			<displayName>Warhammer 40k - Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3267464767</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	<loadAfter>

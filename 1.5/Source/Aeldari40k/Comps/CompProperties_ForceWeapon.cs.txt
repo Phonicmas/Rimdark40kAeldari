@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 
@@ -6,6 +7,10 @@ namespace Aeldari40k
 {
     public class CompProperties_ForceWeapon : CompProperties
     {
+        public DamageDef damageDef;
+
+        public List<ToolCapacityDef> capacitiesToApplyOn;
+
         public StatDef scalingStat;
         public float damageScalingFactor = 1;
 

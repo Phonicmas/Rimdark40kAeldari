@@ -190,7 +190,7 @@
     </weaponClasses>
     <!-- Damage Stuff -->
     <tools>
-      <!--<li>
+      <li>
         <label>handle</label>
         <capacities>
           <li>Blunt</li>
@@ -203,32 +203,30 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>27</power>
+        <power>20</power>
         <cooldownTime>1.6</cooldownTime>
         <armorPenetration>0.9</armorPenetration>
-      </li>-->
+      </li>
       <li>
         <label>edge</label>
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>15</power>
-        <cooldownTime>1</cooldownTime>
-        <armorPenetration>0</armorPenetration>
-        <extraMeleeDamages>
-          <li>
-            <def>BEWH_ForceCutScaling</def>
-            <amount>0</amount>
-            <armorPenetration>0</armorPenetration>
-          </li>
-        </extraMeleeDamages>
+        <power>20</power>
+        <cooldownTime>1.6</cooldownTime>
+        <armorPenetration>0.9</armorPenetration>
       </li>
     </tools>
     <comps>
       <!--<li>
         <compClass>CompQuality</compClass>
       </li>-->
-      <li Class="Aeldari40k.CompProperties_ForceWeapon">
+      <li Class="Core40k.CompProperties_ForceWeapon">
+        <damageDef>BEWH_ForceCutScaling</damageDef>
+        <capacitiesToApplyOn>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacitiesToApplyOn>
         <scalingStat>PsychicSensitivity</scalingStat>
         <damageScalingFactor>7</damageScalingFactor>
         <scalesPen>true</scalesPen>

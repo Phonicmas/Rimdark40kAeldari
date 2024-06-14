@@ -15,7 +15,7 @@
         <label>Bonesinging</label>
         <description>???</description>
         <baseCost>1000</baseCost>
-        <researchViewX>6</researchViewX>
+        <researchViewX>0</researchViewX>
         <researchViewY>1</researchViewY>
     </ResearchProjectDef>
 
@@ -27,7 +27,7 @@
             <li>BEWH_AeldarWraithbone</li>
         </prerequisites>
         <baseCost>2000</baseCost>
-        <researchViewX>7</researchViewX>
+        <researchViewX>1</researchViewX>
         <researchViewY>0.5</researchViewY>
     </ResearchProjectDef>
 
@@ -39,7 +39,7 @@
             <li>BEWH_AeldarWraithbone</li>
         </prerequisites>
         <baseCost>4000</baseCost>
-        <researchViewX>7</researchViewX>
+        <researchViewX>1</researchViewX>
         <researchViewY>1.5</researchViewY>
     </ResearchProjectDef>
 

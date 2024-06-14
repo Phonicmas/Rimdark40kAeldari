@@ -6,3 +6,4 @@ C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kAeldari\1.5\Source\Aeldari40
 C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kAeldari\1.5\Source\Aeldari40k\obj\Debug\Aeldari40k.csproj.CoreCompileInputs.cache
 C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kAeldari\1.5\Assemblies\Aeldari40k.dll
 C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kAeldari\1.5\Source\Aeldari40k\obj\Debug\Aeldari40k.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kAeldari\1.5\Source\Aeldari40k\obj\Debug\Aeldari40k.csproj.CopyComplete

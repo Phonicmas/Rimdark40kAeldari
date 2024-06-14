@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <RecipeDef Name="BEWH_RecipeBaseWeapon">
+    <RecipeDef Name="BEWH_RecipeBaseWeapon" Abstract="True">
         <researchPrerequisite>BEWH_AeldarWraithbone</researchPrerequisite>
         <workSpeedStat>PsychicSensitivity</workSpeedStat>
         <effectWorking>Cook</effectWorking>
         <soundWorking>BEWH_WorkBonesinging</soundWorking>
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>        <!-- Change this -->
         <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>BEWH_WraithboneBenchMeditation</li>
+        </recipeUsers>
     </RecipeDef>
 
 </Defs>

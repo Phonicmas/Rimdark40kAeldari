@@ -40,8 +40,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Core40k">
-      <HintPath>..\..\..\..\Warhammer40kCore\1.4\Assemblies\Core40k.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\Warhammer40kFramework\1.5\Assemblies\Core40k.dll</HintPath>
     </Reference>
     <Reference Include="Genes40k">
       <HintPath>..\..\..\..\Warhammer40kGenes\1.4\Assemblies\Genes40k.dll</HintPath>
@@ -78,8 +77,8 @@
     <Compile Include="Comps\CompProperties_BladelinkWeapon_AeldariSpirit.cs" />
     <Compile Include="Comps\CompPowerPlantInfinityCircuit.cs" />
     <Compile Include="Comps\CompMeditationSpawn.cs" />
-    <Compile Include="Comps\CompForceWeapon.cs" />
-    <Compile Include="Comps\CompProperties_ForceWeapon.cs" />
+    <Content Include="Comps\CompForceWeapon.cs.txt" />
+    <Content Include="Comps\CompProperties_ForceWeapon.cs.txt" />
     <Compile Include="DefModExtensions\DefModExtension_ScalingDamage.cs" />
     <Compile Include="DefModExtensions\DefModExtension_WebwayGate.cs" />
     <Compile Include="DefModExtensions\DefModExtension_WeaponTraitExtra.cs" />

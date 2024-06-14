@@ -8,7 +8,7 @@
         <graphicData>
             <texPath>Apparel/SpiritStones/SpiritStoneNecklace</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.75</drawSize>
+            <drawSize>0.75</drawSize>
             <!-- <shaderType>CutoutComplex</shaderType> -->
         </graphicData>
         <!--<thingClass>ThingWithComps</thingClass>-->
@@ -49,9 +49,6 @@
         <tradeTags>
             <li>ExoticMisc</li>
         </tradeTags>
-        <!-- <equippedStatOffsets>
-            <PawnBeauty>+1</PawnBeauty>
-        </equippedStatOffsets> -->
         <!-- ===== Recipe ===== -->
         <costList>
             <BEWH_Wraithbone>25</BEWH_Wraithbone>
@@ -64,7 +61,7 @@
             <recipeUsers>
                 <li>BEWH_WraithboneBenchMeditation</li>
             </recipeUsers>
-            <!--<researchPrerequisite>BEWH_??</researchPrerequisite>-->
+            <researchPrerequisite>BEWH_AeldarWraithbone</researchPrerequisite>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
                 <Crafting>6</Crafting>
