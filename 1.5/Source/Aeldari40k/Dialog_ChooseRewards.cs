@@ -6,6 +6,7 @@ using Verse;
 
 namespace Aeldari40k
 {
+    //Thanks to VE for letting me repurpose code from VE ancients
     [StaticConstructorOnStartup]
     public class Dialog_ChooseRewards : Window
     {
@@ -33,7 +34,7 @@ namespace Aeldari40k
         public override void DoWindowContents(Rect inRect)
         {
             inRect = inRect.ContractedBy(15f, 7f);
-            Widgets.Label(inRect.TopPartPixels(60f), "ChooseReward".Translate());
+            Widgets.Label(inRect.TopPartPixels(60f), "BEWH.ChooseReward".Translate());
             inRect.y += 60f;
             List<Rect> rects = Split(inRect, choices.Count, new Vector2(80f, 200f));
             for (int i = 0; i < choices.Count; i++)
@@ -59,7 +60,7 @@ namespace Aeldari40k
                         Find.WindowStack.Add(new Dialog_InfoCard(thing.def));
                     }
                 }
-                if (Widgets.ButtonText(rect3, "SelectReward".Translate()))
+                if (Widgets.ButtonText(rect3, "BEWH.SelectReward".Translate()))
                 {
                     IntVec3 spawnLoc = webway.InteractionCell;
                     spawnLoc.y = 0;

@@ -79,7 +79,6 @@ namespace Aeldari40k
         public override string CompInspectStringExtra()
         {
             string text = "TotalMeditationToday".Translate((meditationTicksToday / 2500).ToString() + "LetterHour".Translate(), ProgressMultiplier.ToStringPercent());
-            //text += "\n" + Props.spawnThing.LabelCap + ": ";
             text += " (" + "ProgressToNextSubplant".Translate(progressToNextSpawn.ToStringPercent()) + ")";
             return text;
         }

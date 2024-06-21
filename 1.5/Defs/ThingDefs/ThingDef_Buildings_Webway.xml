@@ -59,7 +59,7 @@
       <li>BEWH_AeldariWebwayGates</li>
     </researchPrerequisites>
     <placeWorkers>
-      <li>Aeldari40k.PlaceWorker_OnlyOnePerMap</li>
+      <li>Core40k.PlaceWorker_OnlyOnePerMap</li>
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <comps>

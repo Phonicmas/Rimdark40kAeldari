@@ -1,5 +1,4 @@
-﻿using Genes40k;
-using RimWorld;
+﻿using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -192,7 +191,7 @@ namespace Aeldari40k
                         }
                         if (!list.Any())
                         {
-                            list.Add(new FloatMenuOption("NoValidPawns".Translate(), null));
+                            list.Add(new FloatMenuOption("BEWH.NoValidPawns".Translate(), null));
                         }
                         Find.WindowStack.Add(new FloatMenu(list));
                     };
@@ -232,7 +231,7 @@ namespace Aeldari40k
             {
                 if (selectedPawn != null && selectedPawn.Dead)
                 {
-                    Cancel();
+                    Cancel();   
                 }
                 if (progressBar != null)
                 {
@@ -309,7 +308,7 @@ namespace Aeldari40k
             }
             if (!p.genes.HasActiveGene(Aeldari40kDefOf.BEWH_AeldariPsyker))
             {
-                return "PawnNotAeldariPsyker".Translate();
+                return "BEWH.PawnNotAeldariPsyker".Translate();
             }
             return true;
 
@@ -414,11 +413,11 @@ namespace Aeldari40k
 
             if (!PowerTraderComp.PowerOn)
             {
-                stringBuilder.Append("NoPowerToRecharge".Translate());
+                stringBuilder.Append("BEWH.NoPowerToRecharge".Translate());
             }
             else if (CooldownTimeRemaining <= 0)
             {
-                stringBuilder.Append("ReadyNow".Translate());
+                stringBuilder.Append("BEWH.ReadyNow".Translate());
             }
             else
             {
@@ -430,13 +429,13 @@ namespace Aeldari40k
                     divider = 2500f;
                     timeDenoter = "LetterHour".Translate();
                 }
-                stringBuilder.Append("ReadyIn".Translate(Math.Round(CooldownTimeRemaining / divider, 2), timeDenoter));
+                stringBuilder.Append("BEWH.ReadyIn".Translate(Math.Round(CooldownTimeRemaining / divider, 2), timeDenoter));
             }
 
             if (Working)
             {
                 stringBuilder.Append("\n");
-                stringBuilder.Append("TravelTimeRemaining".Translate(ContainedPawn, Math.Round(ticksRemaining / 2500f, 2) + "LetterHour".Translate()));
+                stringBuilder.Append("BEWH.TravelTimeRemaining".Translate(ContainedPawn, Math.Round(ticksRemaining / 2500f, 2) + "LetterHour".Translate()));
             }
 
             return stringBuilder.ToString();

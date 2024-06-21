@@ -81,7 +81,7 @@
       <li>Aeldari40k.ITab_ContentsSpiritStone</li>
     </inspectorTabs>
     <placeWorkers>
-      <li>Aeldari40k.PlaceWorker_OnlyOnePerMap</li>
+      <li>Core40k.PlaceWorker_OnlyOnePerMap</li>
     </placeWorkers>
     <comps>
       <li Class="CompProperties_Power">

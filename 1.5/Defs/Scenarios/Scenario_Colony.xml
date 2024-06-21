@@ -112,7 +112,7 @@
         <!-- Game start dialog -->
         <li Class="ScenPart_GameStartDialog">          <!-- Idk what this is, prob some text given at start -->
           <def>GameStartDialog</def>
-          <textKey>AeldariGameStartDialogColony</textKey>
+          <textKey>BEWH.AeldariGameStartDialogColony</textKey>
           <closeSound>GameStartSting</closeSound>
         </li>
 

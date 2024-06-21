@@ -62,6 +62,7 @@
             <li Class="Aeldari40k.DefModExtension_WraithboneCreatedStuff">
                 <createdThing>BEWH_Diresword</createdThing>
             </li>
+            <li Class="Core40k.DefModExtension_DontPlaceProduct" />
         </modExtensions>
     </RecipeDef>
 

@@ -72,11 +72,11 @@ namespace Aeldari40k
             text += "\n";
             if (spirit != null)
             {
-                text += "InhabitedBy".Translate(spirit.Label);
+                text += "BEWH.InhabitedBy".Translate(spirit.Label);
             }
             else
             {
-                text += "EmptySpiritStone".Translate();
+                text += "BEWH.EmptySpiritStone".Translate();
             }
             return text;
         }

@@ -13,9 +13,9 @@ namespace Aeldari40k
         {
             if (pawn != null)
             {
-                return "ContainsSoulOf".Translate(pawn.NameFullColored);
+                return "BEWH.ContainsSoulOf".Translate(pawn.NameFullColored);
             }
-            return "ContainsNoSoul".Translate();
+            return "BEWH.ContainsNoSoul".Translate();
         }
 
         public override void CompTickLong()

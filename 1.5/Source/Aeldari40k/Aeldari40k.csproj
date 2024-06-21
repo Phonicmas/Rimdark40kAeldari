@@ -77,8 +77,6 @@
     <Compile Include="Comps\CompProperties_BladelinkWeapon_AeldariSpirit.cs" />
     <Compile Include="Comps\CompPowerPlantInfinityCircuit.cs" />
     <Compile Include="Comps\CompMeditationSpawn.cs" />
-    <Content Include="Comps\CompForceWeapon.cs.txt" />
-    <Content Include="Comps\CompProperties_ForceWeapon.cs.txt" />
     <Compile Include="DefModExtensions\DefModExtension_ScalingDamage.cs" />
     <Compile Include="DefModExtensions\DefModExtension_WebwayGate.cs" />
     <Compile Include="DefModExtensions\DefModExtension_WeaponTraitExtra.cs" />
@@ -92,11 +90,9 @@
     <Compile Include="HarmonyPatches\HarmonyPatch_PopulateMutableStatsPatch.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatch_GearHasCompsThatAffectStatPatch.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatch_StatOffsetFromGearPatch.cs" />
-    <Compile Include="HarmonyPatches\HarmonyPatch_DontPlaceProductPatch.cs" />
     <Compile Include="AeldariUtils.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatch_TickWraithboneGrowthPatch.cs" />
     <Compile Include="Dialog_ChooseRewards.cs" />
-    <Compile Include="PlaceWorker_OnlyOne.cs" />
     <Compile Include="Need_Meditation.cs" />
     <Compile Include="WebwayRewardDef.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_CarryingSpiritStone.cs" />

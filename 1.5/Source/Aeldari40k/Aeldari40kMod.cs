@@ -1,6 +1,4 @@
-﻿using Genes40k;
-using HarmonyLib;
-using System.Runtime;
+﻿using HarmonyLib;
 using UnityEngine;
 using Verse;
 
@@ -24,10 +22,10 @@ namespace Aeldari40k
         {
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
-            listingStandard.Label("SettingWebwayRewardCount".Translate(settings.aeldariWebwayGateRewardCount));
+            listingStandard.Label("BEWH.SettingWebwayRewardCount".Translate(settings.aeldariWebwayGateRewardCount));
             settings.aeldariWebwayGateRewardCount = (int)listingStandard.Slider(settings.aeldariWebwayGateRewardCount, 1, 5);
 
-            listingStandard.Label("SettingWebwayTravelTime".Translate((settings.aeldariWebwayGateTravelTimeTicks / 2500).ToString("0.00")));
+            listingStandard.Label("BEWH.SettingWebwayTravelTime".Translate((settings.aeldariWebwayGateTravelTimeTicks / 2500).ToString("0.00")));
             settings.aeldariWebwayGateTravelTimeTicks = listingStandard.Slider(settings.aeldariWebwayGateTravelTimeTicks, 1250f, 120000);
             listingStandard.End();
 
@@ -36,7 +34,7 @@ namespace Aeldari40k
             resetRect.xMin += offset;
             resetRect.xMax -= offset;
 
-            if (Widgets.ButtonText(resetRect, "ResetToDefault".Translate()))
+            if (Widgets.ButtonText(resetRect, "BEWH.ResetToDefault".Translate()))
             {
                 settings.aeldariWebwayGateTravelTimeTicks = 30000;
                 settings.aeldariWebwayGateRewardCount = 3;
@@ -48,7 +46,7 @@ namespace Aeldari40k
 
         public override string SettingsCategory()
         {
-            return "ModSettingsNameAeldari".Translate();
+            return "BEWH.ModSettingsNameAeldari".Translate();
         }
     }
 }

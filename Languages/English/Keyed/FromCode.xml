@@ -1,47 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-    <ModSettingsNameAeldari>Warhammer 40k - Aeldari</ModSettingsNameAeldari>
-    <SettingWebwayRewardCount>Webway Gate reward amount: {0}</SettingWebwayRewardCount>
-    <SettingWebwayTravelTime>Webway Gate travel time: {0}h</SettingWebwayTravelTime>
-    <ResetToDefault>Reset to default</ResetToDefault>
+    <BEWH.ModSettingsNameAeldari>Warhammer 40k - Aeldari</BEWH.ModSettingsNameAeldari>
+    <BEWH.SettingWebwayRewardCount>Webway Gate reward amount: {0}</BEWH.SettingWebwayRewardCount>
+    <BEWH.SettingWebwayTravelTime>Webway Gate travel time: {0}h</BEWH.SettingWebwayTravelTime>
+    <BEWH.ResetToDefault>Reset to default</BEWH.ResetToDefault>
 
-    <AeldariGameStartDialogStranded>Stranded game start</AeldariGameStartDialogStranded>
-    <AeldariGameStartDialogColony>Colony game start</AeldariGameStartDialogColony>
+    <BEWH.AeldariGameStartDialogStranded>Stranded game start</BEWH.AeldariGameStartDialogStranded>
+    <BEWH.AeldariGameStartDialogColony>Colony game start</BEWH.AeldariGameStartDialogColony>
 
-    <ContainsSoulOf>Contains the Spirit of {0}</ContainsSoulOf>
+    <BEWH.ContainsSoulOf>Contains the Spirit of {0}</BEWH.ContainsSoulOf>
 
-    <ContainsNoSoul>Contains no spirit</ContainsNoSoul>
+    <BEWH.ContainsNoSoul>Contains no spirit</BEWH.ContainsNoSoul>
 
-    <ContainsXSouls>Contains {0} spirits</ContainsXSouls>
+    <BEWH.ContainsXSouls>Contains {0} spirits</BEWH.ContainsXSouls>
 
-    <InhabitedBy>Inhabited by {0}'s spirit</InhabitedBy>
-
-    <EmptySpiritStone>Spirit stone contains no spirit</EmptySpiritStone>
-
-
-    <OnlyOneBuildingAllowedPerMap>You may only place one {0} per map.</OnlyOneBuildingAllowedPerMap>
+    <BEWH.InhabitedBy>Inhabited by {0}'s spirit</BEWH.InhabitedBy>
+    <BEWH.EmptySpiritStone>Spirit stone contains no spirit</BEWH.EmptySpiritStone>
 
 
-    <ReadyIn>Ready in {0}{1}</ReadyIn>
-    <ReadyNow>Ready now</ReadyNow>
-    <NoPowerToRecharge>Not recharging due to insufficient power</NoPowerToRecharge>
+    <BEWH.ReadyIn>Ready in {0}{1}</BEWH.ReadyIn>
+    <BEWH.ReadyNow>Ready now</BEWH.ReadyNow>
+    <BEWH.NoPowerToRecharge>Not recharging due to insufficient power</BEWH.NoPowerToRecharge>
 
 
-    <ChooseReward>Choose a reward from the Webway gate</ChooseReward>
-    <SelectReward>Select reward</SelectReward>
-    <SeePawnInfo>Check bio</SeePawnInfo>
-    <PawnCannotMove>Pawn unable to move</PawnCannotMove>
-    <PawnNotAeldariPsyker>Pawn is not an aeldari psyker and cannot navigate the webway</PawnNotAeldariPsyker>
-    <TravelTimeRemaining>{0} will return in {1}</TravelTimeRemaining>
-    <NoValidPawns>No valid pawns</NoValidPawns>
+    <BEWH.ChooseReward>Choose a reward from the Webway gate</BEWH.ChooseReward>
+    <BEWH.SelectReward>Select reward</BEWH.SelectReward>
+    <BEWH.SeePawnInfo>Check bio</BEWH.SeePawnInfo>
+    <BEWH.PawnCannotMove>Pawn unable to move</BEWH.PawnCannotMove>
+    <BEWH.PawnNotAeldariPsyker>Pawn is not an aeldari psyker and cannot navigate the webway</BEWH.PawnNotAeldariPsyker>
+    <BEWH.TravelTimeRemaining>{0} will return in {1}</BEWH.TravelTimeRemaining>
+    <BEWH.NoValidPawns>No valid pawns</BEWH.NoValidPawns>
 
 
-    <CannotResurrectMessage>An attempt was made to try and resurrect {0}, however their soul no longer with them and their body is an empty husk that cannot function without its soul.</CannotResurrectMessage>
-    <CannotResurrectTitle>Resurrection Failed</CannotResurrectTitle>
+    <BEWH.CannotResurrectMessage>An attempt was made to try and resurrect {0}, however their soul no longer with them and their body is an empty husk that cannot function without its soul.</BEWH.CannotResurrectMessage>
+    <BEWH.CannotResurrectTitle>Resurrection Failed</BEWH.CannotResurrectTitle>
 
 
-    <CommandUsePortal>Activate Webway Gate</CommandUsePortal>
-    <CommandUsePortalDesc>Activating the Webway Gate will give you an option between 3 rewards to choose from. This procedure uses a lot of power.</CommandUsePortalDesc>
+    <BEWH.CommandUsePortal>Activate Webway Gate</BEWH.CommandUsePortal>
+    <BEWH.CommandUsePortalDesc>Activating the Webway Gate will give you an option between 3 rewards to choose from. This procedure uses a lot of power.</BEWH.CommandUsePortalDesc>
 
 </LanguageData>

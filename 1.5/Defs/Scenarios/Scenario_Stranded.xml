@@ -95,7 +95,7 @@
         <!-- Game start dialog -->
         <li Class="ScenPart_GameStartDialog">          <!-- Idk what this is, prob some text given at start -->
           <def>GameStartDialog</def>
-          <textKey>AeldariGameStartDialogStranded</textKey>
+          <textKey>BEWH.AeldariGameStartDialogStranded</textKey>
           <closeSound>GameStartSting</closeSound>
         </li>
 

@@ -96,7 +96,7 @@ namespace Aeldari40k
         {
             string s = base.GetInspectString();
             s += "\n";
-            s += "ContainsXSouls".Translate(SoulAmount.Count());
+            s += "BEWH.ContainsXSouls".Translate(SoulAmount.Count());
             return s;
         }
 
