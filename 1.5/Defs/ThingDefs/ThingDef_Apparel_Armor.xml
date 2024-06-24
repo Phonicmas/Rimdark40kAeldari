@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- BASE -->
+  <ThingDef Name="BEWH_ApparelArmorAeldariBase" ParentName="ArmorMachineableBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>BEWH_AeldarWraithbone</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>BEWH_WraithboneBenchMeditation</li>
+      </recipeUsers>
+    </recipeMaker>
+    <uiIconScale>1.25</uiIconScale>
+    <generateCommonality>2</generateCommonality>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.4</Flammability>
+    </statBases>
+    <tradeTags>
+      <li>BEWH_AeldariArmor</li>
+    </tradeTags>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <apparel>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear>
+      <soundRemove>Remove_PowerArmor</soundRemove>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+
+  <!-- Guardian -->
+  <ThingDef ParentName="BEWH_ApparelArmorAeldariBase">
+    <defName>Apparel_ArmorAeldariGuardian</defName>
+    <label>guardian armor</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>75000</WorkToMake>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <Insulation_Cold>36</Insulation_Cold>
+      <Insulation_Heat>12</Insulation_Heat>
+      <EquipDelay>17</EquipDelay>
+    </statBases>
+    <!--<equippedStatOffsets>
+      <MoveSpeed>-0.8</MoveSpeed>
+    </equippedStatOffsets>-->
+    <costList>
+      <ComponentSpacer>6</ComponentSpacer>
+      <Plasteel>150</Plasteel>
+      <Uranium>50</Uranium>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor</wornGraphicPath>
+    </apparel>
+    <recipeMaker>
+      <displayPriority>125</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- Banshee -->
+  <ThingDef ParentName="BEWH_ApparelArmorAeldariBase">
+    <defName>Apparel_ArmorAeldariBanshee</defName>
+    <label>banshee armor</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>75000</WorkToMake>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <Insulation_Cold>36</Insulation_Cold>
+      <Insulation_Heat>12</Insulation_Heat>
+      <EquipDelay>17</EquipDelay>
+    </statBases>
+    <!--<equippedStatOffsets>
+      <MoveSpeed>-0.8</MoveSpeed>
+    </equippedStatOffsets>-->
+    <costList>
+      <ComponentSpacer>6</ComponentSpacer>
+      <Plasteel>150</Plasteel>
+      <Uranium>50</Uranium>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor</wornGraphicPath>
+    </apparel>
+    <recipeMaker>
+      <displayPriority>125</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+
+</Defs>

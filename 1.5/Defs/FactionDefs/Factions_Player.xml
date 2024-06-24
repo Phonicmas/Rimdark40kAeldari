@@ -85,7 +85,7 @@
         <options>
           <BEWH_AeldariPawnGuardian>2</BEWH_AeldariPawnGuardian>
           <BEWH_AeldariPawnBanshee>5</BEWH_AeldariPawnBanshee>
-          <BEWH_AeldariPawnWarlock>1</BEWH_AeldariPawnWarlock>
+          <!--<BEWH_AeldariPawnWarlock>1</BEWH_AeldariPawnWarlock>-->
         </options>
       </li>
       <li>

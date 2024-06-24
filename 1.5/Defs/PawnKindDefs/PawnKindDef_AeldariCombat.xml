@@ -4,14 +4,10 @@
     <!-- Aeldari Guardian -->
     <PawnKindDef ParentName="BEWH_AeldariPawnKindCombatBase">
         <defName>BEWH_AeldariPawnGuardian</defName>
-        <!--<apparelTags>
-            <li>IndustrialMilitaryBasic</li>
-            <li>IndustrialMilitaryAdvanced</li>
-        </apparelTags>
         <apparelRequired>
-            <li>BEWH_ImperiumPowerArmor</li>
-            <li>BEWH_ImperiumPowerArmorHelmet</li>
-        </apparelRequired>-->
+            <li>Apparel_ArmorAeldariGuardian</li>
+            <li>Apparel_ArmorHelmetAeldariGuardian</li>
+        </apparelRequired>
         <weaponTags>
             <li>BEWH_AeldariWeaponRanged</li>
         </weaponTags>
@@ -30,14 +26,10 @@
     <!-- Aeldari Banshee -->
     <PawnKindDef ParentName="BEWH_AeldariPawnKindCombatBase">
         <defName>BEWH_AeldariPawnBanshee</defName>
-        <!--<apparelTags>
-            <li>IndustrialMilitaryBasic</li>
-            <li>IndustrialMilitaryAdvanced</li>
-        </apparelTags>
         <apparelRequired>
-            <li>BEWH_ImperiumPowerArmor</li>
-            <li>BEWH_ImperiumPowerArmorHelmet</li>
-        </apparelRequired>-->
+            <li>Apparel_ArmorAeldariBanshee</li>
+            <li>Apparel_ArmorHelmetAeldariBanshee</li>
+        </apparelRequired>
         <weaponTags>
             <li>BEWH_AeldariWeaponMelee</li>
         </weaponTags>

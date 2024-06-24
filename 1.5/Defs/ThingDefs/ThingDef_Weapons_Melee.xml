@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- ==========MELEE WEAPONS========== -->
-  <!-- Diresword -->
-  <ThingDef ParentName="BaseWeapon">
-    <defName>BEWH_Diresword</defName>
-    <label>diresword</label>
-    <description>...</description>
+
+  <ThingDef Name="BEWH_Aeldari" ParentName="BaseWeapon">
     <techLevel>Ultra</techLevel>
     <tradeNeverStack>true</tradeNeverStack>
     <relicChance>0</relicChance>
+    <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+    <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <notifyMapRemoved>true</notifyMapRemoved>
+    <!-- Tags and classes -->
+    <tradeTags>
+      <li>BEWH_AeldariMelee</li>
+    </tradeTags>
+    <weaponTags>
+      <li>BEWH_AeldariWeaponMelee</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+      <li>Ultratech</li>
+    </weaponClasses>
+  </ThingDef>
+
+  <!-- ==========MELEE WEAPONS========== -->
+  <!-- Diresword -->
+  <ThingDef ParentName="BEWH_Aeldari">
+    <defName>BEWH_Diresword</defName>
+    <label>diresword</label>
     <statBases>
       <MarketValue>3500</MarketValue>
       <Mass>2</Mass>
@@ -23,24 +43,10 @@
       <texPath>Weapons/Diresword</texPath>
       <!-- <color>(255,200,200)</color> -->
     </graphicData>
-    <soundInteract>Interact_BladelinkMonoSword</soundInteract>
-    <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
-    <smeltable>false</smeltable>
-    <burnableByRecipe>true</burnableByRecipe>
-    <notifyMapRemoved>true</notifyMapRemoved>
     <!-- Tags and classes -->
     <weaponTags>
-      <li>BEWH_AeldariWeaponMelee</li>
       <li>BEWH_AeldariDiresword</li>
     </weaponTags>
-    <tradeTags>
-      <li>BEWH_AeldariMelee</li>
-    </tradeTags>
-    <weaponClasses>
-      <li>Melee</li>
-      <li>MeleePiercer</li>
-      <li>Ultratech</li>
-    </weaponClasses>
     <!-- Damage Stuff -->
     <tools>
       <li>
@@ -82,13 +88,10 @@
   </ThingDef>
 
   <!-- Biting Blade -->
-  <ThingDef ParentName="BaseWeapon">
+  <ThingDef ParentName="BEWH_Aeldari">
     <defName>BEWH_BitingBlade</defName>
     <label>biting blade</label>
     <description>...</description>
-    <techLevel>Ultra</techLevel>
-    <tradeNeverStack>true</tradeNeverStack>
-    <relicChance>0</relicChance>
     <statBases>
       <MarketValue>3500</MarketValue>
       <Mass>2</Mass>
@@ -102,23 +105,7 @@
       <texPath>Weapons/BitingBlade</texPath>
       <!-- <color>(255,200,200)</color> -->
     </graphicData>
-    <soundInteract>Interact_BladelinkMonoSword</soundInteract>
-    <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
-    <smeltable>false</smeltable>
-    <burnableByRecipe>true</burnableByRecipe>
-    <notifyMapRemoved>true</notifyMapRemoved>
     <!-- Tags and classes -->
-    <weaponTags>
-      <li>BEWH_AeldariWeaponMelee</li>
-    </weaponTags>
-    <tradeTags>
-      <li>BEWH_AeldariMelee</li>
-    </tradeTags>
-    <weaponClasses>
-      <li>Melee</li>
-      <li>MeleePiercer</li>
-      <li>Ultratech</li>
-    </weaponClasses>
     <!-- Damage Stuff -->
     <tools>
       <li>
@@ -151,13 +138,10 @@
   </ThingDef>
 
   <!-- Witch Blade -->
-  <ThingDef ParentName="BaseWeapon">
+  <ThingDef ParentName="BEWH_Aeldari">
     <defName>BEWH_WitchBlade</defName>
     <label>witch blade</label>
     <description>...</description>
-    <techLevel>Ultra</techLevel>
-    <tradeNeverStack>true</tradeNeverStack>
-    <relicChance>0</relicChance>
     <statBases>
       <MarketValue>3500</MarketValue>
       <Mass>2</Mass>
@@ -171,23 +155,7 @@
       <texPath>Weapons/BitingBlade</texPath>
       <!-- <color>(255,200,200)</color> -->
     </graphicData>
-    <soundInteract>Interact_BladelinkMonoSword</soundInteract>
-    <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
-    <smeltable>false</smeltable>
-    <burnableByRecipe>true</burnableByRecipe>
-    <notifyMapRemoved>true</notifyMapRemoved>
     <!-- Tags and classes -->
-    <weaponTags>
-      <li>BEWH_AeldariWeaponMelee</li>
-    </weaponTags>
-    <tradeTags>
-      <li>BEWH_AeldariMelee</li>
-    </tradeTags>
-    <weaponClasses>
-      <li>Melee</li>
-      <li>MeleePiercer</li>
-      <li>Ultratech</li>
-    </weaponClasses>
     <!-- Damage Stuff -->
     <tools>
       <li>
