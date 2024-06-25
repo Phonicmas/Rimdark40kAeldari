@@ -2,10 +2,11 @@
 <Defs>
 
 
-  <ThingDef Name="BEWH_Aeldari" ParentName="BaseWeapon">
+  <ThingDef Name="BEWH_AeldariMeleeWeapons" ParentName="BaseWeapon" Abstract="true">
     <techLevel>Ultra</techLevel>
     <tradeNeverStack>true</tradeNeverStack>
     <relicChance>0</relicChance>
+    <thingClass>ThingWithComps</thingClass>
     <soundInteract>Interact_BladelinkMonoSword</soundInteract>
     <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
     <smeltable>false</smeltable>
@@ -27,7 +28,7 @@
 
   <!-- ==========MELEE WEAPONS========== -->
   <!-- Diresword -->
-  <ThingDef ParentName="BEWH_Aeldari">
+  <ThingDef ParentName="BEWH_AeldariMeleeWeapons">
     <defName>BEWH_Diresword</defName>
     <label>diresword</label>
     <statBases>
@@ -88,7 +89,7 @@
   </ThingDef>
 
   <!-- Biting Blade -->
-  <ThingDef ParentName="BEWH_Aeldari">
+  <ThingDef ParentName="BEWH_AeldariMeleeWeapons">
     <defName>BEWH_BitingBlade</defName>
     <label>biting blade</label>
     <description>...</description>
@@ -138,7 +139,7 @@
   </ThingDef>
 
   <!-- Witch Blade -->
-  <ThingDef ParentName="BEWH_Aeldari">
+  <ThingDef ParentName="BEWH_AeldariMeleeWeapons">
     <defName>BEWH_WitchBlade</defName>
     <label>witch blade</label>
     <description>...</description>
