@@ -39,12 +39,9 @@
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Core40k">
-      <HintPath>..\..\..\..\Warhammer40kFramework\1.5\Assemblies\Core40k.dll</HintPath>
-    </Reference>
-    <Reference Include="Genes40k">
-      <HintPath>..\..\..\..\Warhammer40kGenes\1.4\Assemblies\Genes40k.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Core40k, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Rimdark40kFramework\1.5\Assemblies\Core40k.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -6,5 +6,6 @@ namespace Aeldari40k
     public static class AeldariUtils
     {
 
+
     }
 }
