@@ -108,5 +108,39 @@
     </recipeMaker>
   </ThingDef>
 
+  <!-- Dire Avenger -->
+  <ThingDef ParentName="BEWH_ApparelArmorHelmetAeldariBase">
+    <defName>Apparel_ArmorHelmetAeldariDireAvenger</defName>
+    <label>dire avenger helmet</label>
+    <description>...</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/DireAvengerHelmet/_DireAvenger_Helmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9, 0.9)</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>26250</WorkToMake>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>6</EquipDelay>
+    </statBases>
+    <!--<equippedStatOffsets>
+      <MoveSpeed>-0.8</MoveSpeed>
+    </equippedStatOffsets>-->
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>50</Plasteel>
+    </costList>
+    <apparel>
+      <texPath>Things/Pawn/Humanlike/Apparel/DireAvengerHelmet/DireAvenger_Helmet</texPath>
+    </apparel>
+    <recipeMaker>
+      <displayPriority>125</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
 
 </Defs>
