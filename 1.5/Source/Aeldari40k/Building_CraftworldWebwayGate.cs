@@ -159,8 +159,8 @@ namespace Aeldari40k
                 if (PowerBatteryComp != null && WebwayGateDefMod != null && PowerBatteryComp.StoredEnergy >= WebwayGateDefMod.powerToActivate && PowerTraderComp.PowerOn)
                 {
                     Command_Action command_Action1 = new Command_Action();
-                    command_Action1.defaultLabel = "CommandUsePortal".Translate();
-                    command_Action1.defaultDesc = "CommandUsePortalDesc".Translate();
+                    command_Action1.defaultLabel = "BEWH.CommandUsePortal".Translate();
+                    command_Action1.defaultDesc = "BEWH.CommandUsePortalDesc".Translate();
                     command_Action1.icon = UsePortalIcon;
                     command_Action1.activateSound = SoundDefOf.Designate_Cancel;
                     command_Action1.action = delegate

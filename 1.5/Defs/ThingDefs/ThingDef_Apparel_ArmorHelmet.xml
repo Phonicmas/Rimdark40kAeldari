@@ -112,11 +112,13 @@
   <ThingDef ParentName="BEWH_ApparelArmorHelmetAeldariBase">
     <defName>Apparel_ArmorHelmetAeldariDireAvenger</defName>
     <label>dire avenger helmet</label>
+    <thingClass>Core40k.ApparelColourTwo</thingClass>
     <description>...</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/DireAvengerHelmet/_DireAvenger_Helmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.9, 0.9)</drawSize>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1, 1)</drawSize>
     </graphicData>
     <statBases>
       <WorkToMake>26250</WorkToMake>
@@ -135,7 +137,8 @@
       <Plasteel>50</Plasteel>
     </costList>
     <apparel>
-      <texPath>Things/Pawn/Humanlike/Apparel/DireAvengerHelmet/DireAvenger_Helmet</texPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/DireAvengerHelmet/DireAvenger_Helmet</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
     <recipeMaker>
       <displayPriority>125</displayPriority>
