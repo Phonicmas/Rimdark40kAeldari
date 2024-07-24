@@ -65,7 +65,7 @@
     <comps>
       <li Class="CompProperties_Glower">
         <glowRadius>5</glowRadius>
-        <glowColor>(169,74,58,0)</glowColor>        <!-- Idk what colour, maybe blue? -->
+        <glowColor>(169,74,58,0)</glowColor>
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>

@@ -129,9 +129,6 @@
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>6</EquipDelay>
     </statBases>
-    <!--<equippedStatOffsets>
-      <MoveSpeed>-0.8</MoveSpeed>
-    </equippedStatOffsets>-->
     <costList>
       <ComponentSpacer>1</ComponentSpacer>
       <Plasteel>50</Plasteel>
@@ -139,10 +136,17 @@
     <apparel>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/DireAvengerHelmet/DireAvenger_Helmet</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
+	  <drawData>
+				<dataNorth><offset>(0, 0, 0.1)</offset></dataNorth>
+				<dataEast><offset>(0, 0, 0.05)</offset></dataEast>
+				<dataSouth><offset>(0, 0, 0.05)</offset></dataSouth>
+				<dataWest><offset>(0, 0, 0.05)</offset></dataWest>
+	  </drawData>
     </apparel>
     <recipeMaker>
       <displayPriority>125</displayPriority>
     </recipeMaker>
+
   </ThingDef>
 
 

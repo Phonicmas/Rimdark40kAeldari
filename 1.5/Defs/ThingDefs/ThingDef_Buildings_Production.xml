@@ -19,15 +19,15 @@
     </statBases>
     <minifiedDef />
     <thingCategories Inherit="false" />
-    <size>(5,2)</size>
+    <size>(5,1)</size>
     <costList>
       <Steel>200</Steel>
     </costList>
     <graphicData>
-      <texPath>Things/Building/Production/FabricationBench</texPath>
+      <texPath>Structures/BonesingingBench</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(7,4)</drawSize>
+      <drawSize>(6.8,2.8)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
