@@ -38,11 +38,11 @@
       <Flammability>0.5</Flammability>
       <Beauty>1</Beauty>
     </statBases>
-    <equippedAngleOffset>-65</equippedAngleOffset>
+    <equippedAngleOffset>25</equippedAngleOffset>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Weapons/Diresword</texPath>
-      <!-- <color>(255,200,200)</color> -->
+	  <drawSize>1.1</drawSize>
     </graphicData>
     <!-- Tags and classes -->
     <weaponTags>
@@ -100,11 +100,11 @@
       <Flammability>0.5</Flammability>
       <Beauty>1</Beauty>
     </statBases>
-    <equippedAngleOffset>-45</equippedAngleOffset>
+    <equippedAngleOffset>25</equippedAngleOffset>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Weapons/BitingBlade</texPath>
-      <!-- <color>(255,200,200)</color> -->
+	  <drawSize>1.25</drawSize>
     </graphicData>
     <!-- Tags and classes -->
     <!-- Damage Stuff -->

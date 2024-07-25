@@ -13,7 +13,6 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.2</drawSize>
     </graphicData>
-    <equippedAngleOffset>45</equippedAngleOffset>
     <smeltable>false</smeltable>
     <soundInteract>Interact_ChargeRifle</soundInteract>
     <statBases>
@@ -24,6 +23,7 @@
       <AccuracyLong>0.45</AccuracyLong>
       <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
     </statBases>
+	<equippedAngleOffset>-15</equippedAngleOffset>
     <weaponTags>
       <li>BEWH_AeldariWeaponRanged</li>
     </weaponTags>
@@ -91,7 +91,7 @@
     <graphicData>
       <texPath>Weapons/ShurikenPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.8</drawSize>
+      <drawSize>1.05</drawSize>
     </graphicData>
     <smeltable>false</smeltable>
     <soundInteract>Interact_ChargeRifle</soundInteract>
@@ -103,6 +103,7 @@
       <AccuracyLong>0.45</AccuracyLong>
       <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
     </statBases>
+	<equippedAngleOffset>-15</equippedAngleOffset>
     <weaponTags>
       <li>BEWH_AeldariWeaponRanged</li>
     </weaponTags>

@@ -42,7 +42,7 @@
 
   <!-- Guardian -->
   <ThingDef ParentName="BEWH_ApparelArmorHelmetAeldariBase">
-    <defName>Apparel_ArmorHelmetAeldariGuardian</defName>
+    <defName>BEWH_ArmorHelmetAeldariGuardian</defName>
     <label>guardian helmet</label>
     <description>...</description>
     <graphicData>
@@ -76,7 +76,7 @@
 
   <!-- Banshee -->
   <ThingDef ParentName="BEWH_ApparelArmorHelmetAeldariBase">
-    <defName>Apparel_ArmorHelmetAeldariBanshee</defName>
+    <defName>BEWH_ArmorHelmetAeldariBanshee</defName>
     <label>banshee helmet</label>
     <description>...</description>
     <graphicData>
@@ -110,7 +110,7 @@
 
   <!-- Dire Avenger -->
   <ThingDef ParentName="BEWH_ApparelArmorHelmetAeldariBase">
-    <defName>Apparel_ArmorHelmetAeldariDireAvenger</defName>
+    <defName>BEWH_ArmorHelmetAeldariDireAvenger</defName>
     <label>dire avenger helmet</label>
     <thingClass>Core40k.ApparelColourTwo</thingClass>
     <description>...</description>
@@ -118,7 +118,7 @@
       <texPath>Things/Pawn/Humanlike/Apparel/DireAvengerHelmet/_DireAvenger_Helmet</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(1, 1)</drawSize>
+      <drawSize>(0.9, 0.9)</drawSize>
     </graphicData>
     <statBases>
       <WorkToMake>26250</WorkToMake>
@@ -129,9 +129,6 @@
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>6</EquipDelay>
     </statBases>
-    <!--<equippedStatOffsets>
-      <MoveSpeed>-0.8</MoveSpeed>
-    </equippedStatOffsets>-->
     <costList>
       <ComponentSpacer>1</ComponentSpacer>
       <Plasteel>50</Plasteel>
@@ -139,10 +136,26 @@
     <apparel>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/DireAvengerHelmet/DireAvenger_Helmet</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
+	  <renderSkipFlags>
+		<li>None</li>
+	  </renderSkipFlags>
+	  <drawData>
+				<dataNorth><offset>(0, 0, 0.05)</offset></dataNorth>
+				<dataEast><offset>(0, 0, 0.15)</offset></dataEast>
+				<dataSouth><offset>(0, 0, 0.05)</offset></dataSouth>
+				<dataWest><offset>(0, 0, 0.15)</offset></dataWest>
+	  </drawData>
     </apparel>
     <recipeMaker>
       <displayPriority>125</displayPriority>
     </recipeMaker>
+	<modExtensions>
+			<li Class="VFECore.ApparelDrawPosExtension">
+				<isUnifiedApparel>false</isUnifiedApparel>
+				<hideHead>true</hideHead>
+            </li> 
+	    </modExtensions>
+
   </ThingDef>
 
 

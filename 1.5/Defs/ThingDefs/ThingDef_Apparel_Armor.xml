@@ -47,7 +47,7 @@
 
   <!-- Guardian -->
   <ThingDef ParentName="BEWH_ApparelArmorAeldariBase">
-    <defName>Apparel_ArmorAeldariGuardian</defName>
+    <defName>BEWH_ArmorAeldariGuardian</defName>
     <label>guardian armor</label>
     <description>...</description>
     <graphicData>
@@ -81,7 +81,7 @@
 
   <!-- Banshee -->
   <ThingDef ParentName="BEWH_ApparelArmorAeldariBase">
-    <defName>Apparel_ArmorAeldariBanshee</defName>
+    <defName>BEWH_ArmorAeldariBanshee</defName>
     <label>banshee armor</label>
     <description>...</description>
     <graphicData>
@@ -115,12 +115,13 @@
 
   <!-- Dire Avenger -->
   <ThingDef ParentName="BEWH_ApparelArmorAeldariBase">
-    <defName>Apparel_ArmorAeldariDireAvenger</defName>
+    <defName>BEWH_ArmorAeldariDireAvenger</defName>
     <label>dire avenger armor</label>
     <description>...</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/DireAvengerArmor/_DireAvenger_Armor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <statBases>
       <WorkToMake>75000</WorkToMake>
@@ -131,9 +132,6 @@
       <Insulation_Heat>12</Insulation_Heat>
       <EquipDelay>17</EquipDelay>
     </statBases>
-    <!--<equippedStatOffsets>
-      <MoveSpeed>-0.8</MoveSpeed>
-    </equippedStatOffsets>-->
     <costList>
       <ComponentSpacer>6</ComponentSpacer>
       <Plasteel>150</Plasteel>
@@ -141,6 +139,15 @@
     </costList>
     <apparel>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/DireAvengerArmor/DireAvenger_Armor</wornGraphicPath>
+	  <useWornGraphicMask>true</useWornGraphicMask>
+	  <renderSkipFlags>
+        <li>Beard</li>
+	  </renderSkipFlags>
+	  <drawData>
+        <defaultData>
+          <layer>59</layer>
+        </defaultData>
+      </drawData>
     </apparel>
     <recipeMaker>
       <displayPriority>125</displayPriority>

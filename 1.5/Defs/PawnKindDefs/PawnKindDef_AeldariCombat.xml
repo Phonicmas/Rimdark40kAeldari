@@ -5,8 +5,8 @@
     <PawnKindDef ParentName="BEWH_AeldariPawnKindCombatBase">
         <defName>BEWH_AeldariPawnGuardian</defName>
         <apparelRequired>
-            <li>Apparel_ArmorAeldariGuardian</li>
-            <li>Apparel_ArmorHelmetAeldariGuardian</li>
+            <li>BEWH_ArmorAeldariGuardian</li>
+            <li>BEWH_ArmorHelmetAeldariGuardian</li>
         </apparelRequired>
         <weaponTags>
             <li>BEWH_AeldariWeaponRanged</li>
@@ -27,8 +27,8 @@
     <PawnKindDef ParentName="BEWH_AeldariPawnKindCombatBase">
         <defName>BEWH_AeldariPawnBanshee</defName>
         <apparelRequired>
-            <li>Apparel_ArmorAeldariBanshee</li>
-            <li>Apparel_ArmorHelmetAeldariBanshee</li>
+            <li>BEWH_ArmorAeldariBanshee</li>
+            <li>BEWH_ArmorHelmetAeldariBanshee</li>
         </apparelRequired>
         <weaponTags>
             <li>BEWH_AeldariWeaponMelee</li>
