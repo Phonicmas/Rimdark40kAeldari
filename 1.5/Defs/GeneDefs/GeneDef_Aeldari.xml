@@ -29,9 +29,7 @@
         <marketValueFactor>1.2</marketValueFactor>
         <forcedHeadTypes>
             <li>Male_AveragePointy</li>
-            <li>Male_NarrowPointy</li>
             <li>Female_AveragePointy</li>
-            <li>Female_NarrowPointy</li>
         </forcedHeadTypes>
         <missingGeneRomanceChanceFactor>0.3</missingGeneRomanceChanceFactor>
         <statOffsets>
