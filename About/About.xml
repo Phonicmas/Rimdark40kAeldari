@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Warhammer 40.000 - Aeldari</name>
+	<name>RimDark 40 - Aeldari</name>
 	<author>Phonicmas</author>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
 	<packageId>Phonicmas.40kAeldari</packageId>
 	<description>
-		Warhammer 40k - Aeldari module.
+		Rimdark 40k - Aeldari.
 	</description>
 	<modDependencies>
 		<li>
@@ -20,7 +20,7 @@
 		</li>
 		<li>
 			<packageId>Phonicmas.40kCore</packageId>
-			<displayName>Warhammer 40k - Framework</displayName>
+			<displayName>RimDark 40k - Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3267464767</steamWorkshopUrl>
 		</li>
 	</modDependencies>
